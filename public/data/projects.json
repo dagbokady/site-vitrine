@@ -1,0 +1,35 @@
+{
+    "projects": [
+    {
+        "id": "universite-san-pedro",
+        "slug": "universite-san-pedro",
+        "title": "Université de San-Pédro",
+        "subtitle": "Campus universitaire public, 322 ha",
+        "category": "infrastructure",
+        "categories": ["infrastructure", "education", "ppp"],
+        "status": "realise",
+        "year": 2024,
+        "location": "San-Pédro, Côte d'Ivoire",
+        "client": "PDU — État de Côte d'Ivoire",
+        "surface": "322 ha",
+        "role": "Architecte, Chef de Projet D",
+        "partners": ["Atelier Dieng", "Envol Capital"],
+        "description": "Projet PPP de campus universitaire pour 20 000 étudiants...",
+        "cover": "https://res.cloudinary.com/.../usp-cover.jpg",
+        "gallery": [
+            { "url": "https://res.cloudinary.com/.../usp-1.jpg", "caption": "Vue aérienne du campus" },
+            { "url": "https://res.cloudinary.com/.../usp-2.jpg", "caption": "Entrée principale" }
+        ],
+        "featured": true,
+        "order": 1,
+        "createdAt": "2024-09-12"
+    }
+],
+    "categories": [
+    { "id": "infrastructure", "label": "Infrastructure" },
+    { "id": "residentiel", "label": "Résidentiel" },
+    { "id": "hotellerie", "label": "Hôtellerie" },
+    { "id": "tertiaire", "label": "Tertiaire" },
+    { "id": "concours", "label": "Concours" }
+]
+}

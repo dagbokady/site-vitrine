@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Mc.Johnson & Partners</title>
+    <meta name="description" content="Contactez Mc.Johnson & Partners pour discuter de votre projet d'architecture, d'urbanisme ou d'investissement immobilier.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tokens.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/pages.css">
+
+    <link rel="icon" type="image/png" href="./images/ui/favicon.png">
+
+    <!-- Cloudflare Turnstile (anti-spam, à activer après création du compte) -->
+    <!-- <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script> -->
+</head>
+
+<body>
+
+<header class="site-header" id="site-header">
+    <div class="container header-inner">
+        <a href="./index.html" class="logo" aria-label="Mc.Johnson & Partners — Accueil">
+            <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li><a href="./index.html" class="nav-link">Accueil</a></li>
+                <li><a href="./projets.html" class="nav-link">Projets</a></li>
+                <li><a href="./agence.html" class="nav-link">Agence</a></li>
+                <li><a href="./contact.html" class="nav-link is-active">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <!-- ===== EN-TÊTE DE PAGE ===== -->
+    <section class="page-header">
+        <div class="container">
+            <p class="eyebrow">Nous écrire</p>
+            <h1 class="page-title">Parlons de votre projet.</h1>
+            <p class="page-lead">
+                Un projet de construction, une étude de faisabilité, un conseil en investissement ?
+                Nous répondons sous 48 heures.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT GRID : formulaire + infos ===== -->
+    <section class="section section-contact">
+        <div class="container contact-grid">
+
+            <!-- ----- FORMULAIRE ----- -->
+            <div class="contact-form-wrapper">
+                <h2 class="section-title">Formulaire</h2>
+
+                <form class="contact-form" id="contact-form" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="firstname">Prénom <span aria-hidden="true">*</span></label>
+                            <input type="text" id="firstname" name="firstname" required autocomplete="given-name">
+                            <p class="field-error" id="error-firstname" role="alert"></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="lastname">Nom <span aria-hidden="true">*</span></label>
+                            <input type="text" id="lastname" name="lastname" required autocomplete="family-name">
+                            <p class="field-error" id="error-lastname" role="alert"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">Email <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                            <p class="field-error" id="error-email" role="alert"></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
+                            <p class="field-error" id="error-phone" role="alert"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="company">Société / Organisation</label>
+                        <input type="text" id="company" name="company" autocomplete="organization">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="subject">Type de projet</label>
+                        <select id="subject" name="subject">
+                            <option value="">— Sélectionner —</option>
+                            <option value="residentiel">Projet résidentiel</option>
+                            <option value="tertiaire">Bâtiment tertiaire / bureaux</option>
+                            <option value="hotellerie">Hôtellerie / tourisme</option>
+                            <option value="infrastructure">Infrastructure / équipement public</option>
+                            <option value="urbanisme">Urbanisme / aménagement</option>
+                            <option value="conseil">Conseil en investissement</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Votre message <span aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <p class="field-error" id="error-message" role="alert"></p>
+                    </div>
+
+                    <!-- Honeypot anti-spam (caché aux humains, rempli par les bots) -->
+                    <div class="honeypot" aria-hidden="true">
+                        <label for="website">Ne pas remplir</label>
+                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <!-- Cloudflare Turnstile widget (à activer plus tard) -->
+                    <!-- <div class="cf-turnstile" data-sitekey="VOTRE_SITE_KEY"></div> -->
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large" id="submit-btn">
+                            Envoyer le message
+                        </button>
+                        <p class="form-hint">Réponse sous 48h ouvrées</p>
+                    </div>
+
+                    <!-- Messages de retour -->
+                    <div class="form-feedback" id="form-feedback" role="status" aria-live="polite" hidden>
+                        <p class="feedback-success" id="feedback-success" hidden>
+                            ✓ Message envoyé. Nous vous répondons sous 48 heures.
+                        </p>
+                        <p class="feedback-error" id="feedback-error" hidden>
+                            Une erreur est survenue. Merci de réessayer ou de nous écrire directement à
+                            <a href="mailto:McJohnsonandPartners@gmail.com">McJohnsonandPartners@gmail.com</a>
+                        </p>
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- ----- INFOS DE CONTACT ----- -->
+            <aside class="contact-info">
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Bureaux</h3>
+                    <div class="contact-office">
+                        <p class="office-country">Côte d'Ivoire</p>
+                        <address>
+                            22 BP 1471 Abidjan 22<br>
+                            309 Ilot 19A, Riviera FAYA<br>
+                            Cocody, Abidjan
+                        </address>
+                    </div>
+                    <div class="contact-office">
+                        <p class="office-country">France</p>
+                        <address>
+                            [Adresse à compléter]
+                        </address>
+                    </div>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Téléphone</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-label">Côte d'Ivoire</span>
+                            <a href="tel:+2250759235565">+225 07 59 23 55 65</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">France</span>
+                            <a href="tel:+33647657126">+33 6 47 65 71 26</a>
+                        </li>
+                        <li>
+                            <span class="contact-label">WhatsApp</span>
+                            <a href="https://wa.me/2250759235565" target="_blank" rel="noopener">+225 07 59 23 55 65</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Email</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-label">Pro</span>
+                            <a href="mailto:McJohnsonandPartners@gmail.com">McJohnsonandPartners@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Références légales</h3>
+                    <ul class="contact-meta">
+                        <li>RCCM : CI-ABJ-03-2021-B13-03070</li>
+                        <li>Compte contribuable : 2142527 J</li>
+                        <li>Architecte agréé CNOA-CI 2020-302-194</li>
+                    </ul>
+                </div>
+
+            </aside>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col footer-brand">
+            <p class="footer-logo">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></p>
+            <p class="footer-tagline">Building trust…</p>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Bureaux</h4>
+            <address class="footer-address">
+                <p><strong>Abidjan</strong><br>22 BP 1471 Abidjan 22<br>309 Ilot 19A, Riviera FAYA, Cocody</p>
+                <p><strong>France</strong><br>[Adresse à compléter]</p>
+            </address>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Contact</h4>
+            <ul class="footer-contact">
+                <li><a href="tel:+2250759235565">+225 07 59 23 55 65</a></li>
+                <li><a href="tel:+33647657126">+33 6 47 65 71 26</a></li>
+                <li><a href="mailto:McJohnsonandPartners@gmail.com">McJohnsonandPartners@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Navigation</h4>
+            <ul class="footer-nav">
+                <li><a href="./projets.html">Projets</a></li>
+                <li><a href="./agence.html">Agence</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2026 Mc.Johnson &amp; Partners SARL — RCCM CI-ABJ-03-2021-B13-03070</p>
+        <p>Architecte agréé CNOA-CI 2020-302-194</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

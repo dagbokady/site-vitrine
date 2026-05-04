@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Le titre est mis à jour dynamiquement par le JS -->
+    <title>Projet — Mc.Johnson & Partners</title>
+    <meta name="description" id="meta-description" content="Détail d'un projet de Mc.Johnson & Partners.">
+
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tokens.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/pages.css">
+
+    <link rel="icon" type="image/png" href="./images/ui/favicon.png">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="site-header">
+    <div class="container header-inner">
+        <a href="./index.html" class="logo" aria-label="Mc.Johnson & Partners — Accueil">
+            <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li><a href="./index.html" class="nav-link">Accueil</a></li>
+                <li><a href="./projets.html" class="nav-link is-active">Projets</a></li>
+                <li><a href="./agence.html" class="nav-link">Agence</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main class="project-page">
+
+    <!-- ===== ÉTAT DE CHARGEMENT ===== -->
+    <div class="project-loading" id="project-loading">
+        <p>Chargement du projet…</p>
+    </div>
+
+    <!-- ===== ÉTAT D'ERREUR (projet introuvable) ===== -->
+    <section class="project-error" id="project-error" hidden>
+        <div class="container">
+            <p class="eyebrow">Erreur</p>
+            <h1 class="page-title">Projet introuvable</h1>
+            <p class="page-lead">Le projet que vous cherchez n'existe pas ou a été déplacé.</p>
+            <a href="./projets.html" class="btn btn-primary">Voir tous les projets</a>
+        </div>
+    </section>
+
+    <!-- ===== CONTENU PROJET (rempli par js/project-detail.js) ===== -->
+    <article class="project-article" id="project-article" hidden>
+
+        <!-- HÉRO PROJET : grande image + titre -->
+        <header class="project-hero">
+            <img src="" alt="" id="project-cover" class="project-cover">
+            <div class="container project-hero-text">
+                <p class="eyebrow eyebrow-light" id="project-categories"></p>
+                <h1 class="project-title" id="project-title"></h1>
+                <p class="project-subtitle" id="project-subtitle"></p>
+            </div>
+        </header>
+
+        <!-- INFOS PROJET (style fiche technique) -->
+        <section class="project-meta">
+            <div class="container">
+                <dl class="meta-grid">
+                    <div class="meta-item">
+                        <dt>Statut</dt>
+                        <dd id="meta-status"></dd>
+                    </div>
+                    <div class="meta-item">
+                        <dt>Année</dt>
+                        <dd id="meta-year"></dd>
+                    </div>
+                    <div class="meta-item">
+                        <dt>Lieu</dt>
+                        <dd id="meta-location"></dd>
+                    </div>
+                    <div class="meta-item">
+                        <dt>Maître d'ouvrage</dt>
+                        <dd id="meta-client"></dd>
+                    </div>
+                    <div class="meta-item">
+                        <dt>Surface</dt>
+                        <dd id="meta-surface"></dd>
+                    </div>
+                    <div class="meta-item">
+                        <dt>Notre rôle</dt>
+                        <dd id="meta-role"></dd>
+                    </div>
+                    <div class="meta-item meta-partners" id="meta-partners-wrapper">
+                        <dt>Partenaires</dt>
+                        <dd id="meta-partners"></dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- DESCRIPTION -->
+        <section class="project-description">
+            <div class="container container-narrow">
+                <p id="project-description"></p>
+            </div>
+        </section>
+
+        <!-- GALERIE IMMERSIVE -->
+        <section class="project-gallery" id="project-gallery">
+            <!-- Les images sont injectées par le JS -->
+        </section>
+
+        <!-- NAVIGATION ENTRE PROJETS -->
+        <nav class="project-nav" aria-label="Navigation entre projets">
+            <div class="container project-nav-inner">
+                <a href="#" class="project-nav-link project-nav-prev" id="project-prev" hidden>
+                    <span class="project-nav-label">Projet précédent</span>
+                    <span class="project-nav-title" id="project-prev-title"></span>
+                </a>
+                <a href="./projets.html" class="project-nav-link project-nav-all">
+                    <span class="project-nav-label">Tous les projets</span>
+                </a>
+                <a href="#" class="project-nav-link project-nav-next" id="project-next" hidden>
+                    <span class="project-nav-label">Projet suivant</span>
+                    <span class="project-nav-title" id="project-next-title"></span>
+                </a>
+            </div>
+        </nav>
+
+    </article>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col footer-brand">
+            <p class="footer-logo">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></p>
+            <p class="footer-tagline">Building trust…</p>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Bureaux</h4>
+            <address class="footer-address">
+                <p><strong>Abidjan</strong><br>22 BP 1471 Abidjan 22<br>309 Ilot 19A, Riviera FAYA, Cocody</p>
+                <p><strong>France</strong><br>[Adresse à compléter]</p>
+            </address>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Contact</h4>
+            <ul class="footer-contact">
+                <li><a href="tel:+2250759235565">+225 07 59 23 55 65</a></li>
+                <li><a href="tel:+33647657126">+33 6 47 65 71 26</a></li>
+                <li><a href="mailto:McJohnsonandPartners@gmail.com">McJohnsonandPartners@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Navigation</h4>
+            <ul class="footer-nav">
+                <li><a href="./projets.html">Projets</a></li>
+                <li><a href="./agence.html">Agence</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2026 Mc.Johnson &amp; Partners SARL — RCCM CI-ABJ-03-2021-B13-03070</p>
+        <p>Architecte agréé CNOA-CI 2020-302-194</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/project-detail.js"></script>
+</body>
+</html>

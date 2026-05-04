@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets — Mc.Johnson & Partners</title>
+    <meta name="description" content="Découvrez nos projets d'architecture et d'urbanisme : infrastructures, résidentiel, hôtellerie, tertiaire et concours.">
+
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tokens.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/pages.css">
+
+    <link rel="icon" type="image/png" href="./images/ui/favicon.png">
+</head>
+
+<body>
+
+<!-- ===== HEADER (identique partout) ===== -->
+<header class="site-header" id="site-header">
+    <div class="container header-inner">
+        <a href="./index.html" class="logo" aria-label="Mc.Johnson & Partners — Accueil">
+            <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li><a href="./index.html" class="nav-link">Accueil</a></li>
+                <li><a href="./projets.html" class="nav-link is-active">Projets</a></li>
+                <li><a href="./agence.html" class="nav-link">Agence</a></li>
+                <li><a href="./contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+
+    <!-- ===== EN-TÊTE DE PAGE ===== -->
+    <section class="page-header">
+        <div class="container">
+            <p class="eyebrow">Portfolio</p>
+            <h1 class="page-title">Nos projets</h1>
+            <p class="page-lead">
+                De la villa privée au campus universitaire, chaque projet illustre notre approche
+                d'une architecture durable, ancrée dans son territoire.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== FILTRES ===== -->
+    <section class="filters">
+        <div class="container">
+            <div class="filters-inner">
+
+                <!-- Filtres par catégorie -->
+                <div class="filter-group" role="group" aria-label="Filtrer par catégorie">
+                    <button class="filter-btn is-active" data-filter-category="all">Tout</button>
+                    <button class="filter-btn" data-filter-category="infrastructure">Infrastructure</button>
+                    <button class="filter-btn" data-filter-category="residentiel">Résidentiel</button>
+                    <button class="filter-btn" data-filter-category="hotellerie">Hôtellerie</button>
+                    <button class="filter-btn" data-filter-category="tertiaire">Tertiaire</button>
+                    <button class="filter-btn" data-filter-category="concours">Concours</button>
+                </div>
+
+                <!-- Filtres par statut -->
+                <div class="filter-group filter-group-status" role="group" aria-label="Filtrer par statut">
+                    <button class="filter-btn is-active" data-filter-status="all">Tous statuts</button>
+                    <button class="filter-btn" data-filter-status="realise">Réalisés</button>
+                    <button class="filter-btn" data-filter-status="etude">En étude</button>
+                    <button class="filter-btn" data-filter-status="concours">Concours</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GRILLE DE PROJETS (remplie par js/projects.js) ===== -->
+    <section class="projects-section">
+        <div class="container">
+            <p class="results-count" id="results-count" aria-live="polite"></p>
+            <div class="projects-grid" id="projects-grid">
+                <p class="loading">Chargement des projets…</p>
+            </div>
+            <p class="no-results" id="no-results" hidden>
+                Aucun projet ne correspond à votre filtre.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<!-- ===== FOOTER (identique partout) ===== -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col footer-brand">
+            <p class="footer-logo">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></p>
+            <p class="footer-tagline">Building trust…</p>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Bureaux</h4>
+            <address class="footer-address">
+                <p><strong>Abidjan</strong><br>22 BP 1471 Abidjan 22<br>309 Ilot 19A, Riviera FAYA, Cocody</p>
+                <p><strong>France</strong><br>[Adresse à compléter]</p>
+            </address>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Contact</h4>
+            <ul class="footer-contact">
+                <li><a href="tel:+2250759235565">+225 07 59 23 55 65</a></li>
+                <li><a href="tel:+33647657126">+33 6 47 65 71 26</a></li>
+                <li><a href="mailto:McJohnsonandPartners@gmail.com">McJohnsonandPartners@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4 class="footer-title">Navigation</h4>
+            <ul class="footer-nav">
+                <li><a href="./projets.html">Projets</a></li>
+                <li><a href="./agence.html">Agence</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <p>© 2026 Mc.Johnson &amp; Partners SARL — RCCM CI-ABJ-03-2021-B13-03070</p>
+        <p>Architecte agréé CNOA-CI 2020-302-194</p>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/projects.js"></script>
+</body>
+</html>
