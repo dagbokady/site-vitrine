@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Site vitrine Mc.Johnson & Partners — Agence d'architecture et d'urbanisme",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "npx vercel dev",
     "build": "echo 'Site statique, rien a builder'",
