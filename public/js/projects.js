@@ -126,7 +126,7 @@
     // ============================================
     function createProjectCard(project, isLarge) {
         const card = document.createElement('a');
-        card.href = '/projet.html?id=' + encodeURIComponent(project.id);
+        card.href = '/projet?id=' + encodeURIComponent(project.id);
         card.className = 'project-card' + (isLarge ? ' project-card-large' : '');
         card.setAttribute('aria-label', 'Voir le projet ' + project.title);
 

@@ -6,46 +6,39 @@
     <title>Mc.Johnson & Partners — Agence d'architecture et d'urbanisme</title>
     <meta name="description" content="Agence d'architecture, d'urbanisme et de conseil en investissement immobilier basée à Abidjan et en France. Architecte agréé CNOA-CI.">
 
-    <!-- Open Graph (partage réseaux sociaux) -->
     <meta property="og:title" content="Mc.Johnson & Partners — Architecture & Urbanisme">
     <meta property="og:description" content="Concevoir un environnement bâti durable, ancré dans l'esprit du lieu.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="/images/og-cover.jpg">
 
-    <!-- Preconnect Cloudinary pour accélérer le chargement des images -->
     <link rel="preconnect" href="https://res.cloudinary.com">
-
-    <!-- Google Fonts : Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/tokens.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/components.css">
-    <link rel="stylesheet" href="./css/pages.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="./images/ui/favicon.png">
+    <link rel="icon" type="image/png" href="/images/ui/favicon.png">
 </head>
 
 <body>
 
-<!-- ========== HEADER (commun à toutes les pages) ========== -->
 <header class="site-header" id="site-header">
     <div class="container header-inner">
-        <a href="/index.html" class="logo" aria-label="Mc.Johnson & Partners — Accueil">
+        <a href="/" class="logo" aria-label="Mc.Johnson & Partners — Accueil">
             <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
         </a>
 
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list">
-                <li><a href="/index.html" class="nav-link is-active">Accueil</a></li>
-                <li><a href="/projets.html" class="nav-link">Projets</a></li>
-                <li><a href="/agence.html" class="nav-link">Agence</a></li>
-                <li><a href="/contact.html" class="nav-link">Contact</a></li>
+                <li><a href="/" class="nav-link is-active">Accueil</a></li>
+                <li><a href="/projets" class="nav-link">Projets</a></li>
+                <li><a href="/agence" class="nav-link">Agence</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
 
@@ -55,10 +48,8 @@
     </div>
 </header>
 
-<!-- ========== MAIN ========== -->
 <main>
 
-    <!-- ===== HERO ===== -->
     <section class="hero">
         <div class="container hero-inner">
             <p class="eyebrow eyebrow-light">Agence d'architecture — Abidjan / France</p>
@@ -70,14 +61,13 @@
                 De la villa au campus universitaire, chaque projet est une réponse unique.
             </p>
             <div class="hero-actions">
-                <a href="/projets.html" class="btn btn-primary">Voir les projets</a>
-                <a href="/contact.html" class="btn btn-ghost">Nous contacter</a>
+                <a href="/projets" class="btn btn-primary">Voir les projets</a>
+                <a href="/contact" class="btn btn-ghost">Nous contacter</a>
             </div>
             <p class="hero-signature">Building trust…</p>
         </div>
     </section>
 
-    <!-- ===== SECTION PROJETS PHARES ===== -->
     <section class="section section-featured">
         <div class="container">
             <div class="section-head">
@@ -85,17 +75,15 @@
                     <p class="eyebrow">01 — Sélection</p>
                     <h2 class="section-title">Projets phares</h2>
                 </div>
-                <a href="/projets.html" class="link-arrow">Voir tout</a>
+                <a href="/projets" class="link-arrow">Voir tout</a>
             </div>
 
-            <!-- La grille sera remplie dynamiquement par js/projects.js -->
             <div class="featured-grid" id="featured-grid">
                 <p class="loading">Chargement des projets…</p>
             </div>
         </div>
     </section>
 
-    <!-- ===== SECTION AGENCE ===== -->
     <section class="section section-about">
         <div class="container about-grid">
             <div class="about-text">
@@ -106,7 +94,7 @@
                     et conseil en investissement immobilier. Nos références incluent l'Université de
                     San-Pédro, le Métro d'Abidjan et la Tour Cacao.
                 </p>
-                <a href="/agence.html" class="link-underline">En savoir plus</a>
+                <a href="/agence" class="link-underline">En savoir plus</a>
             </div>
 
             <ul class="stats-grid">
@@ -130,7 +118,6 @@
         </div>
     </section>
 
-    <!-- ===== SECTION EXPERTISE ===== -->
     <section class="section section-expertise">
         <div class="container">
             <p class="eyebrow">03 — Expertise</p>
@@ -153,7 +140,6 @@
         </div>
     </section>
 
-    <!-- ===== SECTION PARTENAIRES ===== -->
     <section class="section section-partners">
         <div class="container">
             <p class="eyebrow eyebrow-center">Ils nous font confiance</p>
@@ -165,18 +151,16 @@
         </div>
     </section>
 
-    <!-- ===== CTA FINAL ===== -->
     <section class="section section-cta">
         <div class="container cta-inner">
             <h2 class="cta-title">Vous avez un projet ?</h2>
             <p class="cta-lead">Discutons-en. Premier échange gratuit et confidentiel.</p>
-            <a href="/contact.html" class="btn btn-primary btn-large">Démarrer un projet</a>
+            <a href="/contact" class="btn btn-primary btn-large">Démarrer un projet</a>
         </div>
     </section>
 
 </main>
 
-<!-- ========== FOOTER (commun à toutes les pages) ========== -->
 <footer class="site-footer">
     <div class="container footer-grid">
         <div class="footer-col footer-brand">
@@ -204,9 +188,9 @@
         <div class="footer-col">
             <h4 class="footer-title">Navigation</h4>
             <ul class="footer-nav">
-                <li><a href="/projets.html">Projets</a></li>
-                <li><a href="/agence.html">Agence</a></li>
-                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/projets">Projets</a></li>
+                <li><a href="/agence">Agence</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -217,8 +201,7 @@
     </div>
 </footer>
 
-<!-- ========== JS ========== -->
-<script src="js/main.js"></script>
-<script src="js/projects.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/projects.js"></script>
 </body>
 </html>

@@ -28,10 +28,5 @@
         { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
       ]
     }
-  ],
-  "rewrites": [
-    { "source": "/projets", "destination": "/projets.html" },
-    { "source": "/agence", "destination": "/agence.html" },
-    { "source": "/contact", "destination": "/contact.html" }
   ]
 }

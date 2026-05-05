@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page introuvable — Mc.Johnson & Partners</title>
+    <meta name="description" content="La page demandée n'existe pas.">
+    <meta name="robots" content="noindex">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/pages.css">
+
+    <link rel="icon" type="image/png" href="/images/ui/favicon.png">
+
+    <style>
+        .error-page {
+            min-height: calc(100vh - var(--header-height));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--space-16) 0;
+        }
+        .error-code {
+            font-size: clamp(6rem, 20vw, 14rem);
+            font-weight: var(--weight-medium);
+            letter-spacing: var(--tracking-tight);
+            line-height: 1;
+            color: var(--color-accent);
+            margin-bottom: var(--space-4);
+        }
+        .error-title {
+            font-size: var(--text-3xl);
+            font-weight: var(--weight-medium);
+            margin-bottom: var(--space-4);
+        }
+        .error-text {
+            font-size: var(--text-lg);
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-8);
+            max-width: 480px;
+            margin-inline: auto;
+        }
+        .error-actions {
+            display: flex;
+            gap: var(--space-3);
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="site-header" id="site-header">
+    <div class="container header-inner">
+        <a href="/" class="logo" aria-label="Mc.Johnson & Partners — Accueil">
+            <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navigation principale">
+            <ul class="nav-list">
+                <li><a href="/" class="nav-link">Accueil</a></li>
+                <li><a href="/projets" class="nav-link">Projets</a></li>
+                <li><a href="/agence" class="nav-link">Agence</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <section class="error-page">
+        <div class="container">
+            <p class="error-code">404</p>
+            <h1 class="error-title">Page introuvable</h1>
+            <p class="error-text">
+                La page que vous cherchez n'existe pas ou a été déplacée.
+            </p>
+            <div class="error-actions">
+                <a href="/" class="btn btn-primary">Retour à l'accueil</a>
+                <a href="/projets" class="btn btn-outline">Voir nos projets</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-bottom">
+        <p>© 2026 Mc.Johnson &amp; Partners SARL</p>
+        <p>Architecte agréé CNOA-CI 2020-302-194</p>
+    </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
