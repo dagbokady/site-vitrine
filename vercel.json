@@ -29,9 +29,9 @@
       ]
     }
   ],
-  "redirects": [
-    { "source": "/projets.html", "destination": "/projets", "permanent": true },
-    { "source": "/agence.html", "destination": "/agence", "permanent": true },
-    { "source": "/contact.html", "destination": "/contact", "permanent": true }
+  "rewrites": [
+    { "source": "/projets", "destination": "/projets.html" },
+    { "source": "/agence", "destination": "/agence.html" },
+    { "source": "/contact", "destination": "/contact.html" }
   ]
 }
