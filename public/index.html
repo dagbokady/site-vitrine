@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mc.Johnson & Partners — Agence d'architecture et d'urbanisme</title>
-    <meta name="description" content="Agence d'architecture, d'urbanisme et de conseil en investissement immobilier basée à Abidjan et en France. Architecte agréé CNOA-CI.">
+    <title>Mc.Johnson & Partners — Architecture, Design, Urbanisme</title>
+    <meta name="description" content="Agence d'architecture, design et urbanisme. Abidjan / France. Architecte agréé CNOA-CI.">
 
-    <meta property="og:title" content="Mc.Johnson & Partners — Architecture & Urbanisme">
-    <meta property="og:description" content="Concevoir un environnement bâti durable, ancré dans l'esprit du lieu.">
+    <meta property="og:title" content="Mc.Johnson & Partners — Architecture, Design, Urbanisme">
+    <meta property="og:description" content="Agence d'architecture, design et urbanisme. Abidjan / France.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mc-johnson-partners.com/">
     <meta property="og:image" content="/images/og-cover.jpg">
+
+    <link rel="canonical" href="https://mc-johnson-partners.com/">
 
     <link rel="preconnect" href="https://res.cloudinary.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,25 +23,29 @@
     <link rel="stylesheet" href="/css/tokens.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/components.css">
-    <link rel="stylesheet" href="/css/pages.css">
+    <link rel="stylesheet" href="/css/home.css">
 
     <link rel="icon" type="image/png" href="/images/ui/favicon.png">
 </head>
 
-<body>
+<body class="home-body">
 
-<header class="site-header" id="site-header">
-    <div class="container header-inner">
+<!-- ========== HEADER ========== -->
+<header class="home-header" id="site-header">
+    <div class="home-header-inner">
         <a href="/" class="logo" aria-label="Mc.Johnson & Partners — Accueil">
             <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
         </a>
 
-        <nav class="main-nav" aria-label="Navigation principale">
-            <ul class="nav-list">
-                <li><a href="/" class="nav-link is-active">Accueil</a></li>
-                <li><a href="/projets" class="nav-link">Projets</a></li>
-                <li><a href="/agence" class="nav-link">Agence</a></li>
-                <li><a href="/contact" class="nav-link">Contact</a></li>
+        <nav class="home-nav" aria-label="Disciplines">
+            <ul class="home-nav-list">
+                <li><a href="/?discipline=architecture" class="home-nav-link">Architecture</a></li>
+                <li><a href="/?discipline=design" class="home-nav-link">Design</a></li>
+                <li><a href="/?discipline=urbanisme" class="home-nav-link">Urbanisme</a></li>
+                <li class="home-nav-sep" aria-hidden="true"></li>
+                <li><a href="/archive" class="home-nav-link home-nav-secondary">Archive</a></li>
+                <li><a href="/agence" class="home-nav-link home-nav-secondary">Agence</a></li>
+                <li><a href="/contact" class="home-nav-link home-nav-secondary">Contact</a></li>
             </ul>
         </nav>
 
@@ -48,160 +55,116 @@
     </div>
 </header>
 
-<main>
+<!-- ========== SLIDER HERO ========== -->
+<section class="hero-slider" id="hero-slider" aria-roledescription="carousel" aria-label="Projets récents">
 
-    <section class="hero">
-        <div class="container hero-inner">
-            <p class="eyebrow eyebrow-light">Agence d'architecture — Abidjan / France</p>
-            <h1 class="hero-title">
-                Concevoir un environnement bâti durable, ancré dans l'esprit du lieu.
-            </h1>
-            <p class="hero-lead">
-                Architecture, urbanisme et conseil en investissement immobilier.
-                De la villa au campus universitaire, chaque projet est une réponse unique.
-            </p>
-            <div class="hero-actions">
-                <a href="/projets" class="btn btn-primary">Voir les projets</a>
-                <a href="/contact" class="btn btn-ghost">Nous contacter</a>
+    <!-- Loading initial -->
+    <div class="hero-loading" id="hero-loading">
+        <p>Chargement…</p>
+    </div>
+
+    <!-- Slides (rempli par JS) -->
+    <div class="hero-slides" id="hero-slides" hidden></div>
+
+    <!-- Indicateurs (puces) -->
+    <div class="hero-dots" id="hero-dots" hidden role="tablist" aria-label="Sélectionner un projet"></div>
+
+    <!-- Flèches (desktop) -->
+    <button class="hero-arrow hero-arrow-prev" id="hero-prev" aria-label="Projet précédent" hidden>←</button>
+    <button class="hero-arrow hero-arrow-next" id="hero-next" aria-label="Projet suivant" hidden>→</button>
+
+    <!-- CTA Voir le projet -->
+    <a href="#" class="hero-cta" id="hero-cta" hidden>Voir le projet →</a>
+
+    <!-- Tagline en bas à droite -->
+    <p class="hero-tagline">Building trust…</p>
+</section>
+
+<!-- ========== GRILLE PROJETS RÉCENTS ========== -->
+<section class="recent-projects">
+    <div class="recent-inner">
+
+        <header class="recent-header">
+            <p class="eyebrow">Projets récents</p>
+            <h2 class="recent-title">Trois disciplines,<br>une vision.</h2>
+        </header>
+
+        <!-- 3 blocs (architecture, design, urbanisme) — remplis par JS -->
+        <div class="discipline-block" data-discipline="architecture">
+            <header class="discipline-header">
+                <h3 class="discipline-name">Architecture</h3>
+                <a href="/?discipline=architecture" class="discipline-link">Voir tout →</a>
+            </header>
+            <div class="discipline-grid" id="grid-architecture">
+                <p class="loading">Chargement…</p>
             </div>
-            <p class="hero-signature">Building trust…</p>
         </div>
-    </section>
 
-    <section class="section section-featured">
-        <div class="container">
-            <div class="section-head">
-                <div>
-                    <p class="eyebrow">01 — Sélection</p>
-                    <h2 class="section-title">Projets phares</h2>
-                </div>
-                <a href="/projets" class="link-arrow">Voir tout</a>
-            </div>
-
-            <div class="featured-grid" id="featured-grid">
-                <p class="loading">Chargement des projets…</p>
+        <div class="discipline-block" data-discipline="design">
+            <header class="discipline-header">
+                <h3 class="discipline-name">Design</h3>
+                <a href="/?discipline=design" class="discipline-link">Voir tout →</a>
+            </header>
+            <div class="discipline-grid" id="grid-design">
+                <p class="loading">Chargement…</p>
             </div>
         </div>
-    </section>
 
-    <section class="section section-about">
-        <div class="container about-grid">
-            <div class="about-text">
-                <p class="eyebrow">02 — Agence</p>
-                <h2 class="section-title">Sept ans d'expérience auprès de cabinets reconnus.</h2>
-                <p class="lead-text">
-                    Architecte agréé CNOA-CI, Mc.Johnson &amp; Partners conjugue expertise architecturale
-                    et conseil en investissement immobilier. Nos références incluent l'Université de
-                    San-Pédro, le Métro d'Abidjan et la Tour Cacao.
-                </p>
-                <a href="/agence" class="link-underline">En savoir plus</a>
+        <div class="discipline-block" data-discipline="urbanisme">
+            <header class="discipline-header">
+                <h3 class="discipline-name">Urbanisme</h3>
+                <a href="/?discipline=urbanisme" class="discipline-link">Voir tout →</a>
+            </header>
+            <div class="discipline-grid" id="grid-urbanisme">
+                <p class="loading">Chargement…</p>
             </div>
-
-            <ul class="stats-grid">
-                <li class="stat">
-                    <p class="stat-value">7+</p>
-                    <p class="stat-label">années d'expérience</p>
-                </li>
-                <li class="stat">
-                    <p class="stat-value">322<span class="stat-unit">ha</span></p>
-                    <p class="stat-label">campus USP livré</p>
-                </li>
-                <li class="stat">
-                    <p class="stat-value">17</p>
-                    <p class="stat-label">collaborateurs</p>
-                </li>
-                <li class="stat">
-                    <p class="stat-value">2</p>
-                    <p class="stat-label">pays d'implantation</p>
-                </li>
-            </ul>
         </div>
-    </section>
 
-    <section class="section section-expertise">
-        <div class="container">
-            <p class="eyebrow">03 — Expertise</p>
-            <h2 class="section-title section-title-spaced">Nos domaines d'intervention</h2>
-
-            <ul class="expertise-grid">
-                <li class="expertise-item">
-                    <h3 class="expertise-title">Architecture</h3>
-                    <p class="expertise-desc">Conception architecturale, BIM management, études techniques et suivi de réalisation.</p>
-                </li>
-                <li class="expertise-item">
-                    <h3 class="expertise-title">Urbanisme</h3>
-                    <p class="expertise-desc">Aménagement territorial, plans masse, infrastructures et grands équipements.</p>
-                </li>
-                <li class="expertise-item">
-                    <h3 class="expertise-title">Conseil &amp; PPP</h3>
-                    <p class="expertise-desc">Project finance, montage de partenariats public-privé, conseil en investissement immobilier.</p>
-                </li>
-            </ul>
+        <!-- CTA archive -->
+        <div class="recent-footer">
+            <a href="/archive" class="archive-cta">
+                <span class="archive-cta-label">Archive complète</span>
+                <span class="archive-cta-arrow">→</span>
+            </a>
         </div>
-    </section>
 
-    <section class="section section-partners">
-        <div class="container">
-            <p class="eyebrow eyebrow-center">Ils nous font confiance</p>
-            <ul class="partners-list">
-                <li class="partner">CNOA — Conseil National de l'Ordre des Architectes</li>
-                <li class="partner">PDU — Programme de Décentralisation des Universités</li>
-                <li class="partner">Groupe Figuiers</li>
-            </ul>
-        </div>
-    </section>
+    </div>
+</section>
 
-    <section class="section section-cta">
-        <div class="container cta-inner">
-            <h2 class="cta-title">Vous avez un projet ?</h2>
-            <p class="cta-lead">Discutons-en. Premier échange gratuit et confidentiel.</p>
-            <a href="/contact" class="btn btn-primary btn-large">Démarrer un projet</a>
-        </div>
-    </section>
-
-</main>
-
-<footer class="site-footer">
-    <div class="container footer-grid">
-        <div class="footer-col footer-brand">
+<!-- ========== FOOTER ========== -->
+<footer class="home-footer">
+    <div class="home-footer-inner">
+        <div class="footer-col">
             <p class="footer-logo">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></p>
             <p class="footer-tagline">Building trust…</p>
         </div>
-
         <div class="footer-col">
-            <h4 class="footer-title">Bureaux</h4>
-            <address class="footer-address">
-                <p><strong>Abidjan</strong><br>22 BP 1471 Abidjan 22<br>309 Ilot 19A, Riviera FAYA, Cocody</p>
-                <p><strong>France</strong><br>[Adresse à compléter]</p>
-            </address>
-        </div>
-
-        <div class="footer-col">
-            <h4 class="footer-title">Contact</h4>
-            <ul class="footer-contact">
-                <li><a href="tel:+2250759235565">+225 07 59 23 55 65</a></li>
-                <li><a href="tel:+33647657126">+33 6 47 65 71 26</a></li>
-                <li><a href="mailto:McJohnsonandPartners@gmail.com">McJohnsonandPartners@gmail.com</a></li>
+            <p class="footer-col-title">Disciplines</p>
+            <ul>
+                <li><a href="/?discipline=architecture">Architecture</a></li>
+                <li><a href="/?discipline=design">Design</a></li>
+                <li><a href="/?discipline=urbanisme">Urbanisme</a></li>
+                <li><a href="/archive">Archive complète</a></li>
             </ul>
         </div>
-
         <div class="footer-col">
-            <h4 class="footer-title">Navigation</h4>
-            <ul class="footer-nav">
-                <li><a href="/projets">Projets</a></li>
-                <li><a href="/agence">Agence</a></li>
+            <p class="footer-col-title">Agence</p>
+            <ul>
+                <li><a href="/agence">À propos</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
+        <div class="footer-col">
+            <p class="footer-col-title">Bureaux</p>
+            <p class="footer-meta">Abidjan · France<br>+225 07 59 23 55 65<br>+33 6 47 65 71 26</p>
+        </div>
     </div>
-
-    <div class="container footer-bottom">
-        <p>© 2026 Mc.Johnson &amp; Partners SARL — RCCM CI-ABJ-03-2021-B13-03070</p>
-        <p>Architecte agréé CNOA-CI 2020-302-194</p>
+    <div class="footer-bottom">
+        <p>© 2026 Mc.Johnson &amp; Partners SARL · CNOA-CI 2020-302-194</p>
     </div>
 </footer>
 
 <script src="/js/main.js"></script>
-<script src="/js/projects.js"></script>
+<script src="/js/home.js"></script>
 </body>
 </html>

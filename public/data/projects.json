@@ -1,35 +1,205 @@
 {
-    "projects": [
+  "projects": [
     {
-        "id": "universite-san-pedro",
-        "slug": "universite-san-pedro",
-        "title": "Université de San-Pédro",
-        "subtitle": "Campus universitaire public, 322 ha",
-        "category": "infrastructure",
-        "categories": ["infrastructure", "education", "ppp"],
-        "status": "realise",
-        "year": 2024,
-        "location": "San-Pédro, Côte d'Ivoire",
-        "client": "PDU — État de Côte d'Ivoire",
-        "surface": "322 ha",
-        "role": "Architecte, Chef de Projet D",
-        "partners": ["Atelier Dieng", "Envol Capital"],
-        "description": "Projet PPP de campus universitaire pour 20 000 étudiants...",
-        "cover": "https://res.cloudinary.com/.../usp-cover.jpg",
-        "gallery": [
-            { "url": "https://res.cloudinary.com/.../usp-1.jpg", "caption": "Vue aérienne du campus" },
-            { "url": "https://res.cloudinary.com/.../usp-2.jpg", "caption": "Entrée principale" }
-        ],
-        "featured": true,
-        "order": 1,
-        "createdAt": "2024-09-12"
+      "id": "universite-san-pedro",
+      "slug": "universite-san-pedro",
+      "title": "Université de San-Pédro",
+      "subtitle": "Campus universitaire public, 20 000 étudiants",
+      "discipline": "architecture",
+      "categories": ["infrastructure", "education"],
+      "status": "realise",
+      "year": 2024,
+      "location": "San-Pédro, Côte d'Ivoire",
+      "client": "PDU — Programme de Décentralisation des Universités",
+      "surface": "322 ha",
+      "role": "Architecte, Chef de Projet D — BIM Manager",
+      "partners": ["Atelier Dieng", "Envol Capital"],
+      "description": "Projet PPP d'envergure nationale : campus universitaire public conçu pour accueillir 20 000 étudiants, inscrit au Plan National de Développement de la Côte d'Ivoire.",
+      "cover": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue aérienne du campus de l'Université de San-Pédro"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Un projet PPP inscrit au PND ivoirien",
+          "text": "Étude de faisabilité, conception architecturale et suivi de réalisation d'un campus de 322 hectares, comprenant amphithéâtres, résidences étudiantes, équipements sportifs et infrastructures techniques."
+        },
+        {
+          "type": "context",
+          "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=1400&auto=format&fit=crop",
+          "caption": "Plan masse — implantation sur 322 hectares"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Entrée principale du campus"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Amphithéâtre 500 places"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue aérienne du chantier"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan d'ensemble"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Coupe transversale"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 1,
+      "createdAt": "2024-09-12"
+    },
+    {
+      "id": "tour-cacao",
+      "slug": "tour-cacao",
+      "title": "Tour Cacao",
+      "subtitle": "Concours — Plus haute tour d'Afrique de l'Ouest",
+      "discipline": "architecture",
+      "categories": ["concours", "tertiaire"],
+      "status": "concours",
+      "year": 2022,
+      "location": "Abidjan, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "—",
+      "role": "Participation au concours",
+      "partners": [],
+      "description": "Proposition pour le concours de la Tour Cacao, projet emblématique inscrit au PND ivoirien.",
+      "cover": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Tour Cacao — perspective principale"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1448630360428-65456885c650?q=80&w=1400&auto=format&fit=crop",
+          "title": "Un manifeste pour la filière cacao",
+          "text": "Tour signature conçue comme un hommage à la filière cacao ivoirienne, avec façade en résille et jardin vertical intégré."
+        },
+        {
+          "type": "context",
+          "image": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+          "caption": "Implantation dans le quartier d'affaires du Plateau"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue de la résille"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1431578500526-4d9613015464?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Détail façade"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan type étage courant"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 2,
+      "createdAt": "2024-09-12"
+    },
+    {
+      "id": "residences-bahia",
+      "slug": "residences-bahia",
+      "title": "Les Résidences Bahia",
+      "subtitle": "17 villas duplex haut de gamme",
+      "discipline": "architecture",
+      "categories": ["residentiel"],
+      "status": "realise",
+      "year": 2023,
+      "location": "Abidjan, Côte d'Ivoire",
+      "client": "Promoteur privé",
+      "surface": "17 villas",
+      "role": "Conception & Réalisation",
+      "partners": [],
+      "description": "Complexe résidentiel de 17 villas duplex, conçu et réalisé par l'agence.",
+      "cover": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Façade principale des Résidences Bahia"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1400&auto=format&fit=crop",
+          "title": "17 villas duplex contemporaines",
+          "text": "Architecture contemporaine avec piscines privatives, garages couverts et jardins paysagers."
+        },
+        {
+          "type": "context",
+          "image": "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?q=80&w=1400&auto=format&fit=crop",
+          "caption": "Plan masse de l'opération"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan 3D RDC"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan 3D étage"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan type villa"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 3,
+      "createdAt": "2024-09-12"
     }
-],
-    "categories": [
+  ],
+  "disciplines": [
+    { "id": "architecture", "label": "Architecture" },
+    { "id": "design", "label": "Design" },
+    { "id": "urbanisme", "label": "Urbanisme" }
+  ],
+  "categories": [
     { "id": "infrastructure", "label": "Infrastructure" },
     { "id": "residentiel", "label": "Résidentiel" },
     { "id": "hotellerie", "label": "Hôtellerie" },
     { "id": "tertiaire", "label": "Tertiaire" },
-    { "id": "concours", "label": "Concours" }
-]
+    { "id": "concours", "label": "Concours" },
+    { "id": "education", "label": "Éducation" }
+  ]
 }

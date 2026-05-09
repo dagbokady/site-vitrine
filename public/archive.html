@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive des projets — Mc.Johnson & Partners</title>
+    <meta name="description" content="Archive complète des projets Mc.Johnson & Partners : architecture, design, urbanisme. Filtrer par discipline ou par année.">
+
+    <meta property="og:title" content="Archive des projets — Mc.Johnson & Partners">
+    <meta property="og:description" content="Archive complète des projets : architecture, design, urbanisme.">
+    <meta property="og:url" content="https://mc-johnson-partners.com/archive">
+
+    <link rel="canonical" href="https://mc-johnson-partners.com/archive">
+
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/archive.css">
+
+    <link rel="icon" type="image/png" href="/images/ui/favicon.png">
+</head>
+
+<body class="archive-body">
+
+<!-- HEADER -->
+<header class="archive-header" id="site-header">
+    <div class="archive-header-inner">
+        <a href="/" class="logo" aria-label="Mc.Johnson & Partners — Accueil">
+            <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
+        </a>
+
+        <nav class="archive-nav" aria-label="Navigation">
+            <ul>
+                <li><a href="/" class="nav-link">Accueil</a></li>
+                <li><a href="/archive" class="nav-link is-active">Archive</a></li>
+                <li><a href="/agence" class="nav-link">Agence</a></li>
+                <li><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</header>
+
+<main class="archive-main">
+
+    <!-- TITRE DE PAGE -->
+    <section class="archive-title-section">
+        <p class="eyebrow">Archive</p>
+        <h1 class="archive-title">Tous les projets</h1>
+        <p class="archive-count" id="archive-count">—</p>
+    </section>
+
+    <!-- FILTRES -->
+    <section class="archive-filters" id="archive-filters">
+        <div class="filters-row">
+            <span class="filter-label">Discipline</span>
+            <button class="filter-chip is-active" data-filter="discipline" data-value="all">Toutes</button>
+            <button class="filter-chip" data-filter="discipline" data-value="architecture">Architecture</button>
+            <button class="filter-chip" data-filter="discipline" data-value="design">Design</button>
+            <button class="filter-chip" data-filter="discipline" data-value="urbanisme">Urbanisme</button>
+        </div>
+
+        <div class="filters-row">
+            <span class="filter-label">Statut</span>
+            <button class="filter-chip is-active" data-filter="status" data-value="all">Tous</button>
+            <button class="filter-chip" data-filter="status" data-value="realise">Réalisés</button>
+            <button class="filter-chip" data-filter="status" data-value="etude">En étude</button>
+            <button class="filter-chip" data-filter="status" data-value="concours">Concours</button>
+        </div>
+
+        <div class="filters-row filters-row-search">
+            <label for="archive-search" class="visually-hidden">Rechercher un projet</label>
+            <input type="search" id="archive-search" placeholder="Rechercher un projet…" autocomplete="off">
+        </div>
+    </section>
+
+    <!-- GRILLE -->
+    <section class="archive-grid-section">
+        <div class="archive-grid" id="archive-grid">
+            <p class="loading">Chargement…</p>
+        </div>
+
+        <p class="archive-empty" id="archive-empty" hidden>
+            Aucun projet ne correspond à votre recherche.
+            <button class="link-underline" id="reset-filters">Réinitialiser les filtres</button>
+        </p>
+
+        <!-- Pagination "Charger plus" -->
+        <div class="archive-pagination" id="archive-pagination" hidden>
+            <button class="btn-load-more" id="load-more-btn">
+                Charger plus de projets
+            </button>
+            <p class="pagination-info" id="pagination-info"></p>
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="home-footer">
+    <div class="home-footer-inner">
+        <div class="footer-col">
+            <p class="footer-logo">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></p>
+            <p class="footer-tagline">Building trust…</p>
+        </div>
+        <div class="footer-col">
+            <p class="footer-col-title">Disciplines</p>
+            <ul>
+                <li><a href="/?discipline=architecture">Architecture</a></li>
+                <li><a href="/?discipline=design">Design</a></li>
+                <li><a href="/?discipline=urbanisme">Urbanisme</a></li>
+                <li><a href="/archive">Archive complète</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <p class="footer-col-title">Agence</p>
+            <ul>
+                <li><a href="/agence">À propos</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <p class="footer-col-title">Bureaux</p>
+            <p class="footer-meta">Abidjan · France<br>+225 07 59 23 55 65<br>+33 6 47 65 71 26</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Mc.Johnson &amp; Partners SARL · CNOA-CI 2020-302-194</p>
+    </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script src="/js/archive.js"></script>
+</body>
+</html>
