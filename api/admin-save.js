@@ -28,7 +28,7 @@ export default async function handler(req, res) {
 
         if (req.method === 'OPTIONS') return res.status(200).end();
         if (req.method !== 'POST') {
-            return res.status(405).json({ success: false, error: 'Méthode non autorisée' });
+            return res.status(405).json({success: false, error: 'Méthode non autorisée'});
         }
 
         try {
@@ -42,7 +42,7 @@ export default async function handler(req, res) {
             const payload = verifyToken(token, secret);
 
             if (!payload) {
-                return res.status(401).json({ success: false, error: 'Token invalide ou expiré' });
+                return res.status(401).json({success: false, error: 'Token invalide ou expiré'});
             }
 
             // ============================================
@@ -52,7 +52,7 @@ export default async function handler(req, res) {
             const errors = validateProject(project);
 
             if (errors.length > 0) {
-                return res.status(400).json({ success: false, error: errors.join(', ') });
+                return res.status(400).json({success: false, error: errors.join(', ')});
             }
 
             // ============================================
@@ -64,7 +64,7 @@ export default async function handler(req, res) {
 
             if (!ghToken || !ghOwner || !ghRepo) {
                 console.error('Variables GitHub manquantes');
-                return res.status(500).json({ success: false, error: 'Configuration GitHub incomplète' });
+                return res.status(500).json({success: false, error: 'Configuration GitHub incomplète'});
             }
 
             const apiBase = `https://api.github.com/repos/${ghOwner}/${ghRepo}`;
@@ -81,13 +81,13 @@ export default async function handler(req, res) {
             // ============================================
             const getResp = await fetch(
                 `${apiBase}/contents/${FILE_PATH}?ref=${BRANCH}`,
-                { headers }
+                {headers}
             );
 
             if (!getResp.ok) {
                 const errText = await getResp.text();
                 console.error('Erreur GitHub GET :', errText);
-                return res.status(500).json({ success: false, error: 'Impossible de lire projects.json sur GitHub' });
+                return res.status(500).json({success: false, error: 'Impossible de lire projects.json sur GitHub'});
             }
 
             const fileData = await getResp.json();
@@ -132,7 +132,7 @@ export default async function handler(req, res) {
                 `${apiBase}/contents/${FILE_PATH}`,
                 {
                     method: 'PUT',
-                    headers: { ...headers, 'Content-Type': 'application/json' },
+                    headers: {...headers, 'Content-Type': 'application/json'},
                     body: JSON.stringify({
                         message: `chore(admin): ajout projet "${project.title}"`,
                         content: newContentBase64,
@@ -162,7 +162,7 @@ export default async function handler(req, res) {
 
         } catch (error) {
             console.error('Erreur admin-save :', error);
-            return res.status(500).json({ success: false, error: 'Erreur serveur' });
+            return res.status(500).json({success: false, error: 'Erreur serveur'});
         }
     }
 
@@ -257,3 +257,4 @@ export default async function handler(req, res) {
             return false;
         }
     }
+}
