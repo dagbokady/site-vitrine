@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+    <!-- Favicon Mc.Johnson & Partners — monogramme MJ sur fond noir, accent rouge -->
+    <rect width="64" height="64" fill="#0A0A0A"/>
+    <text x="32" y="40" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700"
+          fill="#FFFFFF" text-anchor="middle" letter-spacing="-1">MJ</text>
+    <rect x="20" y="48" width="24" height="2" fill="#E63A11"/>
+</svg>

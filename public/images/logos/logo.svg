@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+    <!-- Logo Mc.Johnson & Partners — version horizontale -->
+    <!-- Bloc monogramme à gauche -->
+    <rect x="0" y="10" width="60" height="60" fill="#0A0A0A"/>
+    <text x="30" y="48" font-family="Inter, sans-serif" font-size="26" font-weight="700"
+          fill="#FFFFFF" text-anchor="middle" letter-spacing="-1">MC</text>
+    <text x="30" y="62" font-family="Inter, sans-serif" font-size="7" font-weight="500"
+          fill="#E63A11" text-anchor="middle" letter-spacing="2">PARTNERS</text>
+
+    <!-- Texte à droite -->
+    <text x="76" y="38" font-family="Inter, sans-serif" font-size="16" font-weight="600"
+          fill="#0A0A0A" letter-spacing="-0.3">Mc.JOHNSON</text>
+    <text x="76" y="56" font-family="Inter, sans-serif" font-size="14" font-weight="400"
+          fill="#0A0A0A" letter-spacing="0">&amp; <tspan fill="#E63A11" font-weight="600">Partners</tspan></text>
+
+    <!-- Petit trait décoratif -->
+    <line x1="76" y1="68" x2="120" y2="68" stroke="#E63A11" stroke-width="1.5"/>
+</svg>

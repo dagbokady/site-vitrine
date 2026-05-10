@@ -158,12 +158,12 @@
             goToSlide(newIndex);
         });
 
-        // Auto-play hover-pause
+        // Auto-play continu — pas de pause au survol (demande client)
         const slider = document.getElementById('hero-slider');
-        slider.addEventListener('mouseenter', pauseAutoPlay);
-        slider.addEventListener('mouseleave', resumeAutoPlay);
+        // slider.addEventListener('mouseenter', pauseAutoPlay);  // désactivé
+        // slider.addEventListener('mouseleave', resumeAutoPlay); // désactivé
 
-        // Pause si l'onglet est masqué (économie de batterie)
+        // On garde la pause si l'onglet est caché (économie batterie + bonne pratique)
         document.addEventListener('visibilitychange', () => {
             if (document.hidden) {
                 pauseAutoPlay();
