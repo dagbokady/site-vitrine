@@ -6,64 +6,23 @@
       "title": "Université de San-Pédro",
       "subtitle": "Campus universitaire public, 20 000 étudiants",
       "discipline": "architecture",
-      "categories": ["infrastructure", "education"],
+      "categories": [
+        "infrastructure",
+        "education"
+      ],
       "status": "realise",
       "year": 2024,
       "location": "San-Pédro, Côte d'Ivoire",
       "client": "PDU — Programme de Décentralisation des Universités",
       "surface": "322 ha",
       "role": "Architecte, Chef de Projet D — BIM Manager",
-      "partners": ["Atelier Dieng", "Envol Capital"],
+      "partners": [
+        "Atelier Dieng",
+        "Envol Capital"
+      ],
       "description": "Projet PPP d'envergure nationale : campus universitaire public conçu pour accueillir 20 000 étudiants, inscrit au Plan National de Développement de la Côte d'Ivoire.",
       "cover": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
-      "sections": [
-        {
-          "type": "hero",
-          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
-          "alt": "Vue aérienne du campus de l'Université de San-Pédro"
-        },
-        {
-          "type": "image-text",
-          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
-          "title": "Un projet PPP inscrit au PND ivoirien",
-          "text": "Étude de faisabilité, conception architecturale et suivi de réalisation d'un campus de 322 hectares, comprenant amphithéâtres, résidences étudiantes, équipements sportifs et infrastructures techniques."
-        },
-        {
-          "type": "context",
-          "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=1400&auto=format&fit=crop",
-          "caption": "Plan masse — implantation sur 322 hectares"
-        },
-        {
-          "type": "gallery",
-          "images": [
-            {
-              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Entrée principale du campus"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Amphithéâtre 500 places"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Vue aérienne du chantier"
-            }
-          ]
-        },
-        {
-          "type": "plans",
-          "images": [
-            {
-              "url": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Plan d'ensemble"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Coupe transversale"
-            }
-          ]
-        }
-      ],
+      "sections": [],
       "featured": true,
       "order": 1,
       "createdAt": "2024-09-12"
@@ -74,7 +33,10 @@
       "title": "Tour Cacao",
       "subtitle": "Concours — Plus haute tour d'Afrique de l'Ouest",
       "discipline": "architecture",
-      "categories": ["concours", "tertiaire"],
+      "categories": [
+        "concours",
+        "tertiaire"
+      ],
       "status": "concours",
       "year": 2022,
       "location": "Abidjan, Côte d'Ivoire",
@@ -84,46 +46,7 @@
       "partners": [],
       "description": "Proposition pour le concours de la Tour Cacao, projet emblématique inscrit au PND ivoirien.",
       "cover": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
-      "sections": [
-        {
-          "type": "hero",
-          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
-          "alt": "Tour Cacao — perspective principale"
-        },
-        {
-          "type": "image-text",
-          "image": "https://images.unsplash.com/photo-1448630360428-65456885c650?q=80&w=1400&auto=format&fit=crop",
-          "title": "Un manifeste pour la filière cacao",
-          "text": "Tour signature conçue comme un hommage à la filière cacao ivoirienne, avec façade en résille et jardin vertical intégré."
-        },
-        {
-          "type": "context",
-          "image": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
-          "caption": "Implantation dans le quartier d'affaires du Plateau"
-        },
-        {
-          "type": "gallery",
-          "images": [
-            {
-              "url": "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Vue de la résille"
-            },
-            {
-              "url": "https://images.unsplash.com/photo-1431578500526-4d9613015464?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Détail façade"
-            }
-          ]
-        },
-        {
-          "type": "plans",
-          "images": [
-            {
-              "url": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Plan type étage courant"
-            }
-          ]
-        }
-      ],
+      "sections": [],
       "featured": true,
       "order": 2,
       "createdAt": "2024-09-12"
@@ -134,7 +57,9 @@
       "title": "Les Résidences Bahia",
       "subtitle": "17 villas duplex haut de gamme",
       "discipline": "architecture",
-      "categories": ["residentiel"],
+      "categories": [
+        "residentiel"
+      ],
       "status": "realise",
       "year": 2023,
       "location": "Abidjan, Côte d'Ivoire",
@@ -144,33 +69,53 @@
       "partners": [],
       "description": "Complexe résidentiel de 17 villas duplex, conçu et réalisé par l'agence.",
       "cover": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+      "sections": [],
+      "featured": true,
+      "order": 3,
+      "createdAt": "2024-09-12"
+    },
+    {
+      "id": "eco-quartier-laguna",
+      "slug": "eco-quartier-laguna",
+      "title": "Eco Quartier Laguna",
+      "subtitle": "Complexe mixte durable",
+      "discipline": "architecture",
+      "categories": [
+        "tertiaire"
+      ],
+      "status": "etude",
+      "year": 2022,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "28 villas",
+      "role": "Conception & Réalisation",
+      "partners": [
+        "Studio Urbain"
+      ],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
       "sections": [
         {
           "type": "hero",
-          "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
-          "alt": "Façade principale des Résidences Bahia"
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Eco Quartier Laguna"
         },
         {
           "type": "image-text",
-          "image": "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?q=80&w=1400&auto=format&fit=crop",
-          "title": "17 villas duplex contemporaines",
-          "text": "Architecture contemporaine avec piscines privatives, garages couverts et jardins paysagers."
-        },
-        {
-          "type": "context",
-          "image": "https://images.unsplash.com/photo-1600566753151-384129cf4e3e?q=80&w=1400&auto=format&fit=crop",
-          "caption": "Plan masse de l'opération"
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site."
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Plan 3D RDC"
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
             },
             {
-              "url": "https://images.unsplash.com/photo-1600121848594-d8644e57abab?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Plan 3D étage"
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
             }
           ]
         },
@@ -178,28 +123,2913 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1400&auto=format&fit=crop",
-              "caption": "Plan type villa"
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 4,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "centre-culturel-éburnie",
+      "slug": "centre-culturel-éburnie",
+      "title": "Centre Culturel Éburnie",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "urbanisme",
+      "categories": [
+        "concours"
+      ],
+      "status": "realise",
+      "year": 2023,
+      "location": "Grand-Bassam, Côte d'Ivoire",
+      "client": "Promoteur privé",
+      "surface": "220 ha",
+      "role": "Conception & Réalisation",
+      "partners": [
+        "Studio Urbain"
+      ],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Centre Culturel Éburnie"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 5,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "hôtel-horizon-bleu",
+      "slug": "hôtel-horizon-bleu",
+      "title": "Hôtel Horizon Bleu",
+      "subtitle": "Concours international",
+      "discipline": "design",
+      "categories": [
+        "concours"
+      ],
+      "status": "realise",
+      "year": 2026,
+      "location": "Korhogo, Côte d'Ivoire",
+      "client": "Investisseur privé",
+      "surface": "85 000 m²",
+      "role": "Architecte principal",
+      "partners": [
+        "Build Africa"
+      ],
+      "description": "Développement urbain mixte combinant logements, bureaux et équipements publics.",
+      "cover": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue principale du projet Hôtel Horizon Bleu"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
             }
           ]
         }
       ],
       "featured": true,
-      "order": 3,
-      "createdAt": "2024-09-12"
+      "order": 6,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "parc-urbain-riviera",
+      "slug": "parc-urbain-riviera",
+      "title": "Parc Urbain Riviera",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "architecture",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "realise",
+      "year": 2025,
+      "location": "Abidjan, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "220 ha",
+      "role": "Chef de projet",
+      "partners": [],
+      "description": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site.",
+      "cover": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Parc Urbain Riviera"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 7,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "bibliothèque-métropolitaine",
+      "slug": "bibliothèque-métropolitaine",
+      "title": "Bibliothèque Métropolitaine",
+      "subtitle": "Concours international",
+      "discipline": "design",
+      "categories": [
+        "tertiaire"
+      ],
+      "status": "realise",
+      "year": 2023,
+      "location": "Yamoussoukro, Côte d'Ivoire",
+      "client": "Ministère de la Construction",
+      "surface": "85 000 m²",
+      "role": "Urbaniste",
+      "partners": [],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Bibliothèque Métropolitaine"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 8,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "résidence-palm-view",
+      "slug": "résidence-palm-view",
+      "title": "Résidence Palm View",
+      "subtitle": "Complexe mixte durable",
+      "discipline": "architecture",
+      "categories": [
+        "hotellerie"
+      ],
+      "status": "etude",
+      "year": 2019,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "Ville d'Abidjan",
+      "surface": "12 000 m²",
+      "role": "Urbaniste",
+      "partners": [
+        "Atelier Sahel"
+      ],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Résidence Palm View"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 9,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "cité-administrative-du-plateau",
+      "slug": "cité-administrative-du-plateau",
+      "title": "Cité Administrative du Plateau",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "design",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "realise",
+      "year": 2020,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "Ville d'Abidjan",
+      "surface": "12 000 m²",
+      "role": "Chef de projet",
+      "partners": [],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Cité Administrative du Plateau"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 10,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "campus-digital-afrique",
+      "slug": "campus-digital-afrique",
+      "title": "Campus Digital Afrique",
+      "subtitle": "Équipement structurant",
+      "discipline": "design",
+      "categories": [
+        "tertiaire"
+      ],
+      "status": "realise",
+      "year": 2021,
+      "location": "San-Pédro, Côte d'Ivoire",
+      "client": "Ministère de la Construction",
+      "surface": "220 ha",
+      "role": "Designer Lead",
+      "partners": [
+        "Atelier Sahel",
+        "Build Africa"
+      ],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Campus Digital Afrique"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 11,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "marché-central-de-bouaké",
+      "slug": "marché-central-de-bouaké",
+      "title": "Marché Central de Bouaké",
+      "subtitle": "Concours international",
+      "discipline": "urbanisme",
+      "categories": [
+        "infrastructure"
+      ],
+      "status": "concours",
+      "year": 2025,
+      "location": "Abidjan, Côte d'Ivoire",
+      "client": "Promoteur privé",
+      "surface": "220 ha",
+      "role": "Urbaniste",
+      "partners": [],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Marché Central de Bouaké"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 12,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "musée-des-civilisations-africaines",
+      "slug": "musée-des-civilisations-africaines",
+      "title": "Musée des Civilisations Africaines",
+      "subtitle": "Complexe mixte durable",
+      "discipline": "design",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "realise",
+      "year": 2025,
+      "location": "Bouaké, Côte d'Ivoire",
+      "client": "Ville d'Abidjan",
+      "surface": "85 000 m²",
+      "role": "Conception & Réalisation",
+      "partners": [],
+      "description": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site.",
+      "cover": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue principale du projet Musée des Civilisations Africaines"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Développement urbain mixte combinant logements, bureaux et équipements publics."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 13,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "smart-city-bingerville",
+      "slug": "smart-city-bingerville",
+      "title": "Smart City Bingerville",
+      "subtitle": "Complexe mixte durable",
+      "discipline": "architecture",
+      "categories": [
+        "education"
+      ],
+      "status": "etude",
+      "year": 2019,
+      "location": "Grand-Bassam, Côte d'Ivoire",
+      "client": "Promoteur privé",
+      "surface": "28 villas",
+      "role": "Designer Lead",
+      "partners": [
+        "Atelier Horizon"
+      ],
+      "description": "Intervention à grande échelle intégrant architecture, design et urbanisme.",
+      "cover": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Smart City Bingerville"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 14,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "tour-azur",
+      "slug": "tour-azur",
+      "title": "Tour Azur",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "design",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "realise",
+      "year": 2022,
+      "location": "Bouaké, Côte d'Ivoire",
+      "client": "Investisseur privé",
+      "surface": "85 000 m²",
+      "role": "Conception & Réalisation",
+      "partners": [
+        "Green Lab"
+      ],
+      "description": "Développement urbain mixte combinant logements, bureaux et équipements publics.",
+      "cover": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Tour Azur"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 15,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "villa-nsa",
+      "slug": "villa-nsa",
+      "title": "Villa N'Sa",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "architecture",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "realise",
+      "year": 2019,
+      "location": "Bouaké, Côte d'Ivoire",
+      "client": "Investisseur privé",
+      "surface": "45 ha",
+      "role": "Architecte principal",
+      "partners": [
+        "Atelier Sahel",
+        "Green Lab"
+      ],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Villa N'Sa"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 16,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "complexe-sportif-atlantique",
+      "slug": "complexe-sportif-atlantique",
+      "title": "Complexe Sportif Atlantique",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "urbanisme",
+      "categories": [
+        "infrastructure"
+      ],
+      "status": "etude",
+      "year": 2025,
+      "location": "Abidjan, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "45 ha",
+      "role": "Urbaniste",
+      "partners": [
+        "Studio Urbain"
+      ],
+      "description": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site.",
+      "cover": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Complexe Sportif Atlantique"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 17,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "centre-médical-lagune",
+      "slug": "centre-médical-lagune",
+      "title": "Centre Médical Lagune",
+      "subtitle": "Complexe mixte durable",
+      "discipline": "design",
+      "categories": [
+        "tertiaire"
+      ],
+      "status": "etude",
+      "year": 2021,
+      "location": "Bingerville, Côte d'Ivoire",
+      "client": "Ministère de la Construction",
+      "surface": "45 ha",
+      "role": "Conception & Réalisation",
+      "partners": [],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Centre Médical Lagune"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 18,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "marina-grand-bassam",
+      "slug": "marina-grand-bassam",
+      "title": "Marina Grand Bassam",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "architecture",
+      "categories": [
+        "education"
+      ],
+      "status": "etude",
+      "year": 2022,
+      "location": "Korhogo, Côte d'Ivoire",
+      "client": "Ministère de la Construction",
+      "surface": "220 ha",
+      "role": "Urbaniste",
+      "partners": [
+        "Studio Urbain",
+        "Atelier Sahel"
+      ],
+      "description": "Développement urbain mixte combinant logements, bureaux et équipements publics.",
+      "cover": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Marina Grand Bassam"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Développement urbain mixte combinant logements, bureaux et équipements publics."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 19,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "eco-resort-assinie",
+      "slug": "eco-resort-assinie",
+      "title": "Eco Resort Assinie",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "architecture",
+      "categories": [
+        "education"
+      ],
+      "status": "concours",
+      "year": 2021,
+      "location": "Korhogo, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "45 ha",
+      "role": "Urbaniste",
+      "partners": [],
+      "description": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site.",
+      "cover": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Eco Resort Assinie"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 20,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "pôle-innovation-yamoussoukro",
+      "slug": "pôle-innovation-yamoussoukro",
+      "title": "Pôle Innovation Yamoussoukro",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "urbanisme",
+      "categories": [
+        "infrastructure"
+      ],
+      "status": "realise",
+      "year": 2023,
+      "location": "Bingerville, Côte d'Ivoire",
+      "client": "Ministère de la Construction",
+      "surface": "85 000 m²",
+      "role": "Chef de projet",
+      "partners": [],
+      "description": "Développement urbain mixte combinant logements, bureaux et équipements publics.",
+      "cover": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue principale du projet Pôle Innovation Yamoussoukro"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Développement urbain mixte combinant logements, bureaux et équipements publics."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 21,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "aéroport-régional-korhogo",
+      "slug": "aéroport-régional-korhogo",
+      "title": "Aéroport Régional Korhogo",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "architecture",
+      "categories": [
+        "hotellerie"
+      ],
+      "status": "etude",
+      "year": 2024,
+      "location": "Bingerville, Côte d'Ivoire",
+      "client": "Agence Urbaine",
+      "surface": "220 ha",
+      "role": "BIM Manager",
+      "partners": [
+        "Studio Urbain"
+      ],
+      "description": "Développement urbain mixte combinant logements, bureaux et équipements publics.",
+      "cover": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Aéroport Régional Korhogo"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 22,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "siège-greentech",
+      "slug": "siège-greentech",
+      "title": "Siège GreenTech",
+      "subtitle": "Équipement structurant",
+      "discipline": "architecture",
+      "categories": [
+        "education"
+      ],
+      "status": "concours",
+      "year": 2025,
+      "location": "Yamoussoukro, Côte d'Ivoire",
+      "client": "Agence Urbaine",
+      "surface": "85 000 m²",
+      "role": "Designer Lead",
+      "partners": [
+        "Studio Urbain"
+      ],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Siège GreenTech"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 23,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "place-des-arts",
+      "slug": "place-des-arts",
+      "title": "Place des Arts",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "design",
+      "categories": [
+        "concours"
+      ],
+      "status": "etude",
+      "year": 2019,
+      "location": "Bingerville, Côte d'Ivoire",
+      "client": "Agence Urbaine",
+      "surface": "12 000 m²",
+      "role": "Designer Lead",
+      "partners": [],
+      "description": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site.",
+      "cover": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Place des Arts"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 24,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "quartier-durable-cocody",
+      "slug": "quartier-durable-cocody",
+      "title": "Quartier Durable Cocody",
+      "subtitle": "Concours international",
+      "discipline": "architecture",
+      "categories": [
+        "education"
+      ],
+      "status": "realise",
+      "year": 2025,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "Promoteur privé",
+      "surface": "45 ha",
+      "role": "Conception & Réalisation",
+      "partners": [],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue principale du projet Quartier Durable Cocody"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Développement urbain mixte combinant logements, bureaux et équipements publics."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 25,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "centre-commercial-cosmos",
+      "slug": "centre-commercial-cosmos",
+      "title": "Centre Commercial Cosmos",
+      "subtitle": "Complexe mixte durable",
+      "discipline": "design",
+      "categories": [
+        "tertiaire"
+      ],
+      "status": "concours",
+      "year": 2019,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "Investisseur privé",
+      "surface": "85 000 m²",
+      "role": "Urbaniste",
+      "partners": [],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Centre Commercial Cosmos"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 26,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "bibliothèque-océan",
+      "slug": "bibliothèque-océan",
+      "title": "Bibliothèque Océan",
+      "subtitle": "Concours international",
+      "discipline": "urbanisme",
+      "categories": [
+        "infrastructure"
+      ],
+      "status": "etude",
+      "year": 2024,
+      "location": "Korhogo, Côte d'Ivoire",
+      "client": "Ministère de la Construction",
+      "surface": "12 000 m²",
+      "role": "Architecte principal",
+      "partners": [],
+      "description": "Développement urbain mixte combinant logements, bureaux et équipements publics.",
+      "cover": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Bibliothèque Océan"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Développement urbain mixte combinant logements, bureaux et équipements publics."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 27,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "tour-éléphant",
+      "slug": "tour-éléphant",
+      "title": "Tour Éléphant",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "architecture",
+      "categories": [
+        "education"
+      ],
+      "status": "etude",
+      "year": 2023,
+      "location": "Grand-Bassam, Côte d'Ivoire",
+      "client": "Investisseur privé",
+      "surface": "12 000 m²",
+      "role": "Designer Lead",
+      "partners": [],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Tour Éléphant"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 28,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "résidences-saphir",
+      "slug": "résidences-saphir",
+      "title": "Résidences Saphir",
+      "subtitle": "Concours international",
+      "discipline": "architecture",
+      "categories": [
+        "education"
+      ],
+      "status": "realise",
+      "year": 2021,
+      "location": "Grand-Bassam, Côte d'Ivoire",
+      "client": "Agence Urbaine",
+      "surface": "28 villas",
+      "role": "Designer Lead",
+      "partners": [
+        "Atelier Horizon"
+      ],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue principale du projet Résidences Saphir"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 29,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "plan-directeur-san-pédro",
+      "slug": "plan-directeur-san-pédro",
+      "title": "Plan Directeur San-Pédro",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "architecture",
+      "categories": [
+        "education"
+      ],
+      "status": "etude",
+      "year": 2021,
+      "location": "Korhogo, Côte d'Ivoire",
+      "client": "Agence Urbaine",
+      "surface": "85 000 m²",
+      "role": "Designer Lead",
+      "partners": [
+        "Atelier Horizon"
+      ],
+      "description": "Intervention à grande échelle intégrant architecture, design et urbanisme.",
+      "cover": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Plan Directeur San-Pédro"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 30,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "éco-village-tiassalé",
+      "slug": "éco-village-tiassalé",
+      "title": "Éco Village Tiassalé",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "architecture",
+      "categories": [
+        "hotellerie"
+      ],
+      "status": "realise",
+      "year": 2020,
+      "location": "Yamoussoukro, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "220 ha",
+      "role": "Conception & Réalisation",
+      "partners": [],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue principale du projet Éco Village Tiassalé"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 31,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "palais-des-congrès-abidjan",
+      "slug": "palais-des-congrès-abidjan",
+      "title": "Palais des Congrès Abidjan",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "urbanisme",
+      "categories": [
+        "education"
+      ],
+      "status": "realise",
+      "year": 2020,
+      "location": "Bouaké, Côte d'Ivoire",
+      "client": "Agence Urbaine",
+      "surface": "12 000 m²",
+      "role": "Conception & Réalisation",
+      "partners": [
+        "Atelier Horizon"
+      ],
+      "description": "Intervention à grande échelle intégrant architecture, design et urbanisme.",
+      "cover": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue principale du projet Palais des Congrès Abidjan"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 32,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "centre-aquatique-riviera",
+      "slug": "centre-aquatique-riviera",
+      "title": "Centre Aquatique Riviera",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "architecture",
+      "categories": [
+        "education"
+      ],
+      "status": "concours",
+      "year": 2022,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "45 ha",
+      "role": "Urbaniste",
+      "partners": [
+        "Atelier Horizon"
+      ],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Centre Aquatique Riviera"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 33,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "jardin-botanique-urbain",
+      "slug": "jardin-botanique-urbain",
+      "title": "Jardin Botanique Urbain",
+      "subtitle": "Concours international",
+      "discipline": "architecture",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "realise",
+      "year": 2019,
+      "location": "Yamoussoukro, Côte d'Ivoire",
+      "client": "Investisseur privé",
+      "surface": "28 villas",
+      "role": "Conception & Réalisation",
+      "partners": [],
+      "description": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site.",
+      "cover": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Jardin Botanique Urbain"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Développement urbain mixte combinant logements, bureaux et équipements publics."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 34,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "hub-créatif-treichville",
+      "slug": "hub-créatif-treichville",
+      "title": "Hub Créatif Treichville",
+      "subtitle": "Équipement structurant",
+      "discipline": "design",
+      "categories": [
+        "concours"
+      ],
+      "status": "realise",
+      "year": 2020,
+      "location": "Grand-Bassam, Côte d'Ivoire",
+      "client": "Investisseur privé",
+      "surface": "85 000 m²",
+      "role": "Chef de projet",
+      "partners": [],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Hub Créatif Treichville"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 35,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "tour-lagune",
+      "slug": "tour-lagune",
+      "title": "Tour Lagune",
+      "subtitle": "Équipement structurant",
+      "discipline": "design",
+      "categories": [
+        "concours"
+      ],
+      "status": "realise",
+      "year": 2026,
+      "location": "Korhogo, Côte d'Ivoire",
+      "client": "Ville d'Abidjan",
+      "surface": "12 000 m²",
+      "role": "Chef de projet",
+      "partners": [],
+      "description": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site.",
+      "cover": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue principale du projet Tour Lagune"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Développement urbain mixte combinant logements, bureaux et équipements publics."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 36,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "village-olympique",
+      "slug": "village-olympique",
+      "title": "Village Olympique",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "architecture",
+      "categories": [
+        "education"
+      ],
+      "status": "concours",
+      "year": 2026,
+      "location": "San-Pédro, Côte d'Ivoire",
+      "client": "Ville d'Abidjan",
+      "surface": "12 000 m²",
+      "role": "Conception & Réalisation",
+      "partners": [],
+      "description": "Intervention à grande échelle intégrant architecture, design et urbanisme.",
+      "cover": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Village Olympique"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 37,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "éco-campus-jacqueville",
+      "slug": "éco-campus-jacqueville",
+      "title": "Éco Campus Jacqueville",
+      "subtitle": "Concours international",
+      "discipline": "urbanisme",
+      "categories": [
+        "education"
+      ],
+      "status": "etude",
+      "year": 2019,
+      "location": "Abidjan, Côte d'Ivoire",
+      "client": "Ville d'Abidjan",
+      "surface": "12 000 m²",
+      "role": "Chef de projet",
+      "partners": [
+        "Studio Urbain",
+        "Atelier Horizon"
+      ],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Éco Campus Jacqueville"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Développement urbain mixte combinant logements, bureaux et équipements publics."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 38,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "hôtel-baobab-prestige",
+      "slug": "hôtel-baobab-prestige",
+      "title": "Hôtel Baobab Prestige",
+      "subtitle": "Concours international",
+      "discipline": "urbanisme",
+      "categories": [
+        "concours"
+      ],
+      "status": "concours",
+      "year": 2025,
+      "location": "Abidjan, Côte d'Ivoire",
+      "client": "Agence Urbaine",
+      "surface": "85 000 m²",
+      "role": "Chef de projet",
+      "partners": [
+        "Green Lab",
+        "Atelier Sahel"
+      ],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Hôtel Baobab Prestige"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 39,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "centre-des-startups",
+      "slug": "centre-des-startups",
+      "title": "Centre des Startups",
+      "subtitle": "Complexe mixte durable",
+      "discipline": "architecture",
+      "categories": [
+        "hotellerie"
+      ],
+      "status": "etude",
+      "year": 2021,
+      "location": "Korhogo, Côte d'Ivoire",
+      "client": "Promoteur privé",
+      "surface": "12 000 m²",
+      "role": "Architecte principal",
+      "partners": [],
+      "description": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site.",
+      "cover": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Centre des Startups"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 40,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "parc-technologique",
+      "slug": "parc-technologique",
+      "title": "Parc Technologique",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "design",
+      "categories": [
+        "concours"
+      ],
+      "status": "realise",
+      "year": 2025,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "45 ha",
+      "role": "Architecte principal",
+      "partners": [
+        "Atelier Sahel",
+        "Build Africa"
+      ],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Parc Technologique"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 41,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "résidences-lagoon-bay",
+      "slug": "résidences-lagoon-bay",
+      "title": "Résidences Lagoon Bay",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "architecture",
+      "categories": [
+        "hotellerie"
+      ],
+      "status": "etude",
+      "year": 2023,
+      "location": "Grand-Bassam, Côte d'Ivoire",
+      "client": "Agence Urbaine",
+      "surface": "28 villas",
+      "role": "Architecte principal",
+      "partners": [],
+      "description": "Intervention à grande échelle intégrant architecture, design et urbanisme.",
+      "cover": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue principale du projet Résidences Lagoon Bay"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 42,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "place-numérique",
+      "slug": "place-numérique",
+      "title": "Place Numérique",
+      "subtitle": "Complexe mixte durable",
+      "discipline": "urbanisme",
+      "categories": [
+        "infrastructure"
+      ],
+      "status": "concours",
+      "year": 2026,
+      "location": "Abidjan, Côte d'Ivoire",
+      "client": "Promoteur privé",
+      "surface": "85 000 m²",
+      "role": "Designer Lead",
+      "partners": [
+        "Atelier Horizon"
+      ],
+      "description": "Développement urbain mixte combinant logements, bureaux et équipements publics.",
+      "cover": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Place Numérique"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 43,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "masterplan-bingerville",
+      "slug": "masterplan-bingerville",
+      "title": "Masterplan Bingerville",
+      "subtitle": "Projet urbain innovant",
+      "discipline": "design",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "concours",
+      "year": 2023,
+      "location": "Yamoussoukro, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "85 000 m²",
+      "role": "Designer Lead",
+      "partners": [
+        "Studio Urbain"
+      ],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Masterplan Bingerville"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 44,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "centre-de-design-africain",
+      "slug": "centre-de-design-africain",
+      "title": "Centre de Design Africain",
+      "subtitle": "Équipement structurant",
+      "discipline": "architecture",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "realise",
+      "year": 2023,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "Ville d'Abidjan",
+      "surface": "85 000 m²",
+      "role": "Architecte principal",
+      "partners": [
+        "Build Africa",
+        "Studio Urbain"
+      ],
+      "description": "Intervention à grande échelle intégrant architecture, design et urbanisme.",
+      "cover": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Centre de Design Africain"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 45,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "tour-palmier",
+      "slug": "tour-palmier",
+      "title": "Tour Palmier",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "design",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "concours",
+      "year": 2026,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "12 000 m²",
+      "role": "Designer Lead",
+      "partners": [
+        "Green Lab",
+        "Build Africa"
+      ],
+      "description": "Intervention à grande échelle intégrant architecture, design et urbanisme.",
+      "cover": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Tour Palmier"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 46,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "eco-lodge-comoé",
+      "slug": "eco-lodge-comoé",
+      "title": "Eco Lodge Comoé",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "urbanisme",
+      "categories": [
+        "education"
+      ],
+      "status": "realise",
+      "year": 2026,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "Investisseur privé",
+      "surface": "12 000 m²",
+      "role": "BIM Manager",
+      "partners": [],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "alt": "Vue principale du projet Eco Lodge Comoé"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 47,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "campus-des-métiers",
+      "slug": "campus-des-métiers",
+      "title": "Campus des Métiers",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "design",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "concours",
+      "year": 2019,
+      "location": "Yamoussoukro, Côte d'Ivoire",
+      "client": "Ville d'Abidjan",
+      "surface": "28 villas",
+      "role": "Conception & Réalisation",
+      "partners": [
+        "Build Africa"
+      ],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Campus des Métiers"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Projet emblématique visant à renforcer l’attractivité économique et culturelle du site."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 48,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "cité-verte-abatta",
+      "slug": "cité-verte-abatta",
+      "title": "Cité Verte Abatta",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "design",
+      "categories": [
+        "tertiaire"
+      ],
+      "status": "etude",
+      "year": 2023,
+      "location": "San-Pédro, Côte d'Ivoire",
+      "client": "Ville d'Abidjan",
+      "surface": "12 000 m²",
+      "role": "Designer Lead",
+      "partners": [
+        "Build Africa",
+        "Atelier Horizon"
+      ],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Cité Verte Abatta"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 49,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "centre-dart-contemporain",
+      "slug": "centre-dart-contemporain",
+      "title": "Centre d’Art Contemporain",
+      "subtitle": "Programme résidentiel contemporain",
+      "discipline": "urbanisme",
+      "categories": [
+        "infrastructure"
+      ],
+      "status": "concours",
+      "year": 2020,
+      "location": "San-Pédro, Côte d'Ivoire",
+      "client": "Agence Urbaine",
+      "surface": "28 villas",
+      "role": "Chef de projet",
+      "partners": [
+        "Green Lab"
+      ],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Centre d’Art Contemporain"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=1920&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Concept architectural durable avec intégration paysagère et mobilité douce."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 50,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "waterfront-abidjan",
+      "slug": "waterfront-abidjan",
+      "title": "Waterfront Abidjan",
+      "subtitle": "Concours international",
+      "discipline": "urbanisme",
+      "categories": [
+        "infrastructure"
+      ],
+      "status": "concours",
+      "year": 2025,
+      "location": "Korhogo, Côte d'Ivoire",
+      "client": "Ville d'Abidjan",
+      "surface": "28 villas",
+      "role": "Designer Lead",
+      "partners": [
+        "Atelier Horizon",
+        "Atelier Sahel"
+      ],
+      "description": "Projet contemporain intégrant des principes bioclimatiques et des espaces publics généreux.",
+      "cover": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Waterfront Abidjan"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Intervention à grande échelle intégrant architecture, design et urbanisme."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1400&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 51,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "pavillon-ivoire",
+      "slug": "pavillon-ivoire",
+      "title": "Pavillon Ivoire",
+      "subtitle": "Concours international",
+      "discipline": "architecture",
+      "categories": [
+        "residentiel"
+      ],
+      "status": "etude",
+      "year": 2022,
+      "location": "Assinie, Côte d'Ivoire",
+      "client": "Promoteur privé",
+      "surface": "28 villas",
+      "role": "Architecte principal",
+      "partners": [],
+      "description": "Développement urbain mixte combinant logements, bureaux et équipements publics.",
+      "cover": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+          "alt": "Vue principale du projet Pavillon Ivoire"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Développement urbain mixte combinant logements, bureaux et équipements publics."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": false,
+      "order": 52,
+      "createdAt": "2026-05-10"
+    },
+    {
+      "id": "skyline-business-center",
+      "slug": "skyline-business-center",
+      "title": "Skyline Business Center",
+      "subtitle": "Concours international",
+      "discipline": "design",
+      "categories": [
+        "concours"
+      ],
+      "status": "realise",
+      "year": 2025,
+      "location": "Bingerville, Côte d'Ivoire",
+      "client": "État de Côte d'Ivoire",
+      "surface": "220 ha",
+      "role": "Designer Lead",
+      "partners": [
+        "Studio Urbain",
+        "Build Africa"
+      ],
+      "description": "Concept architectural durable avec intégration paysagère et mobilité douce.",
+      "cover": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=1400&auto=format&fit=crop",
+          "alt": "Vue principale du projet Skyline Business Center"
+        },
+        {
+          "type": "image-text",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1400&auto=format&fit=crop",
+          "title": "Concept architectural",
+          "text": "Développement urbain mixte combinant logements, bureaux et équipements publics."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Perspective extérieure"
+            },
+            {
+              "url": "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Vue intérieure"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?q=80&w=1600&auto=format&fit=crop",
+              "caption": "Plan masse"
+            }
+          ]
+        }
+      ],
+      "featured": true,
+      "order": 53,
+      "createdAt": "2026-05-10"
     }
   ],
   "disciplines": [
-    { "id": "architecture", "label": "Architecture" },
-    { "id": "design", "label": "Design" },
-    { "id": "urbanisme", "label": "Urbanisme" }
+    {
+      "id": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "id": "design",
+      "label": "Design"
+    },
+    {
+      "id": "urbanisme",
+      "label": "Urbanisme"
+    }
   ],
   "categories": [
-    { "id": "infrastructure", "label": "Infrastructure" },
-    { "id": "residentiel", "label": "Résidentiel" },
-    { "id": "hotellerie", "label": "Hôtellerie" },
-    { "id": "tertiaire", "label": "Tertiaire" },
-    { "id": "concours", "label": "Concours" },
-    { "id": "education", "label": "Éducation" }
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "id": "residentiel",
+      "label": "Résidentiel"
+    },
+    {
+      "id": "hotellerie",
+      "label": "Hôtellerie"
+    },
+    {
+      "id": "tertiaire",
+      "label": "Tertiaire"
+    },
+    {
+      "id": "concours",
+      "label": "Concours"
+    },
+    {
+      "id": "education",
+      "label": "Éducation"
+    }
   ]
 }
