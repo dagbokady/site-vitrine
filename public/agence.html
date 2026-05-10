@@ -3,10 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'agence — Mc.Johnson & Partners</title>
-    <meta name="description" content="Mc.Johnson & Partners est une agence d'architecture, d'urbanisme et de construction. Découvrez notre vision, notre équipe et nos valeurs.">
 
-    <link rel="preconnect" href="https://res.cloudinary.com">
+    <title>Contact — Mc.Johnson & Partners, Architecte Abidjan</title>
+    <meta name="description" content="Contactez Mc.Johnson & Partners pour votre projet d'architecture, urbanisme ou investissement immobilier. MC Johnson architecte, Abidjan (Côte d'Ivoire) et France. Réponse sous 48h.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mc-johnson-partners.com/contact">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mc.Johnson & Partners">
+    <meta property="og:title" content="Contact — Mc.Johnson & Partners, Architecte Abidjan">
+    <meta property="og:description" content="Discutons de votre projet. MC Johnson architecte, cabinet à Abidjan et en France.">
+    <meta property="og:url" content="https://mc-johnson-partners.com/contact">
+    <meta property="og:image" content="https://mc-johnson-partners.com/images/og-cover.jpg">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact — Mc.Johnson & Partners">
+    <meta name="twitter:description" content="Contactez le cabinet d'architecture MC Johnson Partners, Abidjan / France.">
+
+    <!-- Schema.org ContactPage -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "url": "https://mc-johnson-partners.com/contact",
+            "name": "Contact — Mc.Johnson & Partners",
+            "description": "Formulaire de contact pour projets d'architecture, urbanisme et investissement immobilier.",
+            "mainEntity": {
+                "@type": "Organization",
+                "@id": "https://mc-johnson-partners.com/#organization",
+                "name": "Mc.Johnson & Partners",
+                "telephone": ["+2250759235565", "+33647657126"],
+                "email": "McJohnsonandPartners@gmail.com",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+2250759235565",
+                    "contactType": "customer service",
+                    "availableLanguage": ["French"],
+                    "areaServed": ["CI", "FR"]
+                }
+            }
+        }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -34,8 +72,8 @@
                 <li><a href="/?discipline=design" class="nav-link">Design</a></li>
                 <li><a href="/?discipline=urbanisme" class="nav-link">Urbanisme</a></li>
                 <li><a href="/archive" class="nav-link">Archive</a></li>
-                <li><a href="/agence" class="nav-link is-active">Agence</a></li>
-                <li><a href="/contact" class="nav-link">Contact</a></li>
+                <li><a href="/agence" class="nav-link">Agence</a></li>
+                <li><a href="/contact" class="nav-link is-active">Contact</a></li>
             </ul>
         </nav>
         <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
@@ -48,131 +86,139 @@
 
     <section class="page-header">
         <div class="container">
-            <p class="eyebrow">L'agence</p>
-            <h1 class="page-title">Architectes, urbanistes,<br>conseillers en investissement.</h1>
+            <p class="eyebrow">Nous écrire</p>
+            <h1 class="page-title">Parlons de votre projet.</h1>
             <p class="page-lead">
-                Mc.Johnson &amp; Partners est née de sept années d'expérience auprès de cabinets reconnus
-                d'Abidjan et de Paris. Nous concevons des bâtiments durables et accompagnons
-                l'investissement immobilier de l'idée à la livraison.
+                Un projet de construction, une étude de faisabilité, un conseil en investissement ?
+                Nous répondons sous 48 heures.
             </p>
         </div>
     </section>
 
-    <section class="section section-vision">
-        <div class="container vision-grid">
-            <div>
-                <p class="eyebrow">Notre vision</p>
-                <h2 class="section-title">Accompagner et garantir<br>l'investissement immobilier.</h2>
+    <section class="section section-contact">
+        <div class="container contact-grid">
+
+            <div class="contact-form-wrapper">
+                <h2 class="section-title">Formulaire</h2>
+
+                <form class="contact-form" id="contact-form" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="firstname">Prénom <span aria-hidden="true">*</span></label>
+                            <input type="text" id="firstname" name="firstname" required autocomplete="given-name">
+                            <p class="field-error" id="error-firstname" role="alert"></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="lastname">Nom <span aria-hidden="true">*</span></label>
+                            <input type="text" id="lastname" name="lastname" required autocomplete="family-name">
+                            <p class="field-error" id="error-lastname" role="alert"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="email">Email <span aria-hidden="true">*</span></label>
+                            <input type="email" id="email" name="email" required autocomplete="email">
+                            <p class="field-error" id="error-email" role="alert"></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel">
+                            <p class="field-error" id="error-phone" role="alert"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="company">Société / Organisation</label>
+                        <input type="text" id="company" name="company" autocomplete="organization">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="subject">Type de projet</label>
+                        <select id="subject" name="subject">
+                            <option value="">— Sélectionner —</option>
+                            <option value="residentiel">Projet résidentiel</option>
+                            <option value="tertiaire">Bâtiment tertiaire / bureaux</option>
+                            <option value="hotellerie">Hôtellerie / tourisme</option>
+                            <option value="infrastructure">Infrastructure / équipement public</option>
+                            <option value="urbanisme">Urbanisme / aménagement</option>
+                            <option value="conseil">Conseil en investissement</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Votre message <span aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                        <p class="field-error" id="error-message" role="alert"></p>
+                    </div>
+
+                    <div class="honeypot" aria-hidden="true">
+                        <label for="website">Ne pas remplir</label>
+                        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large" id="submit-btn">
+                            Envoyer le message
+                        </button>
+                        <p class="form-hint">Réponse sous 48h ouvrées</p>
+                    </div>
+
+                    <div class="form-feedback" id="form-feedback" role="status" aria-live="polite" hidden>
+                        <p class="feedback-success" id="feedback-success" hidden>
+                            ✓ Message envoyé. Nous vous répondons sous 48 heures.
+                        </p>
+                        <p class="feedback-error" id="feedback-error" hidden>
+                            Une erreur est survenue. Merci de réessayer ou de nous écrire directement à
+                            <a href="mailto:McJohnsonandPartners@gmail.com">McJohnsonandPartners@gmail.com</a>
+                        </p>
+                    </div>
+
+                </form>
             </div>
-            <div class="vision-text">
-                <p>
-                    Notre objectif principal est de développer un environnement bâti durable.
-                    Chaque projet s'articule comme une réponse unique face à une problématique mise en
-                    lumière par une approche par les risques.
-                </p>
-                <p>
-                    Nos solutions ont un fort ancrage dans l'esprit du lieu, duquel nous identifions
-                    un équilibre entre les besoins croissants — la <strong>densification</strong> —, l'optimisation
-                    des ressources naturelles — la <strong>durabilité</strong> — et l'<strong>hédonisme</strong>, le confort.
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <section class="section section-expertise-detail">
-        <div class="container">
-            <p class="eyebrow">Six grands piliers</p>
-            <h2 class="section-title section-title-spaced">Domaines de compétences</h2>
+            <aside class="contact-info">
 
-            <ul class="expertise-detail-grid">
-                <li class="expertise-card">
-                    <span class="expertise-num">01</span>
-                    <h3>Entreprise générale</h3>
-                    <p>Coordination de l'ensemble des corps d'état et exécution intégrée.</p>
-                </li>
-                <li class="expertise-card">
-                    <span class="expertise-num">02</span>
-                    <h3>Ingénierie en travaux publics</h3>
-                    <p>Études techniques, génie civil, infrastructure routière et hydraulique.</p>
-                </li>
-                <li class="expertise-card">
-                    <span class="expertise-num">03</span>
-                    <h3>Réseau électrique</h3>
-                    <p>Électrification urbaine et villageoise, réseaux courant fort.</p>
-                </li>
-                <li class="expertise-card">
-                    <span class="expertise-num">04</span>
-                    <h3>Pilotage de projets</h3>
-                    <p>Gestion de chantier, coordination des intervenants, contrôle qualité.</p>
-                </li>
-                <li class="expertise-card">
-                    <span class="expertise-num">05</span>
-                    <h3>Management de grands projets</h3>
-                    <p>Direction de projets d'infrastructure, montage PPP, gouvernance.</p>
-                </li>
-                <li class="expertise-card">
-                    <span class="expertise-num">06</span>
-                    <h3>Comptabilité analytique</h3>
-                    <p>Suivi budgétaire de chantier, contrôle des coûts, reporting financier.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section section-team">
-        <div class="container">
-            <p class="eyebrow">L'équipe</p>
-            <h2 class="section-title section-title-spaced">Une équipe pluridisciplinaire</h2>
-
-            <article class="founder-card">
-                <div class="founder-photo">
-                    <div class="founder-placeholder" aria-hidden="true">MJ</div>
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Bureaux</h3>
+                    <div class="contact-office">
+                        <p class="office-country">Côte d'Ivoire</p>
+                        <address>22 BP 1471 Abidjan 22<br>309 Ilot 19A, Riviera FAYA<br>Cocody, Abidjan</address>
+                    </div>
+                    <div class="contact-office">
+                        <p class="office-country">France</p>
+                        <address>[Adresse à compléter]</address>
+                    </div>
                 </div>
-                <div class="founder-text">
-                    <h3 class="founder-name">Michée Christian Johnson</h3>
-                    <p class="founder-role">Architecte principal — Fondateur</p>
-                    <ul class="founder-credentials">
-                        <li>Architecte agréé CNOA-CI 2020-302-194</li>
-                        <li>Master en Architecture, Pôle d'Excellence de l'UEMOA</li>
-                        <li>Master en Management & Finance, Corporate Finance — France</li>
-                        <li>Master en Management de Projet — EMLyon</li>
-                        <li>Ex-membre du réseau Deloitte — Consultant financier</li>
-                        <li>Chef de Projet de l'Université de San-Pédro auprès du PDU</li>
+
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Téléphone</h3>
+                    <ul class="contact-list">
+                        <li><span class="contact-label">Côte d'Ivoire</span><a href="tel:+2250759235565">+225 07 59 23 55 65</a></li>
+                        <li><span class="contact-label">France</span><a href="tel:+33647657126">+33 6 47 65 71 26</a></li>
+                        <li><span class="contact-label">WhatsApp</span><a href="https://wa.me/2250759235565" target="_blank" rel="noopener">+225 07 59 23 55 65</a></li>
                     </ul>
                 </div>
-            </article>
 
-            <div class="team-composition">
-                <h3 class="team-subtitle">Composition de l'équipe</h3>
-                <ul class="team-list">
-                    <li><span class="team-count">2</span> ingénieurs structure (plans et lots techniques)</li>
-                    <li><span class="team-count">3</span> architectes Master II (DEIAU et DESA Paris)</li>
-                    <li><span class="team-count">1</span> architecte agréé DPLG, membre du CNOA</li>
-                    <li><span class="team-count">2</span> collaborateurs techniciens supérieurs en génie civil</li>
-                    <li><span class="team-count">1</span> métreur — économiste de la construction</li>
-                    <li><span class="team-count">2</span> consultants analystes financiers (ex-Deloitte)</li>
-                    <li><span class="team-count">1</span> chef de projet, secrétariat et direction</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Email</h3>
+                    <ul class="contact-list">
+                        <li><span class="contact-label">Pro</span><a href="mailto:McJohnsonandPartners@gmail.com">McJohnsonandPartners@gmail.com</a></li>
+                    </ul>
+                </div>
 
-    <section class="section section-values">
-        <div class="container">
-            <p class="eyebrow eyebrow-center">Nos valeurs</p>
-            <ul class="values-list">
-                <li class="value">Intégrité</li>
-                <li class="value">Égalité</li>
-                <li class="value">Diversité</li>
-            </ul>
-        </div>
-    </section>
+                <div class="contact-block">
+                    <h3 class="contact-block-title">Références légales</h3>
+                    <ul class="contact-meta">
+                        <li>RCCM : CI-ABJ-03-2021-B13-03070</li>
+                        <li>Compte contribuable : 2142527 J</li>
+                        <li>Architecte agréé CNOA-CI 2020-302-194</li>
+                    </ul>
+                </div>
 
-    <section class="section section-cta">
-        <div class="container cta-inner">
-            <h2 class="cta-title">Travaillons ensemble.</h2>
-            <p class="cta-lead">Premier échange gratuit et confidentiel.</p>
-            <a href="/contact" class="btn btn-primary btn-large">Nous contacter</a>
+            </aside>
         </div>
     </section>
 
@@ -216,5 +262,6 @@
 </footer>
 
 <script src="/js/main.js"></script>
+<script src="/js/contact.js"></script>
 </body>
 </html>

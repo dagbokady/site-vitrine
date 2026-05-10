@@ -10,6 +10,10 @@
      - TURNSTILE_SECRET    (optionnel, secret Cloudflare Turnstile)
    ============================================ */
 
+export const config = {
+    runtime: 'nodejs'
+};
+
 export default async function handler(req, res) {
 
     // === CORS (autorise uniquement le site officiel) ===

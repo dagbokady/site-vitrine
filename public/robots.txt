@@ -3,4 +3,4 @@ Allow: /
 Disallow: /admin
 Disallow: /api/
 
-Sitemap: https://mcjohnson-partners.com/sitemap.xml
+Sitemap: https://mc-johnson-partners.com/sitemap.xml
