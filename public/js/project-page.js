@@ -1,10 +1,9 @@
 /* ============================================
-   PROJECT-PAGE.JS — Page projet en scroll snap
-   - Lit ?id=xxx dans l'URL
-   - Construit les 5 sections selon le type
-   - Indicateur latéral synchronisé au scroll
-   - Touches clavier : flèches haut/bas, Espace
-   - Prev/Next entre projets
+   PROJECT-PAGE.JS — Page projet refondue
+   - Remplit la section 1 (cover style "Du Pont")
+   - Injecte les sections dynamiques (2 à 5)
+   - Gère le scroll snap + indicateur + clavier
+   - Navigation prev/next entre projets
    ============================================ */
 
 (function () {
@@ -13,12 +12,12 @@
     const state = {
         project: null,
         sortedProjects: [],
-        currentIndex: 0,
-        sectionElements: []
+        sectionElements: [],
+        currentSectionIndex: 0
     };
 
     document.addEventListener('DOMContentLoaded', async function () {
-        // 1. Lire l'ID
+        // 1. Lire l'ID dans l'URL
         const params = new URLSearchParams(window.location.search);
         const projectId = params.get('id');
 
@@ -27,14 +26,34 @@
             return;
         }
 
-        // 2. Charger les projets
+        // Charger les projets
         const data = await window.MCJP.fetchProjects();
         if (!data || !data.projects) {
             showError();
             return;
         }
 
-        const project = data.projects.find(p => p.id === projectId);
+        // Recherche tolérante : par id, slug, ou en slugifiant le titre
+        const idNormalized = projectId.toLowerCase().trim();
+        let project = data.projects.find(p => p.id === idNormalized);
+
+        // Fallback 1 : par slug
+        if (!project) {
+            project = data.projects.find(p => p.slug === idNormalized);
+        }
+
+        // Fallback 2 : par titre slugifié (résout les anciens IDs avec espaces / majuscules)
+        if (!project) {
+            project = data.projects.find(p => slugify(p.title) === idNormalized);
+        }
+
+        // Fallback 3 : matching partiel (ex: "tour-cacao" matche "tour-cacao-v2")
+        if (!project) {
+            project = data.projects.find(p =>
+                p.id.includes(idNormalized) || idNormalized.includes(p.id)
+            );
+        }
+
         if (!project) {
             showError();
             return;
@@ -51,39 +70,71 @@
         });
 
         // 4. Construire la page
-        buildProjectPage(project);
-
-        // 5. Construire l'indicateur de sections
-        buildSectionIndicator(project.sections || []);
-
-        // 6. Scroll observer
+        buildCoverSection(project);
+        buildDynamicSections(project);
+        buildSectionIndicator();
         setupScrollObserver();
-
-        // 7. Navigation prev/next
         setupProjectNavigation(project);
-
-        // 8. Clavier
         setupKeyboardNav();
 
-        // 9. Affichage
-        document.getElementById('project-loading').hidden = true;
-        document.getElementById('project-snap').hidden = false;
-        document.getElementById('project-end').hidden = false;
-        document.getElementById('section-indicator').hidden = false;
+        // 5. Afficher : on cache loading + on montre les sections
+        const loadingEl = document.getElementById('project-loading');
+        const errorEl = document.getElementById('project-error');
+        const snapEl = document.getElementById('project-snap');
+        const endEl = document.getElementById('project-end');
+        const indicatorEl = document.getElementById('section-indicator');
+
+        if (loadingEl) { loadingEl.hidden = true; loadingEl.classList.add('is-hidden'); }
+        if (errorEl)   { errorEl.hidden = true;   errorEl.classList.add('is-hidden'); }
+        if (snapEl)      { snapEl.hidden = false;      snapEl.classList.remove('is-hidden'); }
+        if (endEl)       { endEl.hidden = false;       endEl.classList.remove('is-hidden'); }
+        if (indicatorEl) { indicatorEl.hidden = false; indicatorEl.classList.remove('is-hidden'); }
+
+        // 6. Métadonnées de la page
+        setPageMeta(project);
     });
 
     // ============================================
-    // CONSTRUCTION DE LA PAGE
+    // SECTION 1 : COVER (style Du Pont)
+    // Codée en dur dans le HTML, juste à remplir
     // ============================================
-    function buildProjectPage(project) {
-        // Métadonnées de la page
-        document.title = `${project.title} — Mc.Johnson & Partners`;
-        const metaDesc = document.getElementById('meta-description');
-        if (metaDesc && project.description) {
-            metaDesc.setAttribute('content', truncate(project.description, 160));
+    function buildCoverSection(project) {
+        // Image de couverture
+        const coverImg = document.getElementById('cover-image');
+        if (coverImg) {
+            const url = window.MCJP.cloudinaryOptimize(project.cover, 2000);
+            coverImg.src = url;
+            coverImg.alt = project.title || 'Couverture du projet';
         }
 
-        // Header centre (apparaît dès la 2e section)
+        // Discipline
+        const discEl = document.getElementById('cover-discipline');
+        if (discEl) discEl.textContent = getDisciplineLabel(project.discipline);
+
+        // Statut + année
+        const statusEl = document.getElementById('cover-status');
+        if (statusEl) {
+            const parts = [];
+            if (project.status) parts.push(window.MCJP.getStatusLabel(project.status));
+            if (project.year) parts.push(project.year);
+            statusEl.textContent = parts.join(' · ');
+        }
+
+        // Titre + sous-titre
+        setText('cover-title', project.title);
+        setText('cover-subtitle', project.subtitle);
+
+        // Métadonnées (lieu, surface, client)
+        setText('cover-meta-location-value', project.location || '—');
+        setText('cover-meta-surface-value', project.surface && project.surface !== '—' ? project.surface : '—');
+        setText('cover-meta-client-value', truncate(project.client || '—', 30));
+
+        // Cacher les rows vides pour ne pas avoir "—" partout
+        hideMetaRowIfEmpty('location', project.location);
+        hideMetaRowIfEmpty('surface', project.surface);
+        hideMetaRowIfEmpty('client', project.client);
+
+        // Header centre (apparaît au scroll)
         const headerCenter = document.getElementById('project-header-center');
         if (headerCenter) {
             headerCenter.hidden = false;
@@ -92,79 +143,50 @@
             if (disc) disc.textContent = getDisciplineLabel(project.discipline);
             if (title) title.textContent = project.title;
         }
+    }
 
-        // Sections
-        const container = document.getElementById('project-snap');
+    function hideMetaRowIfEmpty(field, value) {
+        if (!value || value === '—') {
+            const row = document.querySelector(`.cover-meta-row[data-meta="${field}"]`);
+            if (row) row.style.display = 'none';
+        }
+    }
+
+    // ============================================
+    // SECTIONS 2 → 5 : injectées dynamiquement
+    // ============================================
+    function buildDynamicSections(project) {
+        const container = document.getElementById('dynamic-sections');
+        if (!container) return;
         container.innerHTML = '';
-        state.sectionElements = [];
 
-        const sections = project.sections || [];
-        sections.forEach((section, index) => {
-            const sectionEl = renderSection(section, project, index);
+        // La section "cover" (index 0) fait déjà partie du DOM
+        state.sectionElements = [document.querySelector('.section-cover')];
+
+        // On filtre les sections valides (on saute "hero" car déjà couvert par la cover)
+        const sections = (project.sections || []).filter(s => s.type !== 'hero');
+
+        sections.forEach((section, i) => {
+            const realIndex = i + 1; // section 0 = cover
+            const sectionEl = renderSection(section, project, realIndex);
             if (sectionEl) {
-                sectionEl.setAttribute('data-section-index', String(index));
+                sectionEl.setAttribute('data-section-index', String(realIndex));
                 container.appendChild(sectionEl);
                 state.sectionElements.push(sectionEl);
             }
         });
-    }
 
-    // ============================================
-    // RENDU DE CHAQUE TYPE DE SECTION
-    // ============================================
-    function renderSection(section, project, index) {
-        const wrapper = document.createElement('section');
-        wrapper.className = 'project-section section-' + section.type;
-
-        switch (section.type) {
-            case 'hero':
-                wrapper.innerHTML = renderHero(section, project);
-                break;
-            case 'image-text':
-                wrapper.innerHTML = renderImageText(section);
-                break;
-            case 'context':
-                wrapper.innerHTML = renderContext(section);
-                break;
-            case 'gallery':
-                wrapper.innerHTML = renderGallery(section);
-                break;
-            case 'plans':
-                wrapper.innerHTML = renderPlans(section);
-                break;
-            default:
-                return null;
+        // Mettre à jour le total dans la cover (ex: 01 / 05)
+        const totalEl = document.getElementById('cover-page-total');
+        if (totalEl) {
+            totalEl.textContent = String(state.sectionElements.length).padStart(2, '0');
         }
-
-        return wrapper;
-    }
-
-    function renderHero(section, project) {
-        const imageUrl = window.MCJP.cloudinaryOptimize(section.image, 2400);
-        const alt = section.alt || project.title;
-
-        return `
-      <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(alt)}" class="section-hero-image">
-      <div class="section-hero-text">
-        <div class="section-hero-text-inner">
-          <p class="section-hero-discipline">${escapeHtml(getDisciplineLabel(project.discipline))}${project.status ? ' · ' + escapeHtml(window.MCJP.getStatusLabel(project.status)) : ''}</p>
-          <h1 class="section-hero-title">${escapeHtml(project.title)}</h1>
-          <p class="section-hero-subtitle">${escapeHtml(project.subtitle || '')}</p>
-        </div>
-      </div>
-      <div class="section-hero-meta">
-        ${project.year ? `<div><strong>${escapeHtml(project.year)}</strong></div>` : ''}
-        ${project.location ? `<div>${escapeHtml(project.location)}</div>` : ''}
-        ${project.surface && project.surface !== '—' ? `<div>${escapeHtml(project.surface)}</div>` : ''}
-        ${project.client ? `<div>${escapeHtml(project.client)}</div>` : ''}
-      </div>
-    `;
     }
 
     function renderImageText(section) {
         const imageUrl = window.MCJP.cloudinaryOptimize(section.image, 1600);
         return `
-      <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(section.title || '')}" class="section-image-text-image">
+      <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(section.title || 'Image du projet')}" class="section-image-text-image" loading="lazy">
       <div class="section-image-text-content">
         <p class="section-image-text-eyebrow">À propos du projet</p>
         ${section.title ? `<h2 class="section-image-text-title">${escapeHtml(section.title)}</h2>` : ''}
@@ -174,28 +196,30 @@
     }
 
     function renderContext(section) {
-        const imageUrl = window.MCJP.cloudinaryOptimize(section.image, 1600);
+        const imageUrl = window.MCJP.cloudinaryOptimize(section.image, 1800);
         return `
-      <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(section.caption || 'Plan de contexte')}" class="section-context-image">
+      <p class="section-context-eyebrow">Contexte &amp; implantation</p>
+      <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(section.caption || 'Plan de contexte')}" class="section-context-image" loading="lazy">
       ${section.caption ? `<p class="section-context-caption">${escapeHtml(section.caption)}</p>` : ''}
     `;
     }
 
     function renderGallery(section) {
         const images = section.images || [];
-        const gridClass = 'section-gallery-grid' + (images.length === 3 ? ' has-3' : '');
+        const gridClass = 'section-gallery' + (images.length === 3 ? ' has-3' : '');
 
         const imagesHtml = images.map(img => {
-            const url = window.MCJP.cloudinaryOptimize(img.url, 1200);
+            const url = window.MCJP.cloudinaryOptimize(img.url, 1400);
             return `
         <figure class="section-gallery-item">
-          <img src="${escapeAttr(url)}" alt="${escapeAttr(img.caption || '')}" loading="lazy">
+          <img src="${escapeAttr(url)}" alt="${escapeAttr(img.caption || 'Image de la galerie')}" loading="lazy">
           ${img.caption ? `<figcaption class="section-gallery-caption">${escapeHtml(img.caption)}</figcaption>` : ''}
         </figure>
       `;
         }).join('');
 
-        return `<div class="${gridClass}">${imagesHtml}</div>`;
+        // On enveloppe la grille dans une section pour appliquer la classe
+        return imagesHtml;
     }
 
     function renderPlans(section) {
@@ -203,7 +227,7 @@
         const gridClass = 'section-plans-grid' + (images.length > 1 ? ' has-multiple' : '');
 
         const imagesHtml = images.map(img => {
-            const url = window.MCJP.cloudinaryOptimize(img.url, 1600);
+            const url = window.MCJP.cloudinaryOptimize(img.url, 1800);
             return `
         <figure class="section-plans-item">
           <img src="${escapeAttr(url)}" alt="${escapeAttr(img.caption || 'Plan technique')}" loading="lazy">
@@ -213,27 +237,54 @@
         }).join('');
 
         return `
-      <p class="section-plans-eyebrow">Plans &amp; dessins</p>
+      <p class="section-plans-eyebrow">Plans &amp; dessins techniques</p>
       <div class="${gridClass}">${imagesHtml}</div>
     `;
     }
 
+    // Hack pour les sections gallery : on doit modifier la classe du <section> wrapper
+    // (parce que la grille fait partie de la section)
+    function renderSection(section, project, index) {
+        const wrapper = document.createElement('section');
+
+        if (section.type === 'gallery') {
+            const images = section.images || [];
+            wrapper.className = 'project-section section-gallery' + (images.length === 3 ? ' has-3' : '');
+            wrapper.innerHTML = renderGallery(section);
+        } else {
+            wrapper.className = 'project-section section-' + section.type;
+            switch (section.type) {
+                case 'image-text':
+                    wrapper.innerHTML = renderImageText(section);
+                    break;
+                case 'context':
+                    wrapper.innerHTML = renderContext(section);
+                    break;
+                case 'plans':
+                    wrapper.innerHTML = renderPlans(section);
+                    break;
+                default:
+                    return null;
+            }
+        }
+
+        return wrapper;
+    }
+
     // ============================================
-    // INDICATEUR DE SECTIONS (à droite)
+    // INDICATEUR DE PAGES (à droite)
     // ============================================
-    function buildSectionIndicator(sections) {
+    function buildSectionIndicator() {
         const list = document.getElementById('indicator-list');
         if (!list) return;
         list.innerHTML = '';
 
-        sections.forEach((section, index) => {
+        state.sectionElements.forEach((_, index) => {
             const li = document.createElement('li');
             const btn = document.createElement('button');
-            btn.className = 'indicator-dot';
+            btn.className = 'indicator-dot' + (index === 0 ? ' is-active' : '');
             btn.setAttribute('data-section-index', String(index));
-            btn.setAttribute('aria-label', `Aller à la section ${index + 1}`);
-            if (index === 0) btn.classList.add('is-active');
-
+            btn.setAttribute('aria-label', `Aller à la page ${index + 1}`);
             btn.addEventListener('click', () => goToSection(index));
             li.appendChild(btn);
             list.appendChild(li);
@@ -245,11 +296,17 @@
             const dotIndex = parseInt(dot.getAttribute('data-section-index'), 10);
             dot.classList.toggle('is-active', dotIndex === index);
         });
+
+        // Met à jour le numéro de page dans la cover
+        const currentEl = document.getElementById('cover-page-current');
+        if (currentEl) {
+            currentEl.textContent = String(index + 1).padStart(2, '0');
+        }
     }
 
     function goToSection(index) {
         if (state.sectionElements[index]) {
-            state.sectionElements[index].scrollIntoView({ behavior: 'smooth' });
+            state.sectionElements[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     }
 
@@ -265,10 +322,11 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
                     const index = parseInt(entry.target.getAttribute('data-section-index'), 10);
-                    if (!isNaN(index)) {
+                    if (!isNaN(index) && index !== state.currentSectionIndex) {
+                        state.currentSectionIndex = index;
                         updateActiveDot(index);
 
-                        // Le titre dans le header apparaît dès qu'on est plus sur la section hero (index 0)
+                        // Le titre dans le header apparaît dès qu'on quitte la cover (index 0)
                         if (headerCenter) {
                             if (index > 0) {
                                 headerCenter.classList.add('is-visible');
@@ -292,33 +350,26 @@
     // ============================================
     function setupKeyboardNav() {
         document.addEventListener('keydown', (e) => {
-            // On ignore si l'utilisateur tape dans un champ
             if (e.target.matches('input, textarea, select')) return;
 
             const container = document.getElementById('project-snap');
             if (!container || container.hidden) return;
 
-            const currentDot = document.querySelector('.indicator-dot.is-active');
-            if (!currentDot) return;
-
-            const currentIdx = parseInt(currentDot.getAttribute('data-section-index'), 10);
+            const total = state.sectionElements.length;
+            const current = state.currentSectionIndex;
 
             if (e.key === 'ArrowDown' || e.key === 'PageDown') {
                 e.preventDefault();
-                if (currentIdx < state.sectionElements.length - 1) {
-                    goToSection(currentIdx + 1);
-                }
+                if (current < total - 1) goToSection(current + 1);
             } else if (e.key === 'ArrowUp' || e.key === 'PageUp') {
                 e.preventDefault();
-                if (currentIdx > 0) {
-                    goToSection(currentIdx - 1);
-                }
+                if (current > 0) goToSection(current - 1);
             } else if (e.key === 'Home') {
                 e.preventDefault();
                 goToSection(0);
             } else if (e.key === 'End') {
                 e.preventDefault();
-                goToSection(state.sectionElements.length - 1);
+                goToSection(total - 1);
             }
         });
     }
@@ -327,9 +378,9 @@
     // PREV / NEXT entre projets
     // ============================================
     function setupProjectNavigation(project) {
-        const currentIndex = state.sortedProjects.findIndex(p => p.id === project.id);
-        const prev = currentIndex > 0 ? state.sortedProjects[currentIndex - 1] : null;
-        const next = currentIndex < state.sortedProjects.length - 1 ? state.sortedProjects[currentIndex + 1] : null;
+        const idx = state.sortedProjects.findIndex(p => p.id === project.id);
+        const prev = idx > 0 ? state.sortedProjects[idx - 1] : null;
+        const next = idx < state.sortedProjects.length - 1 ? state.sortedProjects[idx + 1] : null;
 
         if (prev) {
             const link = document.getElementById('project-prev');
@@ -353,11 +404,53 @@
     }
 
     // ============================================
-    // GESTION D'ERREUR
+    // METADATA DE PAGE (SEO)
+    // ============================================
+    function setPageMeta(project) {
+        document.title = `${project.title} — Mc.Johnson & Partners`;
+
+        const metaDesc = document.getElementById('meta-description');
+        if (metaDesc && project.description) {
+            metaDesc.setAttribute('content', truncate(project.description, 160));
+        }
+
+        // Schema.org JSON-LD pour SEO
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "name": project.title,
+            "description": project.description || project.subtitle,
+            "image": project.cover,
+            "creator": {
+                "@type": "Organization",
+                "name": "Mc.Johnson & Partners",
+                "url": "https://mc-johnson-partners.com"
+            },
+            "dateCreated": project.year ? String(project.year) : undefined,
+            "locationCreated": project.location ? { "@type": "Place", "name": project.location } : undefined
+        };
+
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify(schema);
+        document.head.appendChild(script);
+    }
+
+    // ============================================
+    // ERROR
     // ============================================
     function showError() {
-        document.getElementById('project-loading').hidden = true;
-        document.getElementById('project-error').hidden = false;
+        const loadingEl = document.getElementById('project-loading');
+        const errorEl = document.getElementById('project-error');
+        const snapEl = document.getElementById('project-snap');
+        const endEl = document.getElementById('project-end');
+        const indicatorEl = document.getElementById('section-indicator');
+
+        if (loadingEl)   { loadingEl.hidden = true; loadingEl.classList.add('is-hidden'); }
+        if (snapEl)      { snapEl.hidden = true;      snapEl.classList.add('is-hidden'); }
+        if (endEl)       { endEl.hidden = true;       endEl.classList.add('is-hidden'); }
+        if (indicatorEl) { indicatorEl.hidden = true; indicatorEl.classList.add('is-hidden'); }
+        if (errorEl)     { errorEl.hidden = false;    errorEl.classList.remove('is-hidden'); }
     }
 
     // ============================================
@@ -370,6 +463,21 @@
             'urbanisme': 'Urbanisme'
         };
         return labels[id] || id || '';
+    }
+
+    function slugify(text) {
+        if (!text) return '';
+        return text
+            .toString()
+            .toLowerCase()
+            .normalize('NFD').replace(/[\u0300-\u036f]/g, '')  // retire les accents
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+    }
+
+    function setText(elementId, value) {
+        const el = document.getElementById(elementId);
+        if (el) el.textContent = value || '—';
     }
 
     function truncate(text, max) {

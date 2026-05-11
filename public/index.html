@@ -89,12 +89,14 @@
     <link rel="stylesheet" href="/css/tokens.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/animations.css">
     <link rel="stylesheet" href="/css/home.css">
 
     <link rel="icon" type="image/svg+xml" href="/images/ui/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon-32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/ui/favicon-16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/images/ui/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico">
 </head>
 
 <body class="home-body">
@@ -106,23 +108,36 @@
             <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
         </a>
 
-        <nav class="home-nav" aria-label="Disciplines">
+        <nav class="home-nav" aria-label="Navigation principale">
             <ul class="home-nav-list">
-                <li><a href="/?discipline=architecture" class="home-nav-link">Architecture</a></li>
-                <li><a href="/?discipline=design" class="home-nav-link">Design</a></li>
-                <li><a href="/?discipline=urbanisme" class="home-nav-link">Urbanisme</a></li>
-                <li class="home-nav-sep" aria-hidden="true"></li>
-                <li><a href="/archive" class="home-nav-link home-nav-secondary">Archive</a></li>
-                <li><a href="/agence" class="home-nav-link home-nav-secondary">Agence</a></li>
-                <li><a href="/contact" class="home-nav-link home-nav-secondary">Contact</a></li>
+                <li><a href="/archive" class="home-nav-link">Tous les projets</a></li>
+                <li><a href="/agence" class="home-nav-link">Agence</a></li>
+                <li><a href="/contact" class="home-nav-link">Contact</a></li>
             </ul>
         </nav>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
             <span></span><span></span><span></span>
         </button>
     </div>
 </header>
+
+<!-- ========== MENU MOBILE (overlay plein écran) ==========
+     NB : style inline défensif — au cas où animations.css ne se charge pas (cache, FOUC),
+     cette nav reste invisible par défaut. Le CSS externe la rend cliquable quand .is-open. -->
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true"
+     style="display:none; position:fixed; inset:0; z-index:1000; visibility:hidden;">
+    <nav class="mobile-nav-inner" aria-label="Navigation mobile">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item" style="--i:0"><a href="/archive" class="mobile-nav-link">Tous les projets</a></li>
+            <li class="mobile-nav-item" style="--i:1"><a href="/agence" class="mobile-nav-link">Agence</a></li>
+            <li class="mobile-nav-item" style="--i:2"><a href="/contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <p class="mobile-nav-tagline">Building trust. Designing the future.</p>
+        </div>
+    </nav>
+</div>
 
 <!-- ========== SLIDER HERO ========== -->
 <section class="hero-slider" id="hero-slider" aria-roledescription="carousel" aria-label="Projets récents">
@@ -153,36 +168,36 @@
 <section class="recent-projects">
     <div class="recent-inner">
 
-        <header class="recent-header">
-            <p class="eyebrow">Projets récents</p>
-            <h2 class="recent-title">Trois disciplines,<br>une vision.</h2>
+        <header class="recent-header" data-animate="reveal-up">
+            <p class="eyebrow" data-animate="fade-in">Projets récents</p>
+            <h2 class="recent-title" data-animate="split-text">Trois disciplines,<br>une vision.</h2>
         </header>
 
         <!-- 3 blocs (architecture, design, urbanisme) — remplis par JS -->
-        <div class="discipline-block" data-discipline="architecture">
+        <div class="discipline-block" data-discipline="architecture" data-animate="reveal-up">
             <header class="discipline-header">
-                <h3 class="discipline-name">Architecture</h3>
-                <a href="/?discipline=architecture" class="discipline-link">Voir tout →</a>
+                <h3 class="discipline-name" data-animate="split-text">Architecture</h3>
+                <a href="/archive?discipline=architecture" class="discipline-link magnetic">Voir tout →</a>
             </header>
             <div class="discipline-grid" id="grid-architecture">
                 <p class="loading">Chargement…</p>
             </div>
         </div>
 
-        <div class="discipline-block" data-discipline="design">
+        <div class="discipline-block" data-discipline="design" data-animate="reveal-up">
             <header class="discipline-header">
-                <h3 class="discipline-name">Design</h3>
-                <a href="/?discipline=design" class="discipline-link">Voir tout →</a>
+                <h3 class="discipline-name" data-animate="split-text">Design</h3>
+                <a href="/archive?discipline=design" class="discipline-link magnetic">Voir tout →</a>
             </header>
             <div class="discipline-grid" id="grid-design">
                 <p class="loading">Chargement…</p>
             </div>
         </div>
 
-        <div class="discipline-block" data-discipline="urbanisme">
+        <div class="discipline-block" data-discipline="urbanisme" data-animate="reveal-up">
             <header class="discipline-header">
-                <h3 class="discipline-name">Urbanisme</h3>
-                <a href="/?discipline=urbanisme" class="discipline-link">Voir tout →</a>
+                <h3 class="discipline-name" data-animate="split-text">Urbanisme</h3>
+                <a href="/archive?discipline=urbanisme" class="discipline-link magnetic">Voir tout →</a>
             </header>
             <div class="discipline-grid" id="grid-urbanisme">
                 <p class="loading">Chargement…</p>
@@ -190,8 +205,8 @@
         </div>
 
         <!-- CTA archive -->
-        <div class="recent-footer">
-            <a href="/archive" class="archive-cta">
+        <div class="recent-footer" data-animate="reveal-up">
+            <a href="/archive" class="archive-cta magnetic">
                 <span class="archive-cta-label">Archive complète</span>
                 <span class="archive-cta-arrow">→</span>
             </a>
@@ -210,9 +225,9 @@
         <div class="footer-col">
             <p class="footer-col-title">Disciplines</p>
             <ul>
-                <li><a href="/?discipline=architecture">Architecture</a></li>
-                <li><a href="/?discipline=design">Design</a></li>
-                <li><a href="/?discipline=urbanisme">Urbanisme</a></li>
+                <li><a href="/archive?discipline=architecture">Architecture</a></li>
+                <li><a href="/archive?discipline=design">Design</a></li>
+                <li><a href="/archive?discipline=urbanisme">Urbanisme</a></li>
                 <li><a href="/archive">Archive complète</a></li>
             </ul>
         </div>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet — Mc.Johnson & Partners</title>
     <meta name="description" id="meta-description" content="Détail d'un projet de Mc.Johnson & Partners.">
+    <meta name="robots" content="index, follow">
 
     <link rel="preconnect" href="https://res.cloudinary.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,17 +16,22 @@
     <link rel="stylesheet" href="/css/tokens.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/animations.css">
     <link rel="stylesheet" href="/css/project-page.css">
 
-    <link rel="icon" type="image/png" href="/images/ui/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/images/ui/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/ui/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/ui/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico">
 </head>
 
 <body class="project-body">
 
-<!-- HEADER FLOTTANT (fond change selon la section visible) -->
+<!-- HEADER FLOTTANT -->
 <header class="project-header" id="project-header">
     <div class="project-header-inner">
-        <a href="/" class="logo" aria-label="Retour à l'accueil">
+        <a href="/" class="logo" aria-label="Retour à l'accueil Mc.Johnson & Partners">
             <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
         </a>
 
@@ -35,52 +41,106 @@
         </div>
 
         <nav class="project-nav-top" aria-label="Navigation">
-            <a href="/" class="project-nav-link">Tous les projets</a>
+            <a href="/archive" class="project-nav-link">Tous les projets</a>
             <a href="/agence" class="project-nav-link">Agence</a>
             <a href="/contact" class="project-nav-link">Contact</a>
         </nav>
     </div>
 </header>
 
-<!-- INDICATEUR DE SECTION (à droite, façon Apple) -->
-<aside class="section-indicator" id="section-indicator" hidden aria-hidden="true">
-    <ul class="indicator-list" id="indicator-list">
-        <!-- rempli par JS : 1 dot par section -->
-    </ul>
+<!-- INDICATEUR DE PAGES (à droite) -->
+<aside class="section-indicator is-hidden" id="section-indicator" hidden aria-hidden="true">
+    <ul class="indicator-list" id="indicator-list"></ul>
 </aside>
 
 <!-- LOADING -->
 <div class="project-loading" id="project-loading">
-    <p>Chargement…</p>
+    <div class="loading-spinner"></div>
+    <p>Chargement du projet…</p>
 </div>
 
-<!-- ERREUR : projet introuvable -->
-<section class="project-error" id="project-error" hidden>
+<!-- ERROR -->
+<section class="project-error is-hidden" id="project-error" hidden>
     <div class="project-error-content">
-        <p class="eyebrow">Erreur</p>
+        <p class="eyebrow">Erreur 404</p>
         <h1>Projet introuvable</h1>
         <p>Le projet que vous cherchez n'existe pas ou a été déplacé.</p>
-        <a href="/" class="btn btn-primary">Retour à l'accueil</a>
+        <div class="error-actions">
+            <a href="/archive" class="btn btn-primary">Voir l'archive</a>
+            <a href="/" class="btn btn-outline">Retour à l'accueil</a>
+        </div>
     </div>
 </section>
 
-<!-- CONTENEUR DES SECTIONS (rempli par project-page.js) -->
-<main class="project-snap" id="project-snap" hidden>
-    <!-- Les sections sont injectées dynamiquement -->
+<!-- CONTAINER PRINCIPAL -->
+<main class="project-snap is-hidden" id="project-snap" hidden>
+
+    <!-- SECTION 1 : Style "Du Pont" (codée en dur) -->
+    <section class="project-section section-cover" data-section-index="0">
+
+        <div class="cover-page-number">
+            <span class="cover-page-current" id="cover-page-current">01</span>
+            <span class="cover-page-separator">/</span>
+            <span class="cover-page-total" id="cover-page-total">05</span>
+        </div>
+
+        <!-- Bloc rouge : titre + métadonnées -->
+        <div class="cover-text">
+            <div class="cover-text-inner">
+                <header class="cover-meta-top">
+                    <p class="cover-discipline" id="cover-discipline">Architecture</p>
+                    <p class="cover-status" id="cover-status">Réalisé · 2024</p>
+                </header>
+
+                <div class="cover-title-block">
+                    <h1 class="cover-title" id="cover-title">Titre du projet</h1>
+                    <p class="cover-subtitle" id="cover-subtitle">Sous-titre</p>
+                </div>
+
+                <footer class="cover-meta-bottom">
+                    <div class="cover-meta-row" data-meta="location">
+                        <span class="cover-meta-label">Lieu</span>
+                        <strong class="cover-meta-value" id="cover-meta-location-value">—</strong>
+                    </div>
+                    <div class="cover-meta-row" data-meta="surface">
+                        <span class="cover-meta-label">Surface</span>
+                        <strong class="cover-meta-value" id="cover-meta-surface-value">—</strong>
+                    </div>
+                    <div class="cover-meta-row" data-meta="client">
+                        <span class="cover-meta-label">Client</span>
+                        <strong class="cover-meta-value" id="cover-meta-client-value">—</strong>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Image plein cadre -->
+        <div class="cover-image-wrap">
+            <img src="" alt="" class="cover-image" id="cover-image">
+            <div class="cover-image-scroll">
+                <span class="scroll-text">SCROLLER</span>
+                <span class="scroll-arrow">↓</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTIONS 2 → 5 : injectées par JS -->
+    <div id="dynamic-sections"></div>
+
 </main>
 
-<!-- NAVIGATION INTER-PROJETS (en bas de la dernière section) -->
-<nav class="project-end" id="project-end" hidden aria-label="Suite">
+<!-- NAVIGATION FIN DE PROJET -->
+<nav class="project-end is-hidden" id="project-end" hidden aria-label="Navigation entre projets">
     <div class="project-end-inner">
-        <a href="#" class="project-end-link" id="project-prev" hidden>
-            <span class="end-label">← Précédent</span>
+        <a href="#" class="project-end-link end-left" id="project-prev" hidden>
+            <span class="end-label">← Projet précédent</span>
             <span class="end-title" id="project-prev-title"></span>
         </a>
-        <a href="/" class="project-end-link end-center">
-            <span class="end-label">Tous les projets</span>
+        <a href="/archive" class="project-end-link end-center">
+            <span class="end-label">Voir tous les projets</span>
         </a>
         <a href="#" class="project-end-link end-right" id="project-next" hidden>
-            <span class="end-label">Suivant →</span>
+            <span class="end-label">Projet suivant →</span>
             <span class="end-title" id="project-next-title"></span>
         </a>
     </div>

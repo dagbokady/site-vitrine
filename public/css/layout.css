@@ -114,65 +114,12 @@ body {
 }
 
 /* Bouton menu burger (mobile) */
-.menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 24px;
-    height: 18px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
+/* === MENU BURGER ===
+   Le bouton + son animation sont gérés dans /css/animations.css
+   La nav mobile = overlay #mobile-nav (gérée dans animations.css)
+   === */
 
-.menu-toggle span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: var(--color-text);
-    transition: transform var(--duration-fast) var(--ease-out),
-    opacity var(--duration-fast) var(--ease-out);
-}
-
-.menu-toggle[aria-expanded="true"] span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.menu-toggle[aria-expanded="true"] span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle[aria-expanded="true"] span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-
-/* Navigation mobile (s'ouvre avec menu burger) */
-.main-nav.is-open {
-    display: flex;
-    position: fixed;
-    top: var(--header-height-mobile);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--color-bg);
-    padding: var(--space-8) var(--container-padding);
-    z-index: calc(var(--z-header) - 1);
-}
-
-.main-nav.is-open .nav-list {
-    flex-direction: column;
-    gap: var(--space-6);
-    width: 100%;
-}
-
-.main-nav.is-open .nav-link {
-    font-size: var(--text-2xl);
-    font-weight: var(--weight-medium);
-    color: var(--color-text);
-}
-
-/* Desktop : nav visible, menu burger caché */
+/* Desktop : nav visible, menu burger caché (responsive) */
 @media (min-width: 768px) {
     .site-header {
         height: var(--header-height);
@@ -182,6 +129,9 @@ body {
         display: block;
     }
 
+    /* .menu-toggle est caché par défaut dans animations.css à >899px,
+       mais sur ces pages internes la nav passe en desktop dès 768px,
+       donc on cache le burger ici aussi : */
     .menu-toggle {
         display: none;
     }

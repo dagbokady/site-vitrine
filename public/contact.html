@@ -3,8 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact — Mc.Johnson & Partners</title>
-    <meta name="description" content="Contactez Mc.Johnson & Partners pour discuter de votre projet d'architecture, d'urbanisme ou d'investissement immobilier.">
+
+    <title>Contact — Mc.Johnson & Partners, Architecte Abidjan</title>
+    <meta name="description" content="Contactez Mc.Johnson & Partners pour votre projet d'architecture, urbanisme ou investissement immobilier. MC Johnson architecte, Abidjan (Côte d'Ivoire) et France. Réponse sous 48h.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mc-johnson-partners.com/contact">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mc.Johnson & Partners">
+    <meta property="og:title" content="Contact — Mc.Johnson & Partners, Architecte Abidjan">
+    <meta property="og:description" content="Discutons de votre projet. MC Johnson architecte, cabinet à Abidjan et en France.">
+    <meta property="og:url" content="https://mc-johnson-partners.com/contact">
+    <meta property="og:image" content="https://mc-johnson-partners.com/images/og-cover.jpg">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact — Mc.Johnson & Partners">
+    <meta name="twitter:description" content="Contactez le cabinet d'architecture MC Johnson Partners, Abidjan / France.">
+
+    <!-- Schema.org ContactPage -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "url": "https://mc-johnson-partners.com/contact",
+            "name": "Contact — Mc.Johnson & Partners",
+            "description": "Formulaire de contact pour projets d'architecture, urbanisme et investissement immobilier.",
+            "mainEntity": {
+                "@type": "Organization",
+                "@id": "https://mc-johnson-partners.com/#organization",
+                "name": "Mc.Johnson & Partners",
+                "telephone": ["+2250759235565", "+33647657126"],
+                "email": "McJohnsonandPartners@gmail.com",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+2250759235565",
+                    "contactType": "customer service",
+                    "availableLanguage": ["French"],
+                    "areaServed": ["CI", "FR"]
+                }
+            }
+        }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +53,14 @@
     <link rel="stylesheet" href="/css/tokens.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/animations.css">
     <link rel="stylesheet" href="/css/pages.css">
 
-    <link rel="icon" type="image/png" href="/images/ui/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/images/ui/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/ui/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/ui/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico">
 </head>
 
 <body>
@@ -29,26 +73,37 @@
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list">
                 <li><a href="/" class="nav-link">Accueil</a></li>
-                <li><a href="/?discipline=architecture" class="nav-link">Architecture</a></li>
-                <li><a href="/?discipline=design" class="nav-link">Design</a></li>
-                <li><a href="/?discipline=urbanisme" class="nav-link">Urbanisme</a></li>
-                <li><a href="/archive" class="nav-link">Archive</a></li>
+                <li><a href="/archive" class="nav-link">Tous les projets</a></li>
                 <li><a href="/agence" class="nav-link">Agence</a></li>
                 <li><a href="/contact" class="nav-link is-active">Contact</a></li>
             </ul>
         </nav>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
             <span></span><span></span><span></span>
         </button>
     </div>
 </header>
 
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true" style="display:none; position:fixed; inset:0; z-index:1000; visibility:hidden;">
+    <nav class="mobile-nav-inner" aria-label="Navigation mobile">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item" style="--i:0"><a href="/" class="mobile-nav-link">Accueil</a></li>
+            <li class="mobile-nav-item" style="--i:1"><a href="/archive" class="mobile-nav-link">Tous les projets</a></li>
+            <li class="mobile-nav-item" style="--i:2"><a href="/agence" class="mobile-nav-link">Agence</a></li>
+            <li class="mobile-nav-item" style="--i:3"><a href="/contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <p class="mobile-nav-tagline">Building trust. Designing the future.</p>
+        </div>
+    </nav>
+</div>
+
 <main>
 
     <section class="page-header">
         <div class="container">
-            <p class="eyebrow">Nous écrire</p>
-            <h1 class="page-title">Parlons de votre projet.</h1>
+            <p class="eyebrow" data-animate="fade-in">Nous écrire</p>
+            <h1 class="page-title" data-animate="split-text">Parlons de votre projet.</h1>
             <p class="page-lead">
                 Un projet de construction, une étude de faisabilité, un conseil en investissement ?
                 Nous répondons sous 48 heures.
@@ -60,7 +115,7 @@
         <div class="container contact-grid">
 
             <div class="contact-form-wrapper">
-                <h2 class="section-title">Formulaire</h2>
+                <h2 class="section-title" data-animate="split-text">Formulaire</h2>
 
                 <form class="contact-form" id="contact-form" novalidate>
 

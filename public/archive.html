@@ -23,9 +23,14 @@
     <link rel="stylesheet" href="/css/tokens.css">
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/animations.css">
     <link rel="stylesheet" href="/css/archive.css">
 
-    <link rel="icon" type="image/png" href="/images/ui/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/images/ui/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/ui/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/ui/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/ui/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico">
 </head>
 
 <body class="archive-body">
@@ -51,6 +56,20 @@
         </button>
     </div>
 </header>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true" style="display:none; position:fixed; inset:0; z-index:1000; visibility:hidden;">
+    <nav class="mobile-nav-inner" aria-label="Navigation mobile">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item" style="--i:0"><a href="/" class="mobile-nav-link">Accueil</a></li>
+            <li class="mobile-nav-item" style="--i:1"><a href="/archive" class="mobile-nav-link">Tous les projets</a></li>
+            <li class="mobile-nav-item" style="--i:2"><a href="/agence" class="mobile-nav-link">Agence</a></li>
+            <li class="mobile-nav-item" style="--i:3"><a href="/contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <p class="mobile-nav-tagline">Building trust. Designing the future.</p>
+        </div>
+    </nav>
+</div>
 
 <main class="archive-main">
 
@@ -117,9 +136,9 @@
         <div class="footer-col">
             <p class="footer-col-title">Disciplines</p>
             <ul>
-                <li><a href="/?discipline=architecture">Architecture</a></li>
-                <li><a href="/?discipline=design">Design</a></li>
-                <li><a href="/?discipline=urbanisme">Urbanisme</a></li>
+                <li><a href="/archive?discipline=architecture">Architecture</a></li>
+                <li><a href="/archive?discipline=design">Design</a></li>
+                <li><a href="/archive?discipline=urbanisme">Urbanisme</a></li>
                 <li><a href="/archive">Archive complète</a></li>
             </ul>
         </div>

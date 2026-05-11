@@ -158,17 +158,22 @@
             goToSlide(newIndex);
         });
 
-        // Auto-play continu — pas de pause au survol (demande client)
+        // ============================================
+        // AUTO-PLAY : continu, JAMAIS de pause au survol
+        // Aucun event mouseenter/mouseleave sur le slider
+        // La pause ne se déclenche QUE si l'onglet est caché
+        // ============================================
         const slider = document.getElementById('hero-slider');
-        // slider.addEventListener('mouseenter', pauseAutoPlay);  // désactivé
-        // slider.addEventListener('mouseleave', resumeAutoPlay); // désactivé
 
-        // On garde la pause si l'onglet est caché (économie batterie + bonne pratique)
         document.addEventListener('visibilitychange', () => {
             if (document.hidden) {
-                pauseAutoPlay();
+                if (state.autoPlayTimer) {
+                    clearInterval(state.autoPlayTimer);
+                    state.autoPlayTimer = null;
+                }
             } else {
-                resumeAutoPlay();
+                // Reprise immédiate : on relance toujours, peu importe isPaused
+                startAutoPlay();
             }
         });
 
@@ -206,11 +211,9 @@
         state.sliderIndex = index;
         updateCTA(index);
 
-        // Reset le timer (l'utilisateur a interagi)
-        if (state.autoPlayTimer) {
-            clearInterval(state.autoPlayTimer);
-            if (!state.isPaused) startAutoPlay();
-        }
+        // Reset le timer pour redémarrer un cycle complet de 5s
+        // (toujours, peu importe isPaused — l'utilisateur veut juste reset le compteur)
+        startAutoPlay();
     }
 
     function updateCTA(index) {
@@ -222,6 +225,8 @@
     }
 
     function startAutoPlay() {
+        // Si tab caché, on n'essaie pas de démarrer
+        if (document.hidden) return;
         if (state.autoPlayTimer) clearInterval(state.autoPlayTimer);
         state.autoPlayTimer = setInterval(() => {
             const next = (state.sliderIndex + 1) % state.sliderProjects.length;
@@ -230,7 +235,6 @@
     }
 
     function pauseAutoPlay() {
-        state.isPaused = true;
         if (state.autoPlayTimer) {
             clearInterval(state.autoPlayTimer);
             state.autoPlayTimer = null;
@@ -238,7 +242,6 @@
     }
 
     function resumeAutoPlay() {
-        state.isPaused = false;
         startAutoPlay();
     }
 
@@ -284,8 +287,9 @@
     function createThumb(project) {
         const link = document.createElement('a');
         link.href = '/projet?id=' + encodeURIComponent(project.id);
-        link.className = 'thumb';
+        link.className = 'thumb thumb-cinematic';
         link.setAttribute('aria-label', `Voir le projet ${project.title}`);
+        link.setAttribute('data-animate', 'reveal-up');
 
         const imageUrl = window.MCJP.cloudinaryOptimize(project.cover, 800);
         const meta = [
@@ -294,7 +298,9 @@
         ].filter(Boolean).join(' · ');
 
         link.innerHTML = `
-      <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(project.title)}" class="thumb-image" loading="lazy">
+      <div class="thumb-image-wrap">
+        <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(project.title)}" class="thumb-image" loading="lazy">
+      </div>
       <div class="thumb-text">
         <p class="thumb-meta">${escapeHtml(meta)}</p>
         <h4 class="thumb-title">${escapeHtml(project.title)}</h4>
