@@ -8,96 +8,9 @@
     color: var(--color-text);
 }
 
-/* === HEADER === */
-.home-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: var(--z-header);
-    padding: var(--space-4) 0;
-    background-color: transparent;
-    transition: background-color var(--duration-base) var(--ease-out);
-}
-
-.home-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-            180deg,
-            rgba(10, 10, 10, 0.5) 0%,
-            rgba(10, 10, 10, 0) 100%
-    );
-    pointer-events: none;
-}
-
-/* Quand on scrolle au-delà du hero, le header devient blanc */
-.home-header.is-scrolled {
-    background-color: var(--color-bg);
-    border-bottom: 1px solid var(--color-border);
-}
-
-.home-header.is-scrolled::before {
-    display: none;
-}
-
-.home-header.is-scrolled .home-nav-link {
-    color: var(--color-text-secondary);
-}
-
-.home-header.is-scrolled .home-nav-link:hover {
-    color: var(--color-text);
-}
-
-.home-header.is-scrolled .menu-toggle span {
-    background-color: var(--color-text);
-}
-
-/* === NAV (Desktop only — mobile = #mobile-nav overlay) === */
-.home-nav { display: none; }
-
-.home-nav-list {
-    display: flex;
-    align-items: center;
-    gap: var(--space-6);
-}
-
-.home-nav-link {
-    font-size: var(--text-xs);
-    font-weight: var(--weight-medium);
-    letter-spacing: var(--tracking-wide);
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.85);
-    transition: color var(--duration-fast) var(--ease-out);
-    position: relative;
-}
-
-.home-nav-link:hover {
-    color: var(--color-white);
-}
-
-.home-nav-link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -4px;
-    height: 1px;
-    background-color: currentColor;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.home-nav-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-@media (min-width: 900px) {
-    .home-nav { display: block; }
-}
+/* === HEADER ===
+   Le header de la home est désormais géré par /css/nav.css
+   (classe .site-header--over-hero qui devient .is-scrolled au scroll) */
 
 /* ============================================
    SLIDER HERO

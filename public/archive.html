@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/archive.css">
 
     <link rel="icon" type="image/svg+xml" href="/images/ui/favicon.svg">
@@ -33,31 +34,30 @@
     <link rel="shortcut icon" href="/images/ui/favicon.ico">
 </head>
 
-<body class="archive-body">
+<body class="has-header-spacer archive-body">
 
 <!-- HEADER -->
-<header class="archive-header" id="site-header">
-    <div class="archive-header-inner">
+<header class="site-header" id="site-header">
+    <div class="site-header-inner">
         <a href="/" class="logo" aria-label="Mc.Johnson & Partners — Accueil">
             <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
         </a>
 
-        <nav class="archive-nav" aria-label="Navigation">
-            <ul>
-                <li><a href="/" class="nav-link">Accueil</a></li>
-                <li><a href="/archive" class="nav-link is-active">Archive</a></li>
-                <li><a href="/agence" class="nav-link">Agence</a></li>
-                <li><a href="/contact" class="nav-link">Contact</a></li>
+        <nav class="site-nav" aria-label="Navigation principale">
+            <ul class="site-nav-list">
+                <li><a href="/archive" class="site-nav-link is-active">Tous les projets</a></li>
+                <li><a href="/agence" class="site-nav-link">Agence</a></li>
+                <li><a href="/contact" class="site-nav-link">Contact</a></li>
             </ul>
         </nav>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <button class="site-burger" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
             <span></span><span></span><span></span>
         </button>
     </div>
 </header>
 
-<div class="mobile-nav" id="mobile-nav" aria-hidden="true" style="display:none; position:fixed; inset:0; z-index:1000; visibility:hidden;">
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true" style="display:none; position:fixed; inset:0; z-index:1100; visibility:hidden;">
     <nav class="mobile-nav-inner" aria-label="Navigation mobile">
         <ul class="mobile-nav-list">
             <li class="mobile-nav-item" style="--i:0"><a href="/" class="mobile-nav-link">Accueil</a></li>

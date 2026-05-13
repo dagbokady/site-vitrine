@@ -1,0 +1,411 @@
+/* ============================================
+   NAV.CSS — Barre de navigation unifiée
+
+   Sources des modes :
+   1. .site-header                 : nav fixe en haut, sur fond
+   2. .site-header--over-hero      : transparente sur fond hero (home, page projet)
+   3. .site-header.is-scrolled     : fond blanc + logo noir (au scroll)
+
+   Breakpoint unique : 768px
+   ============================================ */
+
+/* === HEADER (base) === */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: var(--color-bg, #FAFAF7);
+    border-bottom: 1px solid transparent;
+    transition: background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.site-header-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    height: 64px;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+}
+
+@media (min-width: 768px) {
+    .site-header-inner {
+        height: 72px;
+        gap: var(--space-6);
+    }
+}
+
+/* === LOGO === */
+.site-header .logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    flex-shrink: 0;
+    transition: opacity 0.2s ease;
+}
+
+.site-header .logo:hover {
+    opacity: 0.75;
+}
+
+.site-header .logo-text {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    padding: 4px 10px;
+    background-color: var(--color-black, #0A0A0A);
+    color: var(--color-white, #FFFFFF);
+    transition: background-color 0.35s ease, color 0.35s ease;
+    white-space: nowrap;
+}
+
+.site-header .logo-accent {
+    color: var(--color-accent, #E63A11);
+}
+
+@media (min-width: 768px) {
+    .site-header .logo-text {
+        font-size: 12px;
+        padding: 5px 12px;
+    }
+}
+
+/* === NAV LIENS (desktop) === */
+.site-nav {
+    display: none;
+}
+
+.site-nav-list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-nav-link {
+    position: relative;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-text, #0A0A0A);
+    text-decoration: none;
+    padding: 8px 0;
+    transition: color 0.25s ease;
+    white-space: nowrap;
+}
+
+.site-nav-link:hover,
+.site-nav-link.is-active {
+    color: var(--color-accent, #E63A11);
+}
+
+.site-nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-nav-link:hover::after,
+.site-nav-link.is-active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+@media (min-width: 768px) {
+    .site-nav {
+        display: block;
+    }
+    .site-nav-link {
+        font-size: 12px;
+    }
+}
+
+/* === MODE "TRANSPARENT AU-DESSUS DU HERO" === */
+/* Appliqué initialement quand le header est .site-header--over-hero
+   et qu'on n'a pas encore scrollé */
+.site-header--over-hero:not(.is-scrolled) {
+    background-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.site-header--over-hero:not(.is-scrolled) .site-nav-link {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.site-header--over-hero:not(.is-scrolled) .site-nav-link:hover,
+.site-header--over-hero:not(.is-scrolled) .site-nav-link.is-active {
+    color: var(--color-white, #FFFFFF);
+}
+
+/* Léger dégradé pour la lisibilité du logo blanc */
+.site-header--over-hero:not(.is-scrolled)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* === MODE "SCROLLED" (fond blanc + logo noir) === */
+.site-header.is-scrolled {
+    background-color: var(--color-bg, #FAFAF7);
+    border-bottom-color: rgba(0, 0, 0, 0.06);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.04);
+}
+
+.site-header.is-scrolled .site-nav-link {
+    color: var(--color-text, #0A0A0A);
+}
+
+.site-header.is-scrolled .site-nav-link:hover,
+.site-header.is-scrolled .site-nav-link.is-active {
+    color: var(--color-accent, #E63A11);
+}
+
+/* === BURGER (mobile uniquement) === */
+.site-burger {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1101;
+    flex-shrink: 0;
+}
+
+.site-burger span {
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    height: 2px;
+    background-color: var(--color-text, #0A0A0A);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.2s ease,
+    top 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.25s ease;
+    transform-origin: center;
+}
+
+.site-burger span:nth-child(1) { top: 11px; }
+.site-burger span:nth-child(2) { top: 15px; }
+.site-burger span:nth-child(3) { top: 19px; }
+
+.site-burger.is-active span:nth-child(1) {
+    top: 15px;
+    transform: rotate(45deg);
+}
+.site-burger.is-active span:nth-child(2) {
+    opacity: 0;
+}
+.site-burger.is-active span:nth-child(3) {
+    top: 15px;
+    transform: rotate(-45deg);
+}
+
+/* Couleur du burger selon le mode */
+.site-header--over-hero:not(.is-scrolled) .site-burger span {
+    background-color: var(--color-white, #FFFFFF);
+}
+
+.site-header.is-scrolled .site-burger span {
+    background-color: var(--color-text, #0A0A0A);
+}
+
+/* Quand le menu mobile est ouvert : croix toujours blanche */
+.site-burger.is-active span {
+    background-color: var(--color-white, #FFFFFF) !important;
+}
+
+/* Burger : visible uniquement <768px */
+@media (min-width: 768px) {
+    .site-burger {
+        display: none;
+    }
+}
+
+/* === LOGO COLORATION SELON MODE === */
+/* Mode over-hero : logo en blanc inversé */
+.site-header--over-hero:not(.is-scrolled) .logo-text {
+    background-color: var(--color-white, #FFFFFF);
+    color: var(--color-black, #0A0A0A);
+}
+
+/* === RESERVE D'ESPACE POUR LE HEADER FIXED === */
+/* À utiliser sur le body des pages SANS hero
+   (pour éviter que le contenu passe sous le header) */
+body.has-header-spacer {
+    padding-top: 64px;
+}
+
+@media (min-width: 768px) {
+    body.has-header-spacer {
+        padding-top: 72px;
+    }
+}
+
+/* ============================================
+   MOBILE NAV (overlay plein écran)
+   ============================================ */
+.mobile-nav {
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 1100 !important;
+    background-color: var(--color-black, #0A0A0A);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden !important;
+    clip-path: circle(0% at calc(100% - 36px) 36px);
+    transition: clip-path 0.6s cubic-bezier(0.77, 0, 0.175, 1),
+    opacity 0.3s ease,
+    visibility 0s linear 0.6s;
+}
+
+.mobile-nav.is-open {
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible !important;
+    clip-path: circle(150% at calc(100% - 36px) 36px);
+    transition: clip-path 0.6s cubic-bezier(0.77, 0, 0.175, 1),
+    opacity 0.3s ease,
+    visibility 0s linear 0s;
+}
+
+/* Desktop : mobile-nav cachée pour toujours */
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none !important;
+        visibility: hidden !important;
+    }
+}
+
+.mobile-nav-inner {
+    padding: 100px var(--space-6) var(--space-8);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.mobile-nav-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: calc(0.2s + var(--i, 0) * 0.08s);
+}
+
+.mobile-nav.is-open .mobile-nav-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mobile-nav-link {
+    display: block;
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    font-weight: 500;
+    color: var(--color-white, #FFFFFF);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    padding: var(--space-2) 0;
+    position: relative;
+    transition: color 0.3s ease, padding-left 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-accent, #E63A11);
+    transform: translateY(-50%);
+    transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:focus {
+    color: var(--color-accent, #E63A11);
+    padding-left: 28px;
+}
+
+.mobile-nav-link:hover::before,
+.mobile-nav-link:focus::before {
+    width: 18px;
+}
+
+.mobile-nav-footer {
+    opacity: 0;
+    transition: opacity 0.5s ease 0.6s;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: var(--space-4);
+}
+
+.mobile-nav.is-open .mobile-nav-footer {
+    opacity: 1;
+}
+
+.mobile-nav-tagline {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0;
+}
+
+/* === REDUCED MOTION === */
+@media (prefers-reduced-motion: reduce) {
+    .mobile-nav {
+        clip-path: none;
+        transition: opacity 0.2s ease, visibility 0s linear 0.2s;
+    }
+    .mobile-nav.is-open {
+        clip-path: none;
+        transition: opacity 0.2s ease, visibility 0s linear 0s;
+    }
+    .mobile-nav-item {
+        transition: opacity 0.2s ease;
+        transform: none;
+        transition-delay: 0s;
+    }
+    .site-header,
+    .site-nav-link,
+    .site-burger span {
+        transition: none !important;
+    }
+}

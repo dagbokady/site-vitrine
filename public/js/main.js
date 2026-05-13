@@ -75,12 +75,18 @@
 
     /* ============================================
        HEADER QUI SE TRANSFORME AU SCROLL
+       - Pages normales : passe en .is-scrolled dès 20px
+       - Pages over-hero (home, projet) : passe en .is-scrolled
+         quand on quitte la zone du hero (~80vh)
        ============================================ */
     const header = document.getElementById('site-header');
 
     if (header) {
+        const isOverHero = header.classList.contains('site-header--over-hero');
+        const threshold = isOverHero ? Math.round(window.innerHeight * 0.7) : 20;
+
         function updateHeader() {
-            if (window.scrollY > 20) {
+            if (window.scrollY > threshold) {
                 header.classList.add('is-scrolled');
             } else {
                 header.classList.remove('is-scrolled');

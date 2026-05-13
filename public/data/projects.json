@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastUpdate": "2026-05-11",
-    "version": 2,
+    "version": 3,
     "totalProjects": 60
   },
   "disciplines": [
@@ -104,37 +104,37 @@
         "Foster + Partners Africa"
       ],
       "description": "Centre commercial multi-niveaux avec hypermarché, 80 boutiques, restauration et cinéma multiplex.",
-      "cover": "https://picsum.photos/seed/mcjp131/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp131/2400/1400",
+          "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp231/1800/1200",
+          "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp331/1800/1200",
+          "image": "https://images.unsplash.com/photo-1466150036782-869a824aeb25?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp431/1400/900",
+              "url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp531/1400/900",
+              "url": "https://images.unsplash.com/photo-1564540583246-934409427776?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp631/1400/900",
+              "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -143,11 +143,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp731/1800/1200",
+              "url": "https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp831/1800/1200",
+              "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -176,37 +176,37 @@
         "Ingerop"
       ],
       "description": "Conception d'un parc industriel nouvelle génération : modularité, services partagés et infrastructures durables.",
-      "cover": "https://picsum.photos/seed/mcjp541/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1542359649-31e03cd4d909?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp541/2400/1400",
+          "image": "https://images.unsplash.com/photo-1542359649-31e03cd4d909?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp641/1800/1200",
+          "image": "https://images.unsplash.com/photo-1605651531144-51381895e23d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp741/1800/1200",
+          "image": "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp841/1400/900",
+              "url": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp941/1400/900",
+              "url": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1041/1400/900",
+              "url": "https://images.unsplash.com/photo-1496360166961-10a51d5f367a?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -215,11 +215,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1141/1800/1200",
+              "url": "https://images.unsplash.com/photo-1581088382814-2c5c2e0d9077?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1241/1800/1200",
+              "url": "https://images.unsplash.com/photo-1542359649-31e03cd4d909?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -248,37 +248,37 @@
         "Atelier Mathieu Forest"
       ],
       "description": "Projet lauréat du concours d'architecture pour la nouvelle cathédrale du diocèse, dialoguant avec la forêt classée du Banco.",
-      "cover": "https://picsum.photos/seed/mcjp41/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1545569310-2d8e3a3e3c44?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp41/2400/1400",
+          "image": "https://images.unsplash.com/photo-1545569310-2d8e3a3e3c44?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp141/1800/1200",
+          "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp241/1800/1200",
+          "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp341/1400/900",
+              "url": "https://images.unsplash.com/photo-1466150036782-869a824aeb25?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp441/1400/900",
+              "url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp541/1400/900",
+              "url": "https://images.unsplash.com/photo-1564540583246-934409427776?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -287,11 +287,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp641/1800/1200",
+              "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp741/1800/1200",
+              "url": "https://images.unsplash.com/photo-1545569310-2d8e3a3e3c44?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -318,37 +318,37 @@
       "role": "Urbaniste",
       "partners": [],
       "description": "Plan de restructuration d'un quartier informel dense, intégrant relogement, équipements publics et accès améliorés.",
-      "cover": "https://picsum.photos/seed/mcjp421/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp421/2400/1400",
+          "image": "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp521/1800/1200",
+          "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp621/1800/1200",
+          "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp721/1400/900",
+              "url": "https://images.unsplash.com/photo-1496360166961-10a51d5f367a?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp821/1400/900",
+              "url": "https://images.unsplash.com/photo-1581088382814-2c5c2e0d9077?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp921/1400/900",
+              "url": "https://images.unsplash.com/photo-1573108037329-37aa71b56c66?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -357,11 +357,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1021/1800/1200",
+              "url": "https://images.unsplash.com/photo-1561411493-2014b4b03cd6?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1121/1800/1200",
+              "url": "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -392,37 +392,37 @@
         "Cabinet Konaté"
       ],
       "description": "Pôle hospitalier régional intégrant urgences, maternité, chirurgie, oncologie et centre de formation médicale.",
-      "cover": "https://picsum.photos/seed/mcjp51/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1448630360428-65456885c650?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp51/2400/1400",
+          "image": "https://images.unsplash.com/photo-1448630360428-65456885c650?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp151/1800/1200",
+          "image": "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp251/1800/1200",
+          "image": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp351/1400/900",
+              "url": "https://images.unsplash.com/photo-1518306727298-4c17e1bf6947?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp451/1400/900",
+              "url": "https://images.unsplash.com/photo-1542621334-a254cf47733d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp551/1400/900",
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -431,11 +431,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp651/1800/1200",
+              "url": "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp751/1800/1200",
+              "url": "https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -465,37 +465,37 @@
         "Atelier Lion Associés"
       ],
       "description": "Création d'un nouveau pôle d'affaires secondaire pour décongestionner le Plateau : 800 000 m² de bureaux, hôtels et logements.",
-      "cover": "https://picsum.photos/seed/mcjp471/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp471/2400/1400",
+          "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp571/1800/1200",
+          "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp671/1800/1200",
+          "image": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp771/1400/900",
+              "url": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp871/1400/900",
+              "url": "https://images.unsplash.com/photo-1452796207087-bdf8ddc70d10?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp971/1400/900",
+              "url": "https://images.unsplash.com/photo-1577086664693-894d8405334a?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -504,11 +504,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1071/1800/1200",
+              "url": "https://images.unsplash.com/photo-1582394560340-3c7e88e7e94e?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1171/1800/1200",
+              "url": "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -521,7 +521,7 @@
     {
       "id": "scenographie-expo-racines",
       "slug": "scenographie-expo-racines",
-      "title": "Scénographie expo \"Racines\"",
+      "title": "Scénographie expo Racines",
       "subtitle": "Exposition art contemporain",
       "discipline": "design",
       "categories": [
@@ -535,37 +535,37 @@
       "role": "Scénographe",
       "partners": [],
       "description": "Scénographie d'une exposition consacrée aux artistes ivoiriens contemporains, parcours immersif sur 6 mois.",
-      "cover": "https://picsum.photos/seed/mcjp331/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1517387816985-0b8b97b1cd58?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp331/2400/1400",
+          "image": "https://images.unsplash.com/photo-1517387816985-0b8b97b1cd58?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp431/1800/1200",
+          "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp531/1800/1200",
+          "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp631/1400/900",
+              "url": "https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp731/1400/900",
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp831/1400/900",
+              "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -574,11 +574,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp931/1800/1200",
+              "url": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1031/1800/1200",
+              "url": "https://images.unsplash.com/photo-1517387816985-0b8b97b1cd58?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -605,37 +605,37 @@
       "role": "Urbaniste mandataire",
       "partners": [],
       "description": "Plan Directeur d'Urbanisme de la capitale du nord ivoirien, intégrant ses spécificités culturelles sénoufo et son rôle de carrefour régional.",
-      "cover": "https://picsum.photos/seed/mcjp491/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1531973486364-5fa64260d75b?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp491/2400/1400",
+          "image": "https://images.unsplash.com/photo-1531973486364-5fa64260d75b?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp591/1800/1200",
+          "image": "https://images.unsplash.com/photo-1571045287902-e2bb45c2b39f?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp691/1800/1200",
+          "image": "https://images.unsplash.com/photo-1565208128596-ce1444900b9d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp791/1400/900",
+              "url": "https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp891/1400/900",
+              "url": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp991/1400/900",
+              "url": "https://images.unsplash.com/photo-1474738361023-6acca72b3091?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -644,11 +644,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1091/1800/1200",
+              "url": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1191/1800/1200",
+              "url": "https://images.unsplash.com/photo-1531973486364-5fa64260d75b?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -679,37 +679,37 @@
         "Envol Capital"
       ],
       "description": "Projet PPP d'envergure nationale : campus universitaire public conçu pour accueillir 20 000 étudiants, inscrit au Plan National de Développement de la Côte d'Ivoire.",
-      "cover": "https://picsum.photos/seed/mcjp1/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp1/2400/1400",
+          "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp101/1800/1200",
+          "image": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp201/1800/1200",
+          "image": "https://images.unsplash.com/photo-1493606371202-6008c0c4435d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp301/1400/900",
+              "url": "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp401/1400/900",
+              "url": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp501/1400/900",
+              "url": "https://images.unsplash.com/photo-1582640044669-c4d9eb6cb476?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -718,11 +718,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp601/1800/1200",
+              "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp701/1800/1200",
+              "url": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -750,37 +750,37 @@
       "role": "Urbaniste",
       "partners": [],
       "description": "Éco-quartier mixte privilégiant mobilité douce, gestion des eaux pluviales et bâtiments bioclimatiques.",
-      "cover": "https://picsum.photos/seed/mcjp501/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1542223153-c373b71a93f9?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp501/2400/1400",
+          "image": "https://images.unsplash.com/photo-1542223153-c373b71a93f9?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp601/1800/1200",
+          "image": "https://images.unsplash.com/photo-1503424886307-b090341d25d1?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp701/1800/1200",
+          "image": "https://images.unsplash.com/photo-1517823382935-51bfcb0ec6bc?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp801/1400/900",
+              "url": "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp901/1400/900",
+              "url": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1001/1400/900",
+              "url": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -789,11 +789,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1101/1800/1200",
+              "url": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1201/1800/1200",
+              "url": "https://images.unsplash.com/photo-1542223153-c373b71a93f9?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -822,37 +822,37 @@
         "Christian de Portzamparc Atelier"
       ],
       "description": "Tour résidentielle premium de 96 appartements avec services hôteliers et toit-terrasse aménagé.",
-      "cover": "https://picsum.photos/seed/mcjp161/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp161/2400/1400",
+          "image": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp261/1800/1200",
+          "image": "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp361/1800/1200",
+          "image": "https://images.unsplash.com/photo-1545569310-2d8e3a3e3c44?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp461/1400/900",
+              "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp561/1400/900",
+              "url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp661/1400/900",
+              "url": "https://images.unsplash.com/photo-1466150036782-869a824aeb25?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -861,11 +861,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp761/1800/1200",
+              "url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp861/1800/1200",
+              "url": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -896,37 +896,37 @@
         "Systra"
       ],
       "description": "Étude d'urbanisme accompagnant l'implantation du futur Bus Rapid Transit : requalification des axes et valorisation foncière.",
-      "cover": "https://picsum.photos/seed/mcjp521/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1574786845126-71f3c5acb15d?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp521/2400/1400",
+          "image": "https://images.unsplash.com/photo-1574786845126-71f3c5acb15d?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp621/1800/1200",
+          "image": "https://images.unsplash.com/photo-1597211833712-5e41faa202ea?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp721/1800/1200",
+          "image": "https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp821/1400/900",
+              "url": "https://images.unsplash.com/photo-1531973486364-5fa64260d75b?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp921/1400/900",
+              "url": "https://images.unsplash.com/photo-1571045287902-e2bb45c2b39f?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1021/1400/900",
+              "url": "https://images.unsplash.com/photo-1565208128596-ce1444900b9d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -935,11 +935,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1121/1800/1200",
+              "url": "https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1221/1800/1200",
+              "url": "https://images.unsplash.com/photo-1574786845126-71f3c5acb15d?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -969,37 +969,37 @@
         "ADP Ingénierie"
       ],
       "description": "Aérogare régionale traduisant l'identité du nord ivoirien à travers ses matériaux locaux et sa toiture sculpturale.",
-      "cover": "https://picsum.photos/seed/mcjp151/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1582640044669-c4d9eb6cb476?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp151/2400/1400",
+          "image": "https://images.unsplash.com/photo-1582640044669-c4d9eb6cb476?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp251/1800/1200",
+          "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp351/1800/1200",
+          "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp451/1400/900",
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp551/1400/900",
+              "url": "https://images.unsplash.com/photo-1502672023488-70e25813eb80?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp651/1400/900",
+              "url": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1008,11 +1008,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp751/1800/1200",
+              "url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp851/1800/1200",
+              "url": "https://images.unsplash.com/photo-1582640044669-c4d9eb6cb476?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1025,7 +1025,7 @@
     {
       "id": "zac-de-l-aeroport-port-bouet",
       "slug": "zac-de-l-aeroport-port-bouet",
-      "title": "ZAC de l'aéroport — Port-Bouët",
+      "title": "ZAC de l'aéroport Port-Bouët",
       "subtitle": "Quartier mixte autour de l'aéroport",
       "discipline": "urbanisme",
       "categories": [
@@ -1040,37 +1040,37 @@
       "role": "Urbaniste",
       "partners": [],
       "description": "ZAC mixte autour de l'aéroport intégrant hôtels, bureaux, logements et services aéroportuaires.",
-      "cover": "https://picsum.photos/seed/mcjp561/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp561/2400/1400",
+          "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp661/1800/1200",
+          "image": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp761/1800/1200",
+          "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp861/1400/900",
+              "url": "https://images.unsplash.com/photo-1452796207087-bdf8ddc70d10?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp961/1400/900",
+              "url": "https://images.unsplash.com/photo-1577086664693-894d8405334a?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1061/1400/900",
+              "url": "https://images.unsplash.com/photo-1582394560340-3c7e88e7e94e?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1079,11 +1079,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1161/1800/1200",
+              "url": "https://images.unsplash.com/photo-1542223153-c373b71a93f9?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1261/1800/1200",
+              "url": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1096,7 +1096,7 @@
     {
       "id": "quartier-des-ambassades-cocody",
       "slug": "quartier-des-ambassades-cocody",
-      "title": "Quartier des Ambassades — Cocody",
+      "title": "Quartier des Ambassades Cocody",
       "subtitle": "Restructuration diplomatique",
       "discipline": "urbanisme",
       "categories": [
@@ -1110,37 +1110,37 @@
       "role": "Urbaniste",
       "partners": [],
       "description": "Restructuration du quartier diplomatique de Cocody : nouvelles ambassades, résidences et espaces protocolaires.",
-      "cover": "https://picsum.photos/seed/mcjp591/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1503424886307-b090341d25d1?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp591/2400/1400",
+          "image": "https://images.unsplash.com/photo-1503424886307-b090341d25d1?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp691/1800/1200",
+          "image": "https://images.unsplash.com/photo-1517823382935-51bfcb0ec6bc?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp791/1800/1200",
+          "image": "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp891/1400/900",
+              "url": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp991/1400/900",
+              "url": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1091/1400/900",
+              "url": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1149,11 +1149,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1191/1800/1200",
+              "url": "https://images.unsplash.com/photo-1452796207087-bdf8ddc70d10?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1291/1800/1200",
+              "url": "https://images.unsplash.com/photo-1503424886307-b090341d25d1?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1183,37 +1183,37 @@
         "Ingerop"
       ],
       "description": "Création ex-nihilo d'une ville nouvelle pour 80 000 habitants en bordure de la lagune Ébrié, polarisée autour d'un centre urbain dense.",
-      "cover": "https://picsum.photos/seed/mcjp441/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp441/2400/1400",
+          "image": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp541/1800/1200",
+          "image": "https://images.unsplash.com/photo-1452796207087-bdf8ddc70d10?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp641/1800/1200",
+          "image": "https://images.unsplash.com/photo-1577086664693-894d8405334a?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp741/1400/900",
+              "url": "https://images.unsplash.com/photo-1582394560340-3c7e88e7e94e?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp841/1400/900",
+              "url": "https://images.unsplash.com/photo-1542223153-c373b71a93f9?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp941/1400/900",
+              "url": "https://images.unsplash.com/photo-1503424886307-b090341d25d1?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1222,11 +1222,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1041/1800/1200",
+              "url": "https://images.unsplash.com/photo-1517823382935-51bfcb0ec6bc?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1141/1800/1200",
+              "url": "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1255,37 +1255,37 @@
         "Agence TER"
       ],
       "description": "Projet lauréat pour la création d'un parc lagunaire urbain : promenade, équipements sportifs, restauration et lieux de spectacle.",
-      "cover": "https://picsum.photos/seed/mcjp431/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp431/2400/1400",
+          "image": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp531/1800/1200",
+          "image": "https://images.unsplash.com/photo-1574786845126-71f3c5acb15d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp631/1800/1200",
+          "image": "https://images.unsplash.com/photo-1597211833712-5e41faa202ea?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp731/1400/900",
+              "url": "https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp831/1400/900",
+              "url": "https://images.unsplash.com/photo-1531973486364-5fa64260d75b?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp931/1400/900",
+              "url": "https://images.unsplash.com/photo-1571045287902-e2bb45c2b39f?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1294,11 +1294,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1031/1800/1200",
+              "url": "https://images.unsplash.com/photo-1565208128596-ce1444900b9d?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1131/1800/1200",
+              "url": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1326,37 +1326,37 @@
       "role": "Designer",
       "partners": [],
       "description": "Spa hôtelier de 8 cabines avec hammam, sauna et piscine intérieure, ambiance minérale et végétale.",
-      "cover": "https://picsum.photos/seed/mcjp271/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp271/2400/1400",
+          "image": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp371/1800/1200",
+          "image": "https://images.unsplash.com/photo-1551776235-dde6d4829808?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp471/1800/1200",
+          "image": "https://images.unsplash.com/photo-1604147495798-57beb5d6af73?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp571/1400/900",
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp671/1400/900",
+              "url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp771/1400/900",
+              "url": "https://images.unsplash.com/photo-1556909195-2a06b1ed8b9c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1365,11 +1365,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp871/1800/1200",
+              "url": "https://images.unsplash.com/photo-1542884748-2b87b36c6b90?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp971/1800/1200",
+              "url": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1396,37 +1396,37 @@
       "role": "Urbaniste-paysagiste",
       "partners": [],
       "description": "Réaménagement du front de mer historique de Grand-Bassam, classé UNESCO, sur 4,2 km de promenade publique.",
-      "cover": "https://picsum.photos/seed/mcjp461/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp461/2400/1400",
+          "image": "https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp561/1800/1200",
+          "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp661/1800/1200",
+          "image": "https://images.unsplash.com/photo-1474738361023-6acca72b3091?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp761/1400/900",
+              "url": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp861/1400/900",
+              "url": "https://images.unsplash.com/photo-1574786845126-71f3c5acb15d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp961/1400/900",
+              "url": "https://images.unsplash.com/photo-1597211833712-5e41faa202ea?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1435,11 +1435,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1061/1800/1200",
+              "url": "https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1161/1800/1200",
+              "url": "https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1467,37 +1467,37 @@
       "role": "Urbaniste",
       "partners": [],
       "description": "Plan masse d'une cité universitaire de 4 000 lits avec restauration, équipements sportifs et liaisons piétonnes au campus.",
-      "cover": "https://picsum.photos/seed/mcjp531/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1452796207087-bdf8ddc70d10?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp531/2400/1400",
+          "image": "https://images.unsplash.com/photo-1452796207087-bdf8ddc70d10?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp631/1800/1200",
+          "image": "https://images.unsplash.com/photo-1577086664693-894d8405334a?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp731/1800/1200",
+          "image": "https://images.unsplash.com/photo-1582394560340-3c7e88e7e94e?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp831/1400/900",
+              "url": "https://images.unsplash.com/photo-1542223153-c373b71a93f9?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp931/1400/900",
+              "url": "https://images.unsplash.com/photo-1503424886307-b090341d25d1?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1031/1400/900",
+              "url": "https://images.unsplash.com/photo-1517823382935-51bfcb0ec6bc?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1506,11 +1506,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1131/1800/1200",
+              "url": "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1231/1800/1200",
+              "url": "https://images.unsplash.com/photo-1452796207087-bdf8ddc70d10?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1540,37 +1540,37 @@
         "Cabinet Adjarho"
       ],
       "description": "Schéma directeur communal à horizon 2040 pour la plus grande commune d'Abidjan, intégrant mobilité, logement et équipements.",
-      "cover": "https://picsum.photos/seed/mcjp411/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1582394560340-3c7e88e7e94e?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp411/2400/1400",
+          "image": "https://images.unsplash.com/photo-1582394560340-3c7e88e7e94e?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp511/1800/1200",
+          "image": "https://images.unsplash.com/photo-1542223153-c373b71a93f9?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp611/1800/1200",
+          "image": "https://images.unsplash.com/photo-1503424886307-b090341d25d1?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp711/1400/900",
+              "url": "https://images.unsplash.com/photo-1517823382935-51bfcb0ec6bc?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp811/1400/900",
+              "url": "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp911/1400/900",
+              "url": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1579,11 +1579,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1011/1800/1200",
+              "url": "https://images.unsplash.com/photo-1473042904451-00171c69419d?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1111/1800/1200",
+              "url": "https://images.unsplash.com/photo-1582394560340-3c7e88e7e94e?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1611,37 +1611,37 @@
       "role": "Designer mandataire",
       "partners": [],
       "description": "Refonte complète de la suite présidentielle, mêlant codes du luxe parisien et art contemporain ivoirien.",
-      "cover": "https://picsum.photos/seed/mcjp211/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp211/2400/1400",
+          "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp311/1800/1200",
+          "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp411/1800/1200",
+          "image": "https://images.unsplash.com/photo-1517387816985-0b8b97b1cd58?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp511/1400/900",
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp611/1400/900",
+              "url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp711/1400/900",
+              "url": "https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1650,11 +1650,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp811/1800/1200",
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp911/1800/1200",
+              "url": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1681,37 +1681,37 @@
       "role": "Designer",
       "partners": [],
       "description": "Aménagement du cabinet d'avocats : accueil, 8 bureaux d'associés, salles de réunion et bibliothèque juridique.",
-      "cover": "https://picsum.photos/seed/mcjp381/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp381/2400/1400",
+          "image": "https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp481/1800/1200",
+          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp581/1800/1200",
+          "image": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp681/1400/900",
+              "url": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp781/1400/900",
+              "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp881/1400/900",
+              "url": "https://images.unsplash.com/photo-1564540583246-934409427776?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1720,11 +1720,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp981/1800/1200",
+              "url": "https://images.unsplash.com/photo-1503602642458-232111445657?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1081/1800/1200",
+              "url": "https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1737,7 +1737,7 @@
     {
       "id": "mobilier-sur-mesure-villa-cap-saint-jacques",
       "slug": "mobilier-sur-mesure-villa-cap-saint-jacques",
-      "title": "Mobilier sur mesure — Villa Cap Saint-Jacques",
+      "title": "Mobilier sur mesure Villa Cap Saint-Jacques",
       "subtitle": "Mobilier de prestige, 14 pièces",
       "discipline": "design",
       "categories": [
@@ -1754,37 +1754,37 @@
         "Ébénisterie Koffi"
       ],
       "description": "Création de 14 pièces de mobilier sur mesure (table, bibliothèque, lit, chaises) en bois précieux ivoirien.",
-      "cover": "https://picsum.photos/seed/mcjp351/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp351/2400/1400",
+          "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp451/1800/1200",
+          "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp551/1800/1200",
+          "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp651/1400/900",
+              "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp751/1400/900",
+              "url": "https://images.unsplash.com/photo-1517387816985-0b8b97b1cd58?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp851/1400/900",
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1793,11 +1793,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp951/1800/1200",
+              "url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1051/1800/1200",
+              "url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1826,37 +1826,37 @@
         "L'AUC"
       ],
       "description": "Schéma directeur du Plateau à horizon 2035 : densification raisonnée, espaces publics et mise en valeur du patrimoine architectural.",
-      "cover": "https://picsum.photos/seed/mcjp551/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp551/2400/1400",
+          "image": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp651/1800/1200",
+          "image": "https://images.unsplash.com/photo-1474738361023-6acca72b3091?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp751/1800/1200",
+          "image": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp851/1400/900",
+              "url": "https://images.unsplash.com/photo-1574786845126-71f3c5acb15d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp951/1400/900",
+              "url": "https://images.unsplash.com/photo-1597211833712-5e41faa202ea?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1051/1400/900",
+              "url": "https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1865,11 +1865,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1151/1800/1200",
+              "url": "https://images.unsplash.com/photo-1531973486364-5fa64260d75b?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1251/1800/1200",
+              "url": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1898,37 +1898,37 @@
         "Atelier Senso Paris"
       ],
       "description": "Multiplexe culturel comprenant 6 salles de projection, espaces d'exposition et résidences pour cinéastes.",
-      "cover": "https://picsum.photos/seed/mcjp101/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp101/2400/1400",
+          "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp201/1800/1200",
+          "image": "https://images.unsplash.com/photo-1564540583246-934409427776?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp301/1800/1200",
+          "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp401/1400/900",
+              "url": "https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp501/1400/900",
+              "url": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp601/1400/900",
+              "url": "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -1937,11 +1937,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp701/1800/1200",
+              "url": "https://images.unsplash.com/photo-1545569310-2d8e3a3e3c44?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp801/1800/1200",
+              "url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -1969,37 +1969,37 @@
       "role": "Urbaniste",
       "partners": [],
       "description": "Restructuration du centre historique d'Abengourou, valorisation du patrimoine colonial et création d'espaces publics piétonniers.",
-      "cover": "https://picsum.photos/seed/mcjp511/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp511/2400/1400",
+          "image": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp611/1800/1200",
+          "image": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp711/1800/1200",
+          "image": "https://images.unsplash.com/photo-1496360166961-10a51d5f367a?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp811/1400/900",
+              "url": "https://images.unsplash.com/photo-1581088382814-2c5c2e0d9077?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp911/1400/900",
+              "url": "https://images.unsplash.com/photo-1573108037329-37aa71b56c66?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1011/1400/900",
+              "url": "https://images.unsplash.com/photo-1561411493-2014b4b03cd6?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2008,11 +2008,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1111/1800/1200",
+              "url": "https://images.unsplash.com/photo-1474564330163-c4f1c5e63f3f?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1211/1800/1200",
+              "url": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2041,37 +2041,37 @@
         "Studio Arcad Paris"
       ],
       "description": "Hôtel de luxe en bord de lagune avec spa, piscine à débordement, salles de conférences et restaurants gastronomiques.",
-      "cover": "https://picsum.photos/seed/mcjp31/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp31/2400/1400",
+          "image": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp131/1800/1200",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp231/1800/1200",
+          "image": "https://images.unsplash.com/photo-1502672023488-70e25813eb80?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp331/1400/900",
+              "url": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp431/1400/900",
+              "url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp531/1400/900",
+              "url": "https://images.unsplash.com/photo-1493606371202-6008c0c4435d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2080,11 +2080,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp631/1800/1200",
+              "url": "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp731/1800/1200",
+              "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2111,37 +2111,37 @@
       "role": "Designer",
       "partners": [],
       "description": "Appartement haussmannien repensé pour un couple de collectionneurs, valorisant moulures d'origine et art contemporain.",
-      "cover": "https://picsum.photos/seed/mcjp241/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp241/2400/1400",
+          "image": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp341/1800/1200",
+          "image": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp441/1800/1200",
+          "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp541/1400/900",
+              "url": "https://images.unsplash.com/photo-1564540583246-934409427776?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp641/1400/900",
+              "url": "https://images.unsplash.com/photo-1503602642458-232111445657?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp741/1400/900",
+              "url": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2150,11 +2150,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp841/1800/1200",
+              "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp941/1800/1200",
+              "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2181,37 +2181,37 @@
       "role": "Designer",
       "partners": [],
       "description": "Réhabilitation d'un loft industriel, jeu sur les volumes et la lumière naturelle, mobilier sur mesure.",
-      "cover": "https://picsum.photos/seed/mcjp301/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp301/2400/1400",
+          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp401/1800/1200",
+          "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp501/1800/1200",
+          "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp601/1400/900",
+              "url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp701/1400/900",
+              "url": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp801/1400/900",
+              "url": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2220,11 +2220,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp901/1800/1200",
+              "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1001/1800/1200",
+              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2253,37 +2253,37 @@
         "Atelier Castro Denissof"
       ],
       "description": "Plan d'aménagement d'une nouvelle ZAC mixte intégrant 4 000 logements, équipements scolaires, commerces et 35 ha d'espaces verts.",
-      "cover": "https://picsum.photos/seed/mcjp401/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp401/2400/1400",
+          "image": "https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp501/1800/1200",
+          "image": "https://images.unsplash.com/photo-1531973486364-5fa64260d75b?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp601/1800/1200",
+          "image": "https://images.unsplash.com/photo-1571045287902-e2bb45c2b39f?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp701/1400/900",
+              "url": "https://images.unsplash.com/photo-1565208128596-ce1444900b9d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp801/1400/900",
+              "url": "https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp901/1400/900",
+              "url": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2292,11 +2292,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1001/1800/1200",
+              "url": "https://images.unsplash.com/photo-1474738361023-6acca72b3091?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1101/1800/1200",
+              "url": "https://images.unsplash.com/photo-1444084316824-dc26d6657664?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2324,37 +2324,37 @@
       "role": "Urbaniste",
       "partners": [],
       "description": "Schéma directeur d'aménagement balnéaire de la côte sud-ouest, intégrant éco-resorts et préservation du littoral.",
-      "cover": "https://picsum.photos/seed/mcjp581/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1571045287902-e2bb45c2b39f?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp581/2400/1400",
+          "image": "https://images.unsplash.com/photo-1571045287902-e2bb45c2b39f?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp681/1800/1200",
+          "image": "https://images.unsplash.com/photo-1565208128596-ce1444900b9d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp781/1800/1200",
+          "image": "https://images.unsplash.com/photo-1551431009-a802eeec77b1?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp881/1400/900",
+              "url": "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp981/1400/900",
+              "url": "https://images.unsplash.com/photo-1474738361023-6acca72b3091?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1081/1400/900",
+              "url": "https://images.unsplash.com/photo-1518391846015-55a9cc003b25?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2363,11 +2363,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1181/1800/1200",
+              "url": "https://images.unsplash.com/photo-1574786845126-71f3c5acb15d?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1281/1800/1200",
+              "url": "https://images.unsplash.com/photo-1571045287902-e2bb45c2b39f?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2395,37 +2395,37 @@
       "role": "Architecte mandataire",
       "partners": [],
       "description": "Pavillon national lauréat du concours pour l'Exposition Universelle d'Osaka, célébrant le savoir-faire ivoirien.",
-      "cover": "https://picsum.photos/seed/mcjp181/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1493606371202-6008c0c4435d?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp181/2400/1400",
+          "image": "https://images.unsplash.com/photo-1493606371202-6008c0c4435d?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp281/1800/1200",
+          "image": "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp381/1800/1200",
+          "image": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp481/1400/900",
+              "url": "https://images.unsplash.com/photo-1582640044669-c4d9eb6cb476?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp581/1400/900",
+              "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp681/1400/900",
+              "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2434,11 +2434,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp781/1800/1200",
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp881/1800/1200",
+              "url": "https://images.unsplash.com/photo-1493606371202-6008c0c4435d?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2468,37 +2468,37 @@
         "BET Sogea-Satom"
       ],
       "description": "Tour signal du nouveau quartier d'affaires du Plateau, mêlant 18 niveaux de bureaux et 14 niveaux de résidences premium avec vue sur la lagune Ébrié.",
-      "cover": "https://picsum.photos/seed/mcjp11/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1466150036782-869a824aeb25?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp11/2400/1400",
+          "image": "https://images.unsplash.com/photo-1466150036782-869a824aeb25?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp111/1800/1200",
+          "image": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp211/1800/1200",
+          "image": "https://images.unsplash.com/photo-1564540583246-934409427776?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp311/1400/900",
+              "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp411/1400/900",
+              "url": "https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp511/1400/900",
+              "url": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2507,11 +2507,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp611/1800/1200",
+              "url": "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp711/1800/1200",
+              "url": "https://images.unsplash.com/photo-1466150036782-869a824aeb25?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2538,37 +2538,37 @@
       "role": "Architecte mandataire",
       "partners": [],
       "description": "Stade omnisports avec tribunes couvertes, piste d'athlétisme et complexe d'entraînement intégré.",
-      "cover": "https://picsum.photos/seed/mcjp81/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp81/2400/1400",
+          "image": "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp181/1800/1200",
+          "image": "https://images.unsplash.com/photo-1493932484895-d4cc3e0e7e84?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp281/1800/1200",
+          "image": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp381/1400/900",
+              "url": "https://images.unsplash.com/photo-1448630360428-65456885c650?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp481/1400/900",
+              "url": "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp581/1400/900",
+              "url": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2577,11 +2577,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp681/1800/1200",
+              "url": "https://images.unsplash.com/photo-1518306727298-4c17e1bf6947?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp781/1800/1200",
+              "url": "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2610,37 +2610,37 @@
         "Atelier d'Architecture Pierre Fakhoury"
       ],
       "description": "Nouveau siège social de la Banque Atlantique avec atrium central, salle des marchés et toit-terrasse panoramique.",
-      "cover": "https://picsum.photos/seed/mcjp71/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp71/2400/1400",
+          "image": "https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp171/1800/1200",
+          "image": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp271/1800/1200",
+          "image": "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp371/1400/900",
+              "url": "https://images.unsplash.com/photo-1545569310-2d8e3a3e3c44?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp471/1400/900",
+              "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp571/1400/900",
+              "url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2649,11 +2649,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp671/1800/1200",
+              "url": "https://images.unsplash.com/photo-1466150036782-869a824aeb25?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp771/1800/1200",
+              "url": "https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2680,37 +2680,37 @@
       "role": "Architecte",
       "partners": [],
       "description": "Villa contemporaine en L sur le parcours de golf, jouant sur la transparence entre les espaces de vie et le paysage.",
-      "cover": "https://picsum.photos/seed/mcjp121/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp121/2400/1400",
+          "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp221/1800/1200",
+          "image": "https://images.unsplash.com/photo-1502672023488-70e25813eb80?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp321/1800/1200",
+          "image": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp421/1400/900",
+              "url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp521/1400/900",
+              "url": "https://images.unsplash.com/photo-1493606371202-6008c0c4435d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp621/1400/900",
+              "url": "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2719,11 +2719,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp721/1800/1200",
+              "url": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp821/1800/1200",
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2751,37 +2751,37 @@
       "role": "Designer d'espace",
       "partners": [],
       "description": "Café-torréfaction au cœur du Plateau, mêlant matériaux bruts (béton ciré, acier) et chaleur du bois de bilinga local.",
-      "cover": "https://picsum.photos/seed/mcjp201/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1551776235-dde6d4829808?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp201/2400/1400",
+          "image": "https://images.unsplash.com/photo-1551776235-dde6d4829808?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp301/1800/1200",
+          "image": "https://images.unsplash.com/photo-1604147495798-57beb5d6af73?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp401/1800/1200",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp501/1400/900",
+              "url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp601/1400/900",
+              "url": "https://images.unsplash.com/photo-1556909195-2a06b1ed8b9c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp701/1400/900",
+              "url": "https://images.unsplash.com/photo-1542884748-2b87b36c6b90?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2790,11 +2790,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp801/1800/1200",
+              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp901/1800/1200",
+              "url": "https://images.unsplash.com/photo-1551776235-dde6d4829808?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2821,37 +2821,37 @@
       "role": "Designer",
       "partners": [],
       "description": "Aménagement de l'étage de direction avec bureaux exécutifs, salles de conseil et lounges informels.",
-      "cover": "https://picsum.photos/seed/mcjp341/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp341/2400/1400",
+          "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp441/1800/1200",
+          "image": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp541/1800/1200",
+          "image": "https://images.unsplash.com/photo-1551776235-dde6d4829808?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp641/1400/900",
+              "url": "https://images.unsplash.com/photo-1604147495798-57beb5d6af73?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp741/1400/900",
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp841/1400/900",
+              "url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2860,11 +2860,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp941/1800/1200",
+              "url": "https://images.unsplash.com/photo-1556909195-2a06b1ed8b9c?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1041/1800/1200",
+              "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2892,37 +2892,37 @@
       "role": "Architecte",
       "partners": [],
       "description": "Bibliothèque universitaire à la double peau, alliant lecture, espaces collaboratifs et patio planté.",
-      "cover": "https://picsum.photos/seed/mcjp171/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1493932484895-d4cc3e0e7e84?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp171/2400/1400",
+          "image": "https://images.unsplash.com/photo-1493932484895-d4cc3e0e7e84?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp271/1800/1200",
+          "image": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp371/1800/1200",
+          "image": "https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp471/1400/900",
+              "url": "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp571/1400/900",
+              "url": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp671/1400/900",
+              "url": "https://images.unsplash.com/photo-1518306727298-4c17e1bf6947?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -2931,11 +2931,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp771/1800/1200",
+              "url": "https://images.unsplash.com/photo-1542621334-a254cf47733d?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp871/1800/1200",
+              "url": "https://images.unsplash.com/photo-1493932484895-d4cc3e0e7e84?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -2962,37 +2962,37 @@
       "role": "Architecte de conception",
       "partners": [],
       "description": "Ensemble résidentiel de 60 appartements organisés autour d'un patio planté, livré en 2023 dans le quartier résidentiel de Cocody.",
-      "cover": "https://picsum.photos/seed/mcjp21/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1518306727298-4c17e1bf6947?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp21/2400/1400",
+          "image": "https://images.unsplash.com/photo-1518306727298-4c17e1bf6947?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp121/1800/1200",
+          "image": "https://images.unsplash.com/photo-1542621334-a254cf47733d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp221/1800/1200",
+          "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp321/1400/900",
+              "url": "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp421/1400/900",
+              "url": "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp521/1400/900",
+              "url": "https://images.unsplash.com/photo-1493932484895-d4cc3e0e7e84?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3001,11 +3001,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp621/1800/1200",
+              "url": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp721/1800/1200",
+              "url": "https://images.unsplash.com/photo-1518306727298-4c17e1bf6947?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3016,9 +3016,9 @@
       "createdAt": "2023-05-08"
     },
     {
-      "id": "suite-medicale-polyclinique-des-ii-plateaux",
-      "slug": "suite-medicale-polyclinique-des-ii-plateaux",
-      "title": "Suite Médicale Polyclinique des II Plateaux",
+      "id": "suite-medicale-polyclinique-ii-plateaux",
+      "slug": "suite-medicale-polyclinique-ii-plateaux",
+      "title": "Suite Médicale Polyclinique II Plateaux",
       "subtitle": "Hôpital privé, suites VIP",
       "discipline": "design",
       "categories": [
@@ -3033,37 +3033,37 @@
       "role": "Designer associé",
       "partners": [],
       "description": "12 suites médicales VIP pensées comme des chambres d'hôtel haut de gamme, alliant confort patient et exigences hospitalières.",
-      "cover": "https://picsum.photos/seed/mcjp391/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1604147495798-57beb5d6af73?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp391/2400/1400",
+          "image": "https://images.unsplash.com/photo-1604147495798-57beb5d6af73?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp491/1800/1200",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp591/1800/1200",
+          "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp691/1400/900",
+              "url": "https://images.unsplash.com/photo-1556909195-2a06b1ed8b9c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp791/1400/900",
+              "url": "https://images.unsplash.com/photo-1542884748-2b87b36c6b90?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp891/1400/900",
+              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3072,11 +3072,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp991/1800/1200",
+              "url": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1091/1800/1200",
+              "url": "https://images.unsplash.com/photo-1604147495798-57beb5d6af73?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3103,37 +3103,37 @@
       "role": "Designer d'espace",
       "partners": [],
       "description": "Restaurant signature en bord de lagune, scénographie immersive jouant sur les reflets et l'éclairage tamisé.",
-      "cover": "https://picsum.photos/seed/mcjp221/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1503602642458-232111445657?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp221/2400/1400",
+          "image": "https://images.unsplash.com/photo-1503602642458-232111445657?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp321/1800/1200",
+          "image": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp421/1800/1200",
+          "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp521/1400/900",
+              "url": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp621/1400/900",
+              "url": "https://images.unsplash.com/photo-1551776235-dde6d4829808?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp721/1400/900",
+              "url": "https://images.unsplash.com/photo-1604147495798-57beb5d6af73?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3142,11 +3142,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp821/1800/1200",
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp921/1800/1200",
+              "url": "https://images.unsplash.com/photo-1503602642458-232111445657?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3173,37 +3173,37 @@
       "role": "Urbaniste mandataire",
       "partners": [],
       "description": "Plan Directeur d'Urbanisme de la ville portuaire de San-Pédro, intégrant développement industriel, logement et patrimoine balnéaire.",
-      "cover": "https://picsum.photos/seed/mcjp451/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1474564330163-c4f1c5e63f3f?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp451/2400/1400",
+          "image": "https://images.unsplash.com/photo-1474564330163-c4f1c5e63f3f?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp551/1800/1200",
+          "image": "https://images.unsplash.com/photo-1542359649-31e03cd4d909?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp651/1800/1200",
+          "image": "https://images.unsplash.com/photo-1605651531144-51381895e23d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp751/1400/900",
+              "url": "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp851/1400/900",
+              "url": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp951/1400/900",
+              "url": "https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3212,11 +3212,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1051/1800/1200",
+              "url": "https://images.unsplash.com/photo-1496360166961-10a51d5f367a?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1151/1800/1200",
+              "url": "https://images.unsplash.com/photo-1474564330163-c4f1c5e63f3f?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3244,37 +3244,37 @@
       "role": "Designer mandataire",
       "partners": [],
       "description": "Salon premium pour passagers Business et First, dialogue entre matériaux nobles et identité ivoirienne contemporaine.",
-      "cover": "https://picsum.photos/seed/mcjp311/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp311/2400/1400",
+          "image": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp411/1800/1200",
+          "image": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp511/1800/1200",
+          "image": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp611/1400/900",
+              "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp711/1400/900",
+              "url": "https://images.unsplash.com/photo-1564540583246-934409427776?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp811/1400/900",
+              "url": "https://images.unsplash.com/photo-1503602642458-232111445657?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3283,11 +3283,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp911/1800/1200",
+              "url": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1011/1800/1200",
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3316,37 +3316,37 @@
         "Wilmotte & Associés"
       ],
       "description": "Refonte du lobby et bar du Pullman Abidjan, scénarisation des arrivées et création d'un lounge signature.",
-      "cover": "https://picsum.photos/seed/mcjp251/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp251/2400/1400",
+          "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp351/1800/1200",
+          "image": "https://images.unsplash.com/photo-1556909195-2a06b1ed8b9c?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp451/1800/1200",
+          "image": "https://images.unsplash.com/photo-1542884748-2b87b36c6b90?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp551/1400/900",
+              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp651/1400/900",
+              "url": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp751/1400/900",
+              "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3355,11 +3355,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp851/1800/1200",
+              "url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp951/1800/1200",
+              "url": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3386,37 +3386,37 @@
       "role": "Designer",
       "partners": [],
       "description": "Restaurant japonais minimaliste avec comptoir omakase, bar à saké et salle privative tatami.",
-      "cover": "https://picsum.photos/seed/mcjp361/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp361/2400/1400",
+          "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp461/1800/1200",
+          "image": "https://images.unsplash.com/photo-1564540583246-934409427776?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp561/1800/1200",
+          "image": "https://images.unsplash.com/photo-1503602642458-232111445657?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp661/1400/900",
+              "url": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp761/1400/900",
+              "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp861/1400/900",
+              "url": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3425,11 +3425,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp961/1800/1200",
+              "url": "https://images.unsplash.com/photo-1551776235-dde6d4829808?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1061/1800/1200",
+              "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3456,37 +3456,37 @@
       "role": "Designer",
       "partners": [],
       "description": "Aménagement des espaces de travail flex, salles de réunion et zones collaboratives sur 4 plateaux.",
-      "cover": "https://picsum.photos/seed/mcjp281/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp281/2400/1400",
+          "image": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp381/1800/1200",
+          "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp481/1800/1200",
+          "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp581/1400/900",
+              "url": "https://images.unsplash.com/photo-1517387816985-0b8b97b1cd58?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp681/1400/900",
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp781/1400/900",
+              "url": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3495,11 +3495,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp881/1800/1200",
+              "url": "https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp981/1800/1200",
+              "url": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3526,37 +3526,37 @@
       "role": "Urbaniste",
       "partners": [],
       "description": "Aménagement du front lagunaire de Cocody : promenade, ponton, espaces de loisirs et équipements culturels.",
-      "cover": "https://picsum.photos/seed/mcjp571/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1573108037329-37aa71b56c66?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp571/2400/1400",
+          "image": "https://images.unsplash.com/photo-1573108037329-37aa71b56c66?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp671/1800/1200",
+          "image": "https://images.unsplash.com/photo-1561411493-2014b4b03cd6?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp771/1800/1200",
+          "image": "https://images.unsplash.com/photo-1474564330163-c4f1c5e63f3f?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp871/1400/900",
+              "url": "https://images.unsplash.com/photo-1542359649-31e03cd4d909?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp971/1400/900",
+              "url": "https://images.unsplash.com/photo-1605651531144-51381895e23d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1071/1400/900",
+              "url": "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3565,11 +3565,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1171/1800/1200",
+              "url": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1271/1800/1200",
+              "url": "https://images.unsplash.com/photo-1573108037329-37aa71b56c66?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3596,37 +3596,37 @@
       "role": "Architecte",
       "partners": [],
       "description": "Mosquée contemporaine intégrant deux minarets, salle de prière principale et école coranique.",
-      "cover": "https://picsum.photos/seed/mcjp141/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp141/2400/1400",
+          "image": "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp241/1800/1200",
+          "image": "https://images.unsplash.com/photo-1531835551805-16d864c8d311?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp341/1800/1200",
+          "image": "https://images.unsplash.com/photo-1518306727298-4c17e1bf6947?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp441/1400/900",
+              "url": "https://images.unsplash.com/photo-1542621334-a254cf47733d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp541/1400/900",
+              "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp641/1400/900",
+              "url": "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3635,11 +3635,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp741/1800/1200",
+              "url": "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp841/1800/1200",
+              "url": "https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3667,37 +3667,37 @@
       "role": "Designer",
       "partners": [],
       "description": "Concept store dédié à l'artisanat ivoirien contemporain, scénographie évolutive autour de podiums modulaires.",
-      "cover": "https://picsum.photos/seed/mcjp371/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1542884748-2b87b36c6b90?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp371/2400/1400",
+          "image": "https://images.unsplash.com/photo-1542884748-2b87b36c6b90?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp471/1800/1200",
+          "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp571/1800/1200",
+          "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp671/1400/900",
+              "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp771/1400/900",
+              "url": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp871/1400/900",
+              "url": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3706,11 +3706,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp971/1800/1200",
+              "url": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1071/1800/1200",
+              "url": "https://images.unsplash.com/photo-1542884748-2b87b36c6b90?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3737,37 +3737,37 @@
       "role": "Architecte",
       "partners": [],
       "description": "Lycée technique organisé autour d'une cour centrale, intégrant ateliers professionnels, internat et infrastructures sportives.",
-      "cover": "https://picsum.photos/seed/mcjp111/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1542621334-a254cf47733d?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp111/2400/1400",
+          "image": "https://images.unsplash.com/photo-1542621334-a254cf47733d?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp211/1800/1200",
+          "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp311/1800/1200",
+          "image": "https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp411/1400/900",
+              "url": "https://images.unsplash.com/photo-1483366774565-c783b9f70e2c?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp511/1400/900",
+              "url": "https://images.unsplash.com/photo-1493932484895-d4cc3e0e7e84?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp611/1400/900",
+              "url": "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3776,11 +3776,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp711/1800/1200",
+              "url": "https://images.unsplash.com/photo-1448630360428-65456885c650?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp811/1800/1200",
+              "url": "https://images.unsplash.com/photo-1542621334-a254cf47733d?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3807,37 +3807,37 @@
       "role": "Architecte",
       "partners": [],
       "description": "Villa contemporaine sur un terrain en pente, ouvrant ses volumes sur le jardin tropical et la piscine miroir.",
-      "cover": "https://picsum.photos/seed/mcjp61/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp61/2400/1400",
+          "image": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp161/1800/1200",
+          "image": "https://images.unsplash.com/photo-1582640044669-c4d9eb6cb476?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp261/1800/1200",
+          "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp361/1400/900",
+              "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp461/1400/900",
+              "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp561/1400/900",
+              "url": "https://images.unsplash.com/photo-1502672023488-70e25813eb80?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3846,11 +3846,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp661/1800/1200",
+              "url": "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp761/1800/1200",
+              "url": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3877,37 +3877,37 @@
       "role": "Designer",
       "partners": [],
       "description": "Restaurant de cuisine ivoirienne contemporaine, scénographie inspirée des marchés et des étoffes traditionnelles.",
-      "cover": "https://picsum.photos/seed/mcjp291/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1564540583246-934409427776?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp291/2400/1400",
+          "image": "https://images.unsplash.com/photo-1564540583246-934409427776?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp391/1800/1200",
+          "image": "https://images.unsplash.com/photo-1503602642458-232111445657?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp491/1800/1200",
+          "image": "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp591/1400/900",
+              "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp691/1400/900",
+              "url": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp791/1400/900",
+              "url": "https://images.unsplash.com/photo-1551776235-dde6d4829808?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3916,11 +3916,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp891/1800/1200",
+              "url": "https://images.unsplash.com/photo-1604147495798-57beb5d6af73?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp991/1800/1200",
+              "url": "https://images.unsplash.com/photo-1564540583246-934409427776?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -3948,37 +3948,37 @@
       "role": "Designer mandataire",
       "partners": [],
       "description": "Showroom BMW au standard international, intégrant espaces de vente, atelier et café client.",
-      "cover": "https://picsum.photos/seed/mcjp261/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp261/2400/1400",
+          "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp361/1800/1200",
+          "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp461/1800/1200",
+          "image": "https://images.unsplash.com/photo-1618219740975-d40978bb7378?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp561/1400/900",
+              "url": "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp661/1400/900",
+              "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp761/1400/900",
+              "url": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -3987,11 +3987,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp861/1800/1200",
+              "url": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp961/1800/1200",
+              "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -4019,37 +4019,37 @@
       "role": "Designer mandataire",
       "partners": [],
       "description": "Concept store du créateur ivoirien Pathé Diop, scénographie modulaire pour une rotation rapide des collections.",
-      "cover": "https://picsum.photos/seed/mcjp231/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp231/2400/1400",
+          "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp331/1800/1200",
+          "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp431/1800/1200",
+          "image": "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp531/1400/900",
+              "url": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp631/1400/900",
+              "url": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp731/1400/900",
+              "url": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -4058,11 +4058,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp831/1800/1200",
+              "url": "https://images.unsplash.com/photo-1517387816985-0b8b97b1cd58?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp931/1800/1200",
+              "url": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -4090,37 +4090,37 @@
       "role": "Designer",
       "partners": [],
       "description": "Pharmacie moderne avec espace conseil dédié, mobilier sur mesure et signalétique pédagogique.",
-      "cover": "https://picsum.photos/seed/mcjp321/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp321/2400/1400",
+          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp421/1800/1200",
+          "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp521/1800/1200",
+          "image": "https://images.unsplash.com/photo-1556909195-2a06b1ed8b9c?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp621/1400/900",
+              "url": "https://images.unsplash.com/photo-1542884748-2b87b36c6b90?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp721/1400/900",
+              "url": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp821/1400/900",
+              "url": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -4129,11 +4129,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp921/1800/1200",
+              "url": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1021/1800/1200",
+              "url": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -4160,37 +4160,37 @@
       "role": "Architecte",
       "partners": [],
       "description": "Centre médical organisé en pavillons autour d'un jardin thérapeutique, alliant accueil chaleureux et équipement médical de pointe.",
-      "cover": "https://picsum.photos/seed/mcjp191/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1564540583246-934409427776?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp191/2400/1400",
+          "image": "https://images.unsplash.com/photo-1564540583246-934409427776?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp291/1800/1200",
+          "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp391/1800/1200",
+          "image": "https://images.unsplash.com/photo-1605276373954-0c4a0dac5b12?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp491/1400/900",
+              "url": "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp591/1400/900",
+              "url": "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp691/1400/900",
+              "url": "https://images.unsplash.com/photo-1545569310-2d8e3a3e3c44?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -4199,11 +4199,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp791/1800/1200",
+              "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp891/1800/1200",
+              "url": "https://images.unsplash.com/photo-1564540583246-934409427776?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -4216,7 +4216,7 @@
     {
       "id": "place-de-la-republique-bouake",
       "slug": "place-de-la-republique-bouake",
-      "title": "Place de la République — Bouaké",
+      "title": "Place de la République Bouaké",
       "subtitle": "Place publique centrale",
       "discipline": "urbanisme",
       "categories": [
@@ -4230,37 +4230,37 @@
       "role": "Urbaniste",
       "partners": [],
       "description": "Refonte de la place principale de Bouaké, espace fédérateur intégrant marché couvert, mémorial et espaces de fraîcheur.",
-      "cover": "https://picsum.photos/seed/mcjp481/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1581088382814-2c5c2e0d9077?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp481/2400/1400",
+          "image": "https://images.unsplash.com/photo-1581088382814-2c5c2e0d9077?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp581/1800/1200",
+          "image": "https://images.unsplash.com/photo-1573108037329-37aa71b56c66?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp681/1800/1200",
+          "image": "https://images.unsplash.com/photo-1561411493-2014b4b03cd6?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp781/1400/900",
+              "url": "https://images.unsplash.com/photo-1474564330163-c4f1c5e63f3f?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp881/1400/900",
+              "url": "https://images.unsplash.com/photo-1542359649-31e03cd4d909?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp981/1400/900",
+              "url": "https://images.unsplash.com/photo-1605651531144-51381895e23d?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -4269,11 +4269,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp1081/1800/1200",
+              "url": "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp1181/1800/1200",
+              "url": "https://images.unsplash.com/photo-1581088382814-2c5c2e0d9077?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]
@@ -4301,37 +4301,37 @@
       "role": "Architecte de conception",
       "partners": [],
       "description": "Programme de logements sociaux qualitatifs pensés pour la ventilation naturelle et la convivialité de l'îlot.",
-      "cover": "https://picsum.photos/seed/mcjp91/2400/1400",
+      "cover": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?w=2400&h=1400&fit=crop&q=80&auto=format",
       "sections": [
         {
           "type": "hero",
-          "image": "https://picsum.photos/seed/mcjp91/2400/1400",
+          "image": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?w=2400&h=1400&fit=crop&q=80&auto=format",
           "alt": "Vue principale"
         },
         {
           "type": "image-text",
-          "image": "https://picsum.photos/seed/mcjp191/1800/1200",
+          "image": "https://images.unsplash.com/photo-1493606371202-6008c0c4435d?w=1800&h=1200&fit=crop&q=80&auto=format",
           "title": "Une réponse contextuelle",
           "text": "Le projet a fait l'objet d'une analyse approfondie du site, des usages et des contraintes climatiques. La réponse architecturale s'inscrit dans une démarche contextuelle, respectueuse de l'identité du lieu et des attentes des usagers."
         },
         {
           "type": "context",
-          "image": "https://picsum.photos/seed/mcjp291/1800/1200",
+          "image": "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=1800&h=1200&fit=crop&q=80&auto=format",
           "caption": "Plan masse — implantation et organisation générale"
         },
         {
           "type": "gallery",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp391/1400/900",
+              "url": "https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue extérieure"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp491/1400/900",
+              "url": "https://images.unsplash.com/photo-1582640044669-c4d9eb6cb476?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Espaces intérieurs"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp591/1400/900",
+              "url": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1400&h=900&fit=crop&q=80&auto=format",
               "caption": "Vue d'ensemble"
             }
           ]
@@ -4340,11 +4340,11 @@
           "type": "plans",
           "images": [
             {
-              "url": "https://picsum.photos/seed/mcjp691/1800/1200",
+              "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Plan général"
             },
             {
-              "url": "https://picsum.photos/seed/mcjp791/1800/1200",
+              "url": "https://images.unsplash.com/photo-1496564203457-11bb12075d90?w=1800&h=1200&fit=crop&q=80&auto=format",
               "caption": "Coupe transversale"
             }
           ]

@@ -90,6 +90,7 @@
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/home.css">
 
     <link rel="icon" type="image/svg+xml" href="/images/ui/favicon.svg">
@@ -102,25 +103,42 @@
 <body class="home-body">
 
 <!-- ========== HEADER ========== -->
-<header class="home-header" id="site-header">
-    <div class="home-header-inner">
+<header class="site-header site-header--over-hero" id="site-header">
+    <div class="site-header-inner">
         <a href="/" class="logo" aria-label="Mc.Johnson & Partners — Accueil">
             <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
         </a>
 
-        <nav class="home-nav" aria-label="Navigation principale">
-            <ul class="home-nav-list">
-                <li><a href="/archive" class="home-nav-link">Tous les projets</a></li>
-                <li><a href="/agence" class="home-nav-link">Agence</a></li>
-                <li><a href="/contact" class="home-nav-link">Contact</a></li>
+        <nav class="site-nav" aria-label="Navigation principale">
+            <ul class="site-nav-list">
+                <li><a href="/archive" class="site-nav-link">Tous les projets</a></li>
+                <li><a href="/agence" class="site-nav-link">Agence</a></li>
+                <li><a href="/contact" class="site-nav-link">Contact</a></li>
             </ul>
         </nav>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+        <button class="site-burger" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
             <span></span><span></span><span></span>
         </button>
     </div>
 </header>
+
+<!-- ========== MENU MOBILE (overlay plein écran) ==========
+     NB : style inline défensif au cas où CSS pas chargé. -->
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true"
+     style="display:none; position:fixed; inset:0; z-index:1100; visibility:hidden;">
+    <nav class="mobile-nav-inner" aria-label="Navigation mobile">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item" style="--i:0"><a href="/" class="mobile-nav-link">Accueil</a></li>
+            <li class="mobile-nav-item" style="--i:1"><a href="/archive" class="mobile-nav-link">Tous les projets</a></li>
+            <li class="mobile-nav-item" style="--i:2"><a href="/agence" class="mobile-nav-link">Agence</a></li>
+            <li class="mobile-nav-item" style="--i:3"><a href="/contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <p class="mobile-nav-tagline">Building trust. Designing the future.</p>
+        </div>
+    </nav>
+</div>
 
 <!-- ========== MENU MOBILE (overlay plein écran) ==========
      NB : style inline défensif — au cas où animations.css ne se charge pas (cache, FOUC),

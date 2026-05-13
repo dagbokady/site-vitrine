@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/components.css">
     <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/project-page.css">
 
     <link rel="icon" type="image/svg+xml" href="/images/ui/favicon.svg">
@@ -29,24 +30,47 @@
 <body class="project-body">
 
 <!-- HEADER FLOTTANT -->
-<header class="project-header" id="project-header">
-    <div class="project-header-inner">
+<header class="site-header site-header--over-hero" id="site-header">
+    <div class="site-header-inner">
         <a href="/" class="logo" aria-label="Retour à l'accueil Mc.Johnson & Partners">
             <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
         </a>
 
+        <!-- Titre du projet (s'affiche au scroll, masqué initialement) -->
         <div class="project-header-center" id="project-header-center" hidden>
             <p class="header-discipline" id="header-discipline"></p>
             <p class="header-title" id="header-title"></p>
         </div>
 
-        <nav class="project-nav-top" aria-label="Navigation">
-            <a href="/archive" class="project-nav-link">Tous les projets</a>
-            <a href="/agence" class="project-nav-link">Agence</a>
-            <a href="/contact" class="project-nav-link">Contact</a>
+        <nav class="site-nav" aria-label="Navigation principale">
+            <ul class="site-nav-list">
+                <li><a href="/archive" class="site-nav-link">Tous les projets</a></li>
+                <li><a href="/agence" class="site-nav-link">Agence</a></li>
+                <li><a href="/contact" class="site-nav-link">Contact</a></li>
+            </ul>
         </nav>
+
+        <button class="site-burger" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </header>
+
+<!-- ========== MENU MOBILE (overlay plein écran) ========== -->
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true"
+     style="display:none; position:fixed; inset:0; z-index:1100; visibility:hidden;">
+    <nav class="mobile-nav-inner" aria-label="Navigation mobile">
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item" style="--i:0"><a href="/" class="mobile-nav-link">Accueil</a></li>
+            <li class="mobile-nav-item" style="--i:1"><a href="/archive" class="mobile-nav-link">Tous les projets</a></li>
+            <li class="mobile-nav-item" style="--i:2"><a href="/agence" class="mobile-nav-link">Agence</a></li>
+            <li class="mobile-nav-item" style="--i:3"><a href="/contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-nav-footer">
+            <p class="mobile-nav-tagline">Building trust. Designing the future.</p>
+        </div>
+    </nav>
+</div>
 
 <!-- INDICATEUR DE PAGES (à droite) -->
 <aside class="section-indicator is-hidden" id="section-indicator" hidden aria-hidden="true">

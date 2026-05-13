@@ -17,8 +17,7 @@
     };
 
     document.addEventListener('DOMContentLoaded', async function () {
-        // Header transparent → opaque au scroll
-        setupHeaderScroll();
+        // Header transparent → opaque au scroll : géré dans main.js (seuil adaptatif)
 
         // Charger les projets
         const data = await window.MCJP.fetchProjects();
@@ -37,35 +36,11 @@
     });
 
     // ============================================
-    // HEADER : transparent → blanc au scroll
+    // HEADER : transformation au scroll
+    // → Géré globalement dans /js/main.js avec seuil adaptatif
+    //   selon que le header a la classe .site-header--over-hero
     // ============================================
-    function setupHeaderScroll() {
-        const header = document.getElementById('site-header');
-        if (!header) return;
-
-        const heroHeight = window.innerHeight - 100;
-
-        function update() {
-            if (window.scrollY > heroHeight) {
-                header.classList.add('is-scrolled');
-            } else {
-                header.classList.remove('is-scrolled');
-            }
-        }
-
-        let ticking = false;
-        window.addEventListener('scroll', () => {
-            if (!ticking) {
-                requestAnimationFrame(() => {
-                    update();
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        }, { passive: true });
-
-        update();
-    }
+    // setupHeaderScroll() retiré : doublon avec main.js
 
     // ============================================
     // SLIDER HERO

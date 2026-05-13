@@ -12,49 +12,9 @@
 }
 
 /* ============================================
-   HEADER FLOTTANT
+   HEADER (titre projet qui apparaît au scroll)
+   La nav elle-même est gérée par /css/nav.css
    ============================================ */
-.project-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: var(--z-header);
-    padding: var(--space-4) 0;
-    transition: background-color var(--duration-base) var(--ease-out);
-}
-
-.project-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0));
-    pointer-events: none;
-}
-
-.project-header-inner {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--space-6);
-    max-width: var(--container-max);
-    margin-inline: auto;
-    padding-inline: var(--container-padding);
-    z-index: 1;
-}
-
-.project-header .logo {
-    color: var(--color-white);
-    flex-shrink: 0;
-}
-
-.project-header .logo-text {
-    background: var(--color-white);
-    color: var(--color-black);
-    padding: 4px 10px;
-    font-size: var(--text-xs);
-}
 
 /* Centre du header : titre du projet (apparaît au scroll) */
 .project-header-center {
@@ -65,6 +25,7 @@
     transition: opacity var(--duration-base) var(--ease-out),
     transform var(--duration-base) var(--ease-out);
     pointer-events: none;
+    margin: 0 var(--space-4);
 }
 
 .project-header-center.is-visible {
@@ -78,37 +39,22 @@
     letter-spacing: var(--tracking-wider);
     color: var(--color-accent);
     font-weight: var(--weight-medium);
+    margin: 0;
 }
 
 .header-title {
     font-size: var(--text-sm);
-    color: var(--color-white);
+    color: inherit;
     font-weight: var(--weight-medium);
     letter-spacing: var(--tracking-tight);
+    margin: 0;
 }
 
-.project-nav-top {
-    display: none;
-    gap: var(--space-6);
-    flex-shrink: 0;
-}
-
-.project-nav-link {
-    font-size: var(--text-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--tracking-wider);
-    color: rgba(255, 255, 255, 0.7);
-    font-weight: var(--weight-medium);
-    text-decoration: none;
-    transition: color var(--duration-fast) var(--ease-out);
-}
-
-.project-nav-link:hover {
-    color: var(--color-white);
-}
-
-@media (min-width: 900px) {
-    .project-nav-top { display: flex; }
+/* Sur mobile, on cache le titre dans le header (pas assez de place) */
+@media (max-width: 767px) {
+    .project-header-center {
+        display: none;
+    }
 }
 
 /* ============================================
