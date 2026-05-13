@@ -1,6 +1,6 @@
-// api/admin-save.js
-// POST /api/admin-save — crée un nouveau projet
-// Body : { project: { ... } }
+// api/admin-update.js
+// PUT /api/admin-update — modifie un projet existant
+// Body : { id: "slug", project: { ... }, sha: "abc123" }
 
 import { verifyToken, githubReadProjects, githubWriteProjects, slugify } from './_helpers.js';
 
@@ -20,7 +20,7 @@ function validateProject(p) {
 }
 
 export default async function handler(req, res) {
-    if (req.method !== 'POST') {
+    if (req.method !== 'PUT' && req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
     }
 
@@ -32,52 +32,45 @@ export default async function handler(req, res) {
         return res.status(401).json({ error: 'Non autorisé' });
     }
 
-    const { project } = req.body || {};
+    const { id, project } = req.body || {};
+    if (!id) return res.status(400).json({ error: 'ID projet manquant' });
+
     const validationError = validateProject(project);
     if (validationError) return res.status(400).json({ error: validationError });
 
     try {
+        // Lire le state actuel (toujours frais pour éviter les conflits)
         const { json: data, sha: currentSha } = await githubReadProjects();
 
-        // Générer un slug unique
-        let baseSlug = slugify(project.title);
-        let finalSlug = baseSlug;
-        let counter = 2;
-        while (data.projects.some(p => p.id === finalSlug)) {
-            finalSlug = `${baseSlug}-${counter}`;
-            counter++;
+        const index = data.projects.findIndex(p => p.id === id);
+        if (index === -1) {
+            return res.status(404).json({ error: 'Projet introuvable' });
         }
 
-        const now = new Date().toISOString();
-        const maxOrder = data.projects.reduce((m, p) => Math.max(m, p.order || 0), 0);
-
-        const newProject = {
-
-            ...project,
-            // Force les champs système (même si fournis dans le body)
-            id: finalSlug,                         // (overrides précédents)
-            slug: finalSlug,
-            order: maxOrder + 1,
-            featured: project.featured || false,
-            createdAt: now.split('T')[0],
-            updatedAt: now
+        // Préserver l'id et createdAt d'origine, mettre à jour le reste
+        const original = data.projects[index];
+        const updated = {
+            ...original,                       // conserve id, slug, createdAt
+            ...project,                        // applique les changements
+            id: original.id,                   // forcer la conservation de l'ID
+            slug: original.slug,               // idem slug
+            createdAt: original.createdAt,     // idem date de création
+            updatedAt: new Date().toISOString()
         };
 
-        // Ajouter en tête de liste (récents en premier dans la home)
-        data.projects.unshift(newProject);
-        data.meta.totalProjects = data.projects.length;
-        data.meta.lastUpdate = now.split('T')[0];
+        data.projects[index] = updated;
+        data.meta.lastUpdate = new Date().toISOString().split('T')[0];
 
         await githubWriteProjects(
             data,
             currentSha,
-            `[admin] Création projet : ${newProject.title}`
+            `[admin] Update projet : ${updated.title}`
         );
 
-        return res.status(201).json({
+        return res.status(200).json({
             ok: true,
-            project: newProject,
-            message: `Projet "${newProject.title}" créé`
+            project: updated,
+            message: 'Projet mis à jour'
         });
     } catch (err) {
         return res.status(500).json({ error: err.message });

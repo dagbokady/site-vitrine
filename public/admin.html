@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="/css/tokens.css">
     <link rel="stylesheet" href="/css/admin.css">
 
-    <link rel="icon" type="image/png" href="/images/ui/favicon.png">
+    <link rel="icon" type="image/svg+xml" href="/images/ui/favicon.svg">
+    <link rel="shortcut icon" href="/images/ui/favicon.ico">
 </head>
 
 <body class="admin-body">
@@ -28,6 +29,7 @@
             <span class="admin-badge">Admin</span>
         </a>
         <div class="admin-header-actions" id="header-actions" hidden>
+            <button class="admin-link" id="back-to-list" hidden>← Liste</button>
             <a href="/" class="admin-link" target="_blank" rel="noopener">Voir le site ↗</a>
             <button class="admin-link admin-logout" id="logout-btn">Déconnexion</button>
         </div>
@@ -36,287 +38,478 @@
 
 <main class="admin-main">
 
-    <!-- ============================================
-         VUE 1 : ÉCRAN DE LOGIN
-         ============================================ -->
+    <!-- ====================================================
+         VUE 1 : LOGIN
+         ==================================================== -->
     <section class="admin-view view-login" id="view-login">
         <div class="admin-card">
             <h1 class="admin-card-title">Connexion administrateur</h1>
-            <p class="admin-card-subtitle">Réservé à l'équipe Mc.Johnson & Partners</p>
+            <p class="admin-card-subtitle">Réservé à l'équipe Mc.Johnson &amp; Partners</p>
 
             <form class="admin-form" id="login-form" novalidate>
                 <div class="form-field">
                     <label for="login-email">Email</label>
-                    <input
-                            type="email"
-                            id="login-email"
-                            name="email"
-                            required
-                            autocomplete="email"
-                            autofocus>
+                    <input type="email" id="login-email" name="email" required autocomplete="email" autofocus>
                 </div>
-
                 <div class="form-field">
                     <label for="login-password">Mot de passe</label>
-                    <input
-                            type="password"
-                            id="login-password"
-                            name="password"
-                            required
-                            autocomplete="current-password">
+                    <input type="password" id="login-password" name="password" required autocomplete="current-password">
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-block" id="login-btn">
-                    Se connecter
-                </button>
+                <p class="admin-error" id="login-error" hidden></p>
 
-                <p class="form-error" id="login-error" role="alert" hidden></p>
+                <button type="submit" class="admin-btn admin-btn-primary" id="login-btn">
+                    <span class="btn-label">Se connecter</span>
+                    <span class="btn-loader" hidden></span>
+                </button>
             </form>
         </div>
     </section>
 
-    <!-- ============================================
-         VUE 2 : FORMULAIRE D'AJOUT DE PROJET
-         ============================================ -->
-    <section class="admin-view view-form" id="view-form" hidden>
-        <div class="admin-content">
+    <!-- ====================================================
+         VUE 2 : LISTE DES PROJETS
+         ==================================================== -->
+    <section class="admin-view view-list" id="view-list" hidden>
+        <div class="admin-container">
 
-            <div class="admin-page-head">
+            <!-- En-tête liste : titre + bouton "Nouveau" -->
+            <header class="list-header">
                 <div>
-                    <p class="eyebrow">Administration</p>
-                    <h1 class="admin-page-title">Ajouter un nouveau projet</h1>
+                    <h1 class="list-title">Projets</h1>
+                    <p class="list-count" id="list-count">— projets</p>
+                </div>
+                <button class="admin-btn admin-btn-primary" id="btn-new-project">
+                    + Nouveau projet
+                </button>
+            </header>
+
+            <!-- Filtres + recherche -->
+            <div class="list-filters">
+                <div class="filter-group">
+                    <button class="filter-chip is-active" data-discipline="">Toutes</button>
+                    <button class="filter-chip" data-discipline="architecture">Architecture</button>
+                    <button class="filter-chip" data-discipline="design">Design</button>
+                    <button class="filter-chip" data-discipline="urbanisme">Urbanisme</button>
+                </div>
+                <div class="search-group">
+                    <input type="search" id="search-input" placeholder="Rechercher un projet..." aria-label="Rechercher">
                 </div>
             </div>
 
-            <form class="admin-form admin-form-large" id="project-form" novalidate>
+            <!-- État de chargement -->
+            <div class="list-loading" id="list-loading">
+                <span class="spinner"></span>
+                <p>Chargement des projets…</p>
+            </div>
 
-                <!-- ===== SECTION : Identité ===== -->
-                <fieldset class="form-section">
-                    <legend class="form-section-title">Identité du projet</legend>
+            <!-- État vide -->
+            <div class="list-empty" id="list-empty" hidden>
+                <p>Aucun projet ne correspond à votre recherche.</p>
+            </div>
 
-                    <div class="form-row">
-                        <div class="form-field">
-                            <label for="title">Titre <span aria-hidden="true">*</span></label>
-                            <input type="text" id="title" name="title" required maxlength="100">
-                            <p class="field-hint">Ex: Université de San-Pédro</p>
+            <!-- Grille de projets -->
+            <div class="projects-grid" id="projects-grid"></div>
+
+            <!-- Pagination -->
+            <nav class="pagination" id="pagination" hidden aria-label="Pagination">
+                <button class="page-btn" id="page-prev" disabled>← Précédent</button>
+                <span class="page-info" id="page-info">Page 1 / —</span>
+                <button class="page-btn" id="page-next">Suivant →</button>
+            </nav>
+
+        </div>
+    </section>
+
+    <!-- ====================================================
+         VUE 3 : ÉDITEUR (WIZARD 4 ÉTAPES)
+         ==================================================== -->
+    <section class="admin-view view-editor" id="view-editor" hidden>
+        <div class="admin-container">
+
+            <!-- En-tête éditeur -->
+            <header class="editor-header">
+                <h1 class="editor-title" id="editor-title">Nouveau projet</h1>
+                <p class="editor-subtitle" id="editor-subtitle">Création d'un projet</p>
+            </header>
+
+            <!-- Indicateur d'étapes -->
+            <ol class="wizard-steps" id="wizard-steps">
+                <li class="wizard-step is-active" data-step="1">
+                    <span class="step-num">1</span>
+                    <span class="step-label">Métadonnées</span>
+                </li>
+                <li class="wizard-step" data-step="2">
+                    <span class="step-num">2</span>
+                    <span class="step-label">Couverture</span>
+                </li>
+                <li class="wizard-step" data-step="3">
+                    <span class="step-num">3</span>
+                    <span class="step-label">Sections</span>
+                </li>
+                <li class="wizard-step" data-step="4">
+                    <span class="step-num">4</span>
+                    <span class="step-label">Prévisualisation</span>
+                </li>
+            </ol>
+
+            <form class="wizard-form" id="wizard-form" novalidate>
+
+                <!-- ÉTAPE 1 : MÉTADONNÉES -->
+                <div class="wizard-pane is-active" data-pane="1">
+                    <h2 class="pane-title">1. Informations générales</h2>
+
+                    <div class="form-grid">
+                        <div class="form-field form-field-full">
+                            <label for="f-title">Titre du projet <span class="required">*</span></label>
+                            <input type="text" id="f-title" required placeholder="Ex. Tour Cacao">
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="f-subtitle">Sous-titre</label>
+                            <input type="text" id="f-subtitle" placeholder="Ex. Tour mixte bureaux & résidences, 32 niveaux">
                         </div>
 
                         <div class="form-field">
-                            <label for="slug">Identifiant (slug) <span aria-hidden="true">*</span></label>
-                            <input type="text" id="slug" name="slug" required pattern="[a-z0-9-]+" maxlength="80">
-                            <p class="field-hint">Auto-généré depuis le titre. Ne contient que minuscules, chiffres, tirets.</p>
-                        </div>
-                    </div>
-
-                    <div class="form-field">
-                        <label for="subtitle">Sous-titre <span aria-hidden="true">*</span></label>
-                        <input type="text" id="subtitle" name="subtitle" required maxlength="150">
-                        <p class="field-hint">Une phrase courte qui résume le projet. Max 150 caractères.</p>
-                    </div>
-                </fieldset>
-
-                <!-- ===== SECTION : Classification ===== -->
-                <fieldset class="form-section">
-                    <legend class="form-section-title">Classification</legend>
-
-                    <div class="form-row">
-                        <div class="form-field">
-                            <label>Catégories <span aria-hidden="true">*</span></label>
-                            <div class="checkbox-group" id="categories-group">
-                                <label class="checkbox-item"><input type="checkbox" name="categories" value="infrastructure"> Infrastructure</label>
-                                <label class="checkbox-item"><input type="checkbox" name="categories" value="residentiel"> Résidentiel</label>
-                                <label class="checkbox-item"><input type="checkbox" name="categories" value="hotellerie"> Hôtellerie</label>
-                                <label class="checkbox-item"><input type="checkbox" name="categories" value="tertiaire"> Tertiaire</label>
-                                <label class="checkbox-item"><input type="checkbox" name="categories" value="concours"> Concours</label>
-                                <label class="checkbox-item"><input type="checkbox" name="categories" value="education"> Éducation</label>
-                            </div>
-                            <p class="field-hint">Cocher au moins une catégorie</p>
+                            <label for="f-discipline">Discipline <span class="required">*</span></label>
+                            <select id="f-discipline" required>
+                                <option value="architecture">Architecture</option>
+                                <option value="design">Design</option>
+                                <option value="urbanisme">Urbanisme</option>
+                            </select>
                         </div>
 
                         <div class="form-field">
-                            <label for="status">Statut <span aria-hidden="true">*</span></label>
-                            <select id="status" name="status" required>
-                                <option value="">— Sélectionner —</option>
+                            <label for="f-status">Statut <span class="required">*</span></label>
+                            <select id="f-status" required>
                                 <option value="realise">Réalisé</option>
                                 <option value="etude">En étude</option>
                                 <option value="concours">Concours</option>
                             </select>
                         </div>
-                    </div>
 
-                    <div class="form-row">
                         <div class="form-field">
-                            <label for="year">Année</label>
-                            <input type="number" id="year" name="year" min="1990" max="2100">
+                            <label for="f-year">Année</label>
+                            <input type="number" id="f-year" min="1990" max="2100" placeholder="2024">
                         </div>
 
                         <div class="form-field">
-                            <label class="form-field-checkbox">
-                                <input type="checkbox" id="featured" name="featured">
-                                Mettre en avant sur la page d'accueil
+                            <label for="f-surface">Surface</label>
+                            <input type="text" id="f-surface" placeholder="Ex. 12 800 m² ou 322 ha">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="f-location">Lieu</label>
+                            <input type="text" id="f-location" placeholder="Ex. Cocody, Abidjan">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="f-client">Client</label>
+                            <input type="text" id="f-client" placeholder="Ex. Société Ivoirienne d'Investissement">
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="f-role">Rôle de l'agence</label>
+                            <input type="text" id="f-role" placeholder="Ex. Architecte mandataire">
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="f-partners">Partenaires</label>
+                            <input type="text" id="f-partners" placeholder="Séparés par des virgules">
+                            <small>Ex. Atelier Dieng, BET Sogea-Satom</small>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="f-categories">Catégories</label>
+                            <input type="text" id="f-categories" placeholder="Séparées par des virgules">
+                            <small>Ex. tertiaire, residentiel — utilisé pour les filtres d'archive</small>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="f-description">Description courte</label>
+                            <textarea id="f-description" rows="4" placeholder="2-3 phrases décrivant le projet"></textarea>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="f-featured">
+                                <span>Mettre en avant dans la home (slider hero)</span>
                             </label>
-                            <p class="field-hint">Maximum 3 projets en avant.</p>
                         </div>
                     </div>
-                </fieldset>
+                </div>
 
-                <!-- ===== SECTION : Détails ===== -->
-                <fieldset class="form-section">
-                    <legend class="form-section-title">Détails</legend>
+                <!-- ÉTAPE 2 : COUVERTURE -->
+                <div class="wizard-pane" data-pane="2">
+                    <h2 class="pane-title">2. Image de couverture</h2>
+                    <p class="pane-help">L'image principale qui représente le projet sur la home et l'archive. Format paysage recommandé, minimum 1600×1000px.</p>
 
-                    <div class="form-row">
-                        <div class="form-field">
-                            <label for="location">Lieu</label>
-                            <input type="text" id="location" name="location" maxlength="100">
-                            <p class="field-hint">Ex: Abidjan, Côte d'Ivoire</p>
+                    <div class="upload-zone" id="upload-cover">
+                        <input type="file" id="cover-input" accept="image/*" hidden>
+                        <div class="upload-preview" id="cover-preview" hidden>
+                            <img id="cover-preview-img" alt="Aperçu de la couverture">
+                            <button type="button" class="upload-remove" id="cover-remove" aria-label="Supprimer">✕</button>
                         </div>
-
-                        <div class="form-field">
-                            <label for="surface">Surface</label>
-                            <input type="text" id="surface" name="surface" maxlength="50">
-                            <p class="field-hint">Ex: 322 ha · 17 villas · 1500 m²</p>
-                        </div>
+                        <button type="button" class="upload-trigger" id="cover-trigger">
+                            <span class="upload-icon">📷</span>
+                            <span class="upload-label">Cliquez pour téléverser</span>
+                            <span class="upload-hint">ou glissez l'image ici</span>
+                        </button>
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-field">
-                            <label for="client">Maître d'ouvrage / Client</label>
-                            <input type="text" id="client" name="client" maxlength="100">
-                        </div>
-
-                        <div class="form-field">
-                            <label for="role">Notre rôle</label>
-                            <input type="text" id="role" name="role" maxlength="100">
-                            <p class="field-hint">Ex: Architecte, Chef de projet</p>
-                        </div>
-                    </div>
+                    <p class="form-field-or">— ou —</p>
 
                     <div class="form-field">
-                        <label for="partners">Partenaires</label>
-                        <input type="text" id="partners" name="partners" maxlength="200">
-                        <p class="field-hint">Séparer par des virgules. Ex: Atelier Dieng, Envol Capital</p>
+                        <label for="f-cover-url">URL d'une image existante</label>
+                        <input type="url" id="f-cover-url" placeholder="https://...">
+                        <small>Utile pour réutiliser une image déjà uploadée</small>
                     </div>
+                </div>
 
-                    <div class="form-field">
-                        <label for="description">Description <span aria-hidden="true">*</span></label>
-                        <textarea id="description" name="description" rows="6" required maxlength="1000"></textarea>
-                        <p class="field-hint">Entre 100 et 1000 caractères. <span id="desc-counter">0</span>/1000</p>
-                    </div>
-                </fieldset>
+                <!-- ÉTAPE 3 : SECTIONS -->
+                <div class="wizard-pane" data-pane="3">
+                    <h2 class="pane-title">3. Les 5 sections du projet</h2>
+                    <p class="pane-help">Chaque projet a 5 sections fixes qui s'affichent en scroll-snap sur la page projet.</p>
 
-                <!-- ===== SECTION : Images ===== -->
-                <fieldset class="form-section">
-                    <legend class="form-section-title">Images</legend>
-
-                    <div class="form-field">
-                        <label>Image de couverture <span aria-hidden="true">*</span></label>
-                        <div class="upload-zone" id="cover-upload-zone">
-                            <input type="file" id="cover-input" accept="image/jpeg,image/png,image/webp" hidden>
-                            <div class="upload-placeholder" id="cover-placeholder">
-                                <p class="upload-icon">📷</p>
-                                <p class="upload-text">Cliquer pour téléverser une image</p>
-                                <p class="upload-hint">JPG, PNG ou WebP — max 10 Mo</p>
+                    <!-- Section 1 : Hero -->
+                    <details class="section-card" open data-section="hero">
+                        <summary class="section-summary">
+                            <span class="section-num">01</span>
+                            <span class="section-name">Hero — Vue principale</span>
+                            <span class="section-status" id="status-hero">À remplir</span>
+                        </summary>
+                        <div class="section-body">
+                            <p class="section-info">Image plein écran qui ouvre la page projet.</p>
+                            <div class="upload-zone-mini" data-target="hero">
+                                <input type="file" class="section-file-input" accept="image/*" hidden>
+                                <div class="upload-preview-mini" hidden>
+                                    <img class="preview-img" alt="">
+                                    <button type="button" class="upload-remove-mini">✕</button>
+                                </div>
+                                <button type="button" class="upload-trigger-mini">Téléverser l'image</button>
                             </div>
-                            <div class="upload-preview" id="cover-preview" hidden>
-                                <img src="" alt="" id="cover-preview-img">
-                                <button type="button" class="upload-remove" id="cover-remove">Retirer</button>
-                            </div>
-                            <div class="upload-progress" id="cover-progress" hidden>
-                                <p>Téléversement en cours…</p>
+                            <div class="form-field">
+                                <label>URL d'image (alternative)</label>
+                                <input type="url" class="section-url-input" data-target="hero" placeholder="https://...">
                             </div>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="form-field">
-                        <label>Galerie (jusqu'à 10 images)</label>
-                        <div class="upload-zone upload-zone-multiple">
-                            <input type="file" id="gallery-input" accept="image/jpeg,image/png,image/webp" multiple hidden>
-                            <button type="button" class="btn btn-outline" id="gallery-add-btn">
-                                + Ajouter des images
-                            </button>
-                            <p class="field-hint">Vous pouvez sélectionner plusieurs images d'un coup.</p>
+                    <!-- Section 2 : Image + texte -->
+                    <details class="section-card" data-section="image-text">
+                        <summary class="section-summary">
+                            <span class="section-num">02</span>
+                            <span class="section-name">Image + texte</span>
+                            <span class="section-status" id="status-image-text">À remplir</span>
+                        </summary>
+                        <div class="section-body">
+                            <div class="upload-zone-mini" data-target="image-text">
+                                <input type="file" class="section-file-input" accept="image/*" hidden>
+                                <div class="upload-preview-mini" hidden>
+                                    <img class="preview-img" alt="">
+                                    <button type="button" class="upload-remove-mini">✕</button>
+                                </div>
+                                <button type="button" class="upload-trigger-mini">Téléverser l'image</button>
+                            </div>
+                            <div class="form-field">
+                                <label>URL d'image (alternative)</label>
+                                <input type="url" class="section-url-input" data-target="image-text" placeholder="https://...">
+                            </div>
+                            <div class="form-field">
+                                <label>Titre de la section</label>
+                                <input type="text" id="f-image-text-title" placeholder="Ex. Une réponse contextuelle">
+                            </div>
+                            <div class="form-field">
+                                <label>Texte</label>
+                                <textarea id="f-image-text-text" rows="4" placeholder="Paragraphe descriptif"></textarea>
+                            </div>
                         </div>
-                        <div class="gallery-list" id="gallery-list"></div>
-                    </div>
-                </fieldset>
+                    </details>
 
-                <!-- ===== ACTIONS ===== -->
-                <div class="form-actions">
-                    <button type="button" class="btn btn-outline" id="cancel-btn">Annuler</button>
-                    <button type="submit" class="btn btn-primary btn-large" id="preview-btn">
-                        Prévisualiser
+                    <!-- Section 3 : Contexte -->
+                    <details class="section-card" data-section="context">
+                        <summary class="section-summary">
+                            <span class="section-num">03</span>
+                            <span class="section-name">Contexte — Plan masse</span>
+                            <span class="section-status" id="status-context">À remplir</span>
+                        </summary>
+                        <div class="section-body">
+                            <p class="section-info">Plan masse, plan de situation, ou tout dessin technique d'implantation.</p>
+                            <div class="upload-zone-mini" data-target="context">
+                                <input type="file" class="section-file-input" accept="image/*" hidden>
+                                <div class="upload-preview-mini" hidden>
+                                    <img class="preview-img" alt="">
+                                    <button type="button" class="upload-remove-mini">✕</button>
+                                </div>
+                                <button type="button" class="upload-trigger-mini">Téléverser le plan</button>
+                            </div>
+                            <div class="form-field">
+                                <label>URL d'image (alternative)</label>
+                                <input type="url" class="section-url-input" data-target="context" placeholder="https://...">
+                            </div>
+                            <div class="form-field">
+                                <label>Légende</label>
+                                <input type="text" id="f-context-caption" placeholder="Ex. Plan masse — implantation générale">
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Section 4 : Galerie -->
+                    <details class="section-card" data-section="gallery">
+                        <summary class="section-summary">
+                            <span class="section-num">04</span>
+                            <span class="section-name">Galerie — 3 images</span>
+                            <span class="section-status" id="status-gallery">0 / 3 images</span>
+                        </summary>
+                        <div class="section-body">
+                            <p class="section-info">Trois images affichées en grille (1×3 sur desktop, empilées sur mobile).</p>
+                            <div class="gallery-slots">
+                                <div class="gallery-slot" data-slot="0">
+                                    <div class="upload-zone-mini" data-target="gallery-0">
+                                        <input type="file" class="section-file-input" accept="image/*" hidden>
+                                        <div class="upload-preview-mini" hidden>
+                                            <img class="preview-img" alt="">
+                                            <button type="button" class="upload-remove-mini">✕</button>
+                                        </div>
+                                        <button type="button" class="upload-trigger-mini">Image 1</button>
+                                    </div>
+                                    <input type="text" class="gallery-caption" data-slot="0" placeholder="Légende (optionnel)">
+                                </div>
+                                <div class="gallery-slot" data-slot="1">
+                                    <div class="upload-zone-mini" data-target="gallery-1">
+                                        <input type="file" class="section-file-input" accept="image/*" hidden>
+                                        <div class="upload-preview-mini" hidden>
+                                            <img class="preview-img" alt="">
+                                            <button type="button" class="upload-remove-mini">✕</button>
+                                        </div>
+                                        <button type="button" class="upload-trigger-mini">Image 2</button>
+                                    </div>
+                                    <input type="text" class="gallery-caption" data-slot="1" placeholder="Légende (optionnel)">
+                                </div>
+                                <div class="gallery-slot" data-slot="2">
+                                    <div class="upload-zone-mini" data-target="gallery-2">
+                                        <input type="file" class="section-file-input" accept="image/*" hidden>
+                                        <div class="upload-preview-mini" hidden>
+                                            <img class="preview-img" alt="">
+                                            <button type="button" class="upload-remove-mini">✕</button>
+                                        </div>
+                                        <button type="button" class="upload-trigger-mini">Image 3</button>
+                                    </div>
+                                    <input type="text" class="gallery-caption" data-slot="2" placeholder="Légende (optionnel)">
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                    <!-- Section 5 : Plans -->
+                    <details class="section-card" data-section="plans">
+                        <summary class="section-summary">
+                            <span class="section-num">05</span>
+                            <span class="section-name">Plans &amp; dessins techniques</span>
+                            <span class="section-status" id="status-plans">0 / 2 plans</span>
+                        </summary>
+                        <div class="section-body">
+                            <p class="section-info">Plans, coupes, élévations. Fond blanc, deux par défaut.</p>
+                            <div class="gallery-slots gallery-slots-2">
+                                <div class="gallery-slot" data-slot="0">
+                                    <div class="upload-zone-mini" data-target="plans-0">
+                                        <input type="file" class="section-file-input" accept="image/*" hidden>
+                                        <div class="upload-preview-mini" hidden>
+                                            <img class="preview-img" alt="">
+                                            <button type="button" class="upload-remove-mini">✕</button>
+                                        </div>
+                                        <button type="button" class="upload-trigger-mini">Plan 1</button>
+                                    </div>
+                                    <input type="text" class="plans-caption" data-slot="0" placeholder="Légende (ex. Plan général)">
+                                </div>
+                                <div class="gallery-slot" data-slot="1">
+                                    <div class="upload-zone-mini" data-target="plans-1">
+                                        <input type="file" class="section-file-input" accept="image/*" hidden>
+                                        <div class="upload-preview-mini" hidden>
+                                            <img class="preview-img" alt="">
+                                            <button type="button" class="upload-remove-mini">✕</button>
+                                        </div>
+                                        <button type="button" class="upload-trigger-mini">Plan 2</button>
+                                    </div>
+                                    <input type="text" class="plans-caption" data-slot="1" placeholder="Légende (ex. Coupe transversale)">
+                                </div>
+                            </div>
+                        </div>
+                    </details>
+
+                </div>
+
+                <!-- ÉTAPE 4 : PRÉVISUALISATION -->
+                <div class="wizard-pane" data-pane="4">
+                    <h2 class="pane-title">4. Prévisualisation</h2>
+                    <p class="pane-help">Vérifiez les informations puis publiez. Le site sera mis à jour dans environ 30 secondes (déploiement Vercel).</p>
+
+                    <div class="preview-container" id="preview-container">
+                        <!-- Rempli par JS -->
+                    </div>
+                </div>
+
+                <!-- Footer du wizard : navigation entre étapes -->
+                <footer class="wizard-footer">
+                    <button type="button" class="admin-btn admin-btn-secondary" id="wizard-prev" hidden>
+                        ← Précédent
                     </button>
-                </div>
+                    <span class="wizard-spacer"></span>
+                    <p class="wizard-error" id="wizard-error" hidden></p>
+                    <button type="button" class="admin-btn admin-btn-primary" id="wizard-next">
+                        Suivant →
+                    </button>
+                    <button type="submit" class="admin-btn admin-btn-primary" id="wizard-submit" hidden>
+                        <span class="btn-label">Publier</span>
+                        <span class="btn-loader" hidden></span>
+                    </button>
+                </footer>
 
-                <p class="form-error" id="form-error" role="alert" hidden></p>
             </form>
-        </div>
-    </section>
 
-    <!-- ============================================
-         VUE 3 : PRÉVISUALISATION AVANT PUBLICATION
-         ============================================ -->
-    <section class="admin-view view-preview" id="view-preview" hidden>
-        <div class="admin-content">
-
-            <div class="admin-page-head">
-                <div>
-                    <p class="eyebrow">Prévisualisation</p>
-                    <h1 class="admin-page-title">Vérifiez avant publication</h1>
-                </div>
-            </div>
-
-            <div class="preview-banner">
-                <p>👁️ Vous voyez ici le rendu du projet tel qu'il apparaîtra sur le site.
-                    Si tout est correct, cliquez sur <strong>« Publier »</strong>.
-                    Sinon, revenez en arrière pour corriger.</p>
-            </div>
-
-            <!-- Aperçu du projet -->
-            <article class="preview-project" id="preview-project">
-                <!-- Rempli par JS -->
-            </article>
-
-            <!-- Actions de publication -->
-            <div class="preview-actions">
-                <button type="button" class="btn btn-outline" id="back-to-form-btn">
-                    ← Modifier
-                </button>
-                <button type="button" class="btn btn-primary btn-large" id="publish-btn">
-                    Publier le projet
-                </button>
-            </div>
-
-            <p class="form-error" id="publish-error" role="alert" hidden></p>
-        </div>
-    </section>
-
-    <!-- ============================================
-         VUE 4 : SUCCÈS APRÈS PUBLICATION
-         ============================================ -->
-    <section class="admin-view view-success" id="view-success" hidden>
-        <div class="admin-card admin-card-success">
-            <p class="success-icon">✓</p>
-            <h1 class="admin-card-title">Projet publié !</h1>
-            <p class="admin-card-subtitle">
-                Le site va être mis à jour dans environ 30 secondes.
-            </p>
-            <div class="success-actions">
-                <a href="#" class="btn btn-outline" id="view-project-link" target="_blank" rel="noopener">
-                    Voir le projet sur le site
-                </a>
-                <button type="button" class="btn btn-primary" id="add-another-btn">
-                    Ajouter un autre projet
-                </button>
-            </div>
         </div>
     </section>
 
 </main>
 
-<!-- Toast de notification -->
-<div class="toast" id="toast" hidden role="status" aria-live="polite"></div>
+<!-- ====================================================
+     MODAL CONFIRMATION SUPPRESSION
+     ==================================================== -->
+<div class="admin-modal" id="delete-modal" hidden role="dialog" aria-labelledby="delete-title" aria-modal="true">
+    <div class="admin-modal-backdrop" data-modal-close></div>
+    <div class="admin-modal-content">
+        <h2 class="admin-modal-title" id="delete-title">Supprimer ce projet ?</h2>
+        <p class="admin-modal-text">
+            Cette action est <strong>irréversible</strong>. Pour confirmer la suppression de
+            <strong id="delete-project-name">…</strong>, retapez exactement son titre ci-dessous :
+        </p>
+        <input
+                type="text"
+                id="delete-confirm-input"
+                placeholder="Retaper le titre exact"
+                autocomplete="off"
+                spellcheck="false">
+        <p class="admin-error" id="delete-error" hidden></p>
+        <div class="admin-modal-actions">
+            <button type="button" class="admin-btn admin-btn-secondary" data-modal-close>Annuler</button>
+            <button type="button" class="admin-btn admin-btn-danger" id="delete-confirm-btn" disabled>
+                <span class="btn-label">Supprimer définitivement</span>
+                <span class="btn-loader" hidden></span>
+            </button>
+        </div>
+    </div>
+</div>
 
-<script src="/js/admin.js"></script>
+<!-- ====================================================
+     TOAST
+     ==================================================== -->
+<div class="admin-toast" id="toast" hidden role="status" aria-live="polite">
+    <span class="toast-message" id="toast-message"></span>
+</div>
+
+<!-- Cloudinary uploader -->
+<script src="https://upload-widget.cloudinary.com/global/all.js" async></script>
+
+<!-- JS de l'admin -->
+<script type="module" src="/js/admin/main.js"></script>
 </body>
 </html>
