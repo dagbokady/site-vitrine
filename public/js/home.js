@@ -6,7 +6,7 @@
     'use strict';
 
     const SLIDER_INTERVAL = 5000; // 5s par slide
-    const PROJECTS_PER_DISCIPLINE = 3;
+    const PROJECTS_PER_DISCIPLINE = 5;
 
     const state = {
         allProjects: [],
