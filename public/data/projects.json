@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "lastUpdate": "2026-05-11",
+    "version": 3,
+    "totalProjects":0
+  },
+  "disciplines": [
+    {
+      "id": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "id": "design",
+      "label": "Design"
+    },
+    {
+      "id": "urbanisme",
+      "label": "Urbanisme"
+    }
+  ],
+  "categories": [
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "id": "residentiel",
+      "label": "Résidentiel"
+    },
+    {
+      "id": "hotellerie",
+      "label": "Hôtellerie"
+    },
+    {
+      "id": "tertiaire",
+      "label": "Tertiaire"
+    },
+    {
+      "id": "education",
+      "label": "Éducation"
+    },
+    {
+      "id": "sante",
+      "label": "Santé"
+    },
+    {
+      "id": "commerce",
+      "label": "Commerce"
+    },
+    {
+      "id": "restauration",
+      "label": "Restauration"
+    },
+    {
+      "id": "culte",
+      "label": "Culte"
+    },
+    {
+      "id": "culturel",
+      "label": "Culturel"
+    },
+    {
+      "id": "sport",
+      "label": "Sport"
+    },
+    {
+      "id": "transport",
+      "label": "Transport"
+    },
+    {
+      "id": "amenagement",
+      "label": "Aménagement"
+    },
+    {
+      "id": "planification",
+      "label": "Planification"
+    },
+    {
+      "id": "espace_public",
+      "label": "Espace public"
+    },
+    {
+      "id": "industriel",
+      "label": "Industriel"
+    }
+  ],
+  "projects": [
+
+  ]
+}
