@@ -526,6 +526,21 @@
     line-height: var(--leading-relaxed);
 }
 
+/* Classes générées par le rich-text editor de l'admin */
+.section-image-text-body .rt-large {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: var(--color-text);
+    display: inline-block;
+    margin-bottom: var(--space-2);
+}
+
+.section-image-text-body strong,
+.section-image-text-body b {
+    font-weight: 600;
+    color: var(--color-text);
+}
+
 /* ============================================
    SECTION 3 : CONTEXT (plan masse, etc.)
    Texte à GAUCHE (40%) — Image à DROITE (60%)
@@ -602,34 +617,29 @@
     line-height: var(--leading-relaxed);
 }
 
-/* Bloc image droite */
+/* Bloc image droite — sans contour blanc (continuité du design section 2) */
 .section-context-image-wrap {
     order: 2;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--space-6);
-    background-color: var(--color-bg-alt);
+    align-items: stretch;
+    justify-content: stretch;
     min-height: 50vh;
+    overflow: hidden;
 }
 
 @media (max-width: 899px) {
     .section-context-image-wrap {
         order: 1;
         min-height: 55vh;
-        padding: var(--space-4);
     }
 }
 
 .section-context-image {
-    max-width: 100%;
-    max-height: 75vh;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    background-color: var(--color-white);
-    padding: var(--space-3);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 100%;
+    min-height: 50vh;
+    object-fit: cover;
+    display: block;
 }
 
 /* ============================================
@@ -695,9 +705,11 @@
 
 /* ============================================
    SECTION 5 : PLANS
+   Fond grisé pour cette section (demande client).
+   Les cadres d'images restent blancs pour le contraste.
    ============================================ */
 .section-plans {
-    background-color: var(--color-white);
+    background-color: #E8E8E5;
     color: var(--color-text);
     padding: var(--space-16) var(--container-padding);
     display: flex;
@@ -768,8 +780,9 @@
     width: 100%;
     max-height: 55vh;
     object-fit: contain;
-    background-color: var(--color-bg-alt);
+    background-color: var(--color-white);
     padding: var(--space-3);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 /* Quand il y a 4-5 plans, réduire un peu la hauteur */

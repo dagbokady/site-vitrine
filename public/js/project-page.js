@@ -190,9 +190,59 @@
       <div class="section-image-text-content">
         <p class="section-image-text-eyebrow">À propos du projet</p>
         ${section.title ? `<h2 class="section-image-text-title">${escapeHtml(section.title)}</h2>` : ''}
-        <p class="section-image-text-body">${escapeHtml(section.text || '')}</p>
+        <div class="section-image-text-body">${sanitizeRichText(section.text || '')}</div>
       </div>
     `;
+    }
+
+    /**
+     * Sanitize le HTML produit par l'éditeur admin (rich-text).
+     * Whitelist : <strong>, <b>, <em>, <i>, <br>, <span style="color: ..."> et <span class="rt-large">
+     * Toute autre balise est supprimée.
+     */
+    function sanitizeRichText(html) {
+        if (!html) return '';
+        // Si le contenu ne contient aucune balise HTML, on l'échappe simplement et on ajoute des <br>
+        if (!/[<>]/.test(html)) return escapeHtml(html).replace(/\n/g, '<br>');
+
+        const tmpl = document.createElement('template');
+        tmpl.innerHTML = html;
+
+        const allowedTags = new Set(['STRONG', 'B', 'EM', 'I', 'BR', 'SPAN', 'P', 'DIV']);
+        const walker = document.createTreeWalker(tmpl.content, NodeFilter.SHOW_ELEMENT);
+        const toRemove = [];
+        let node;
+        while ((node = walker.nextNode())) {
+            if (!allowedTags.has(node.tagName)) {
+                toRemove.push(node);
+                continue;
+            }
+            // Sanitize les attributs : ne garder que style:color, class:rt-large
+            Array.from(node.attributes).forEach(attr => {
+                if (attr.name === 'style') {
+                    const colorMatch = attr.value.match(/color\s*:\s*(#[0-9a-fA-F]{3,6}|rgb\([^)]+\)|[a-zA-Z]+)/);
+                    if (colorMatch) {
+                        node.setAttribute('style', `color: ${colorMatch[1]}`);
+                    } else {
+                        node.removeAttribute('style');
+                    }
+                } else if (attr.name === 'class') {
+                    // ne garder que les classes whitelistées
+                    const allowed = attr.value.split(/\s+/).filter(c => c === 'rt-large');
+                    if (allowed.length) node.setAttribute('class', allowed.join(' '));
+                    else node.removeAttribute('class');
+                } else {
+                    node.removeAttribute(attr.name);
+                }
+            });
+        }
+        // Retirer les balises non whitelistées (en gardant leur contenu textuel)
+        toRemove.forEach(el => {
+            while (el.firstChild) el.parentNode.insertBefore(el.firstChild, el);
+            el.remove();
+        });
+
+        return tmpl.innerHTML;
     }
 
     function renderContext(section) {

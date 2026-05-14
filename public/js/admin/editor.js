@@ -5,6 +5,7 @@
 import * as api from './api.js';
 import { showView, toast, setBtnLoading, escapeHtml, escapeAttr, disciplineLabel, statusLabel, optimizeImage } from './ui.js';
 import { setupUploadZone } from './cloudinary.js';
+import { setupRichText } from './rich-text.js';
 
 // État local de l'éditeur
 const state = {
@@ -13,7 +14,8 @@ const state = {
     currentStep: 1,
     uploadHandlers: {},      // map { target : { setUrl, getUrl, getIsUploading } }
     imageUrls: {},           // map des URLs uploadées (uniquement Cloudinary, jamais data:)
-    activeUploads: 0         // compteur d'uploads en cours (bloque "Suivant")
+    activeUploads: 0,        // compteur d'uploads en cours (bloque "Suivant")
+    richTextEditors: {}      // map { fieldId : { getHtml, setHtml } }
 };
 
 const FORM_FIELDS_META = [
@@ -31,6 +33,27 @@ export function setupEditor({ onSaved, onBack }) {
     setupUploadZones();
     setupNavigation();
     setupSubmit();
+    setupRichTextEditors();
+}
+
+function setupRichTextEditors() {
+    // Champ description (étape 1)
+    const descTextarea = document.getElementById('f-description');
+    if (descTextarea) {
+        state.richTextEditors['description'] = setupRichText(descTextarea, {
+            placeholder: '2-3 phrases décrivant le projet',
+            minHeight: 100
+        });
+    }
+
+    // Champ texte image-text (étape 3)
+    const itTextarea = document.getElementById('f-image-text-text');
+    if (itTextarea) {
+        state.richTextEditors['image-text-text'] = setupRichText(itTextarea, {
+            placeholder: 'Paragraphe descriptif (gras + couleurs disponibles)',
+            minHeight: 120
+        });
+    }
 }
 
 // ============================================
@@ -324,7 +347,12 @@ function prefillForm(project) {
     document.getElementById('f-role').value = project.role || '';
     document.getElementById('f-partners').value = (project.partners || []).join(', ');
     document.getElementById('f-categories').value = (project.categories || []).join(', ');
-    document.getElementById('f-description').value = project.description || '';
+    // description : rich text — preserve le HTML s'il existe
+    if (state.richTextEditors['description']) {
+        state.richTextEditors['description'].setHtml(project.description || '');
+    } else {
+        document.getElementById('f-description').value = project.description || '';
+    }
     document.getElementById('f-featured').checked = !!project.featured;
 
     // Cover
@@ -357,7 +385,11 @@ function prefillForm(project) {
             if (urlInput) urlInput.value = s.image;
         }
         document.getElementById('f-image-text-title').value = s.title || '';
-        document.getElementById('f-image-text-text').value = s.text || '';
+        if (state.richTextEditors['image-text-text']) {
+            state.richTextEditors['image-text-text'].setHtml(s.text || '');
+        } else {
+            document.getElementById('f-image-text-text').value = s.text || '';
+        }
     }
 
     // Section context
@@ -425,7 +457,9 @@ function collectFormData() {
         role: document.getElementById('f-role').value.trim(),
         partners,
         categories,
-        description: document.getElementById('f-description').value.trim(),
+        description: state.richTextEditors['description']
+            ? state.richTextEditors['description'].getHtml().trim()
+            : document.getElementById('f-description').value.trim(),
         featured: document.getElementById('f-featured').checked,
         cover: state.imageUrls['cover'] || document.getElementById('f-cover-url').value.trim(),
         sections: collectSections()
@@ -446,7 +480,9 @@ function collectSections() {
     // Image-text
     const itUrl = state.imageUrls['image-text'] || '';
     const itTitle = document.getElementById('f-image-text-title').value.trim();
-    const itText = document.getElementById('f-image-text-text').value.trim();
+    const itText = state.richTextEditors['image-text-text']
+        ? state.richTextEditors['image-text-text'].getHtml().trim()
+        : document.getElementById('f-image-text-text').value.trim();
     if (itUrl || itText) {
         sections.push({
             type: 'image-text',

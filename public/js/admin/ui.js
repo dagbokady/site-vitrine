@@ -55,7 +55,7 @@ export function disciplineLabel(id) {
 }
 
 export function statusLabel(id) {
-    return { realise: 'Réalisé', etude: 'En étude', concours: 'Concours' }[id] || id;
+    return { realise: 'Réalisé', 'en-cours': 'En cours', etude: 'En étude', concours: 'Concours' }[id] || id;
 }
 
 export function optimizeImage(url, width) {

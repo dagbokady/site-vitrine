@@ -330,6 +330,7 @@
     window.MCJP.getStatusLabel = function (status) {
         const labels = {
             'realise': 'Réalisé',
+            'en-cours': 'En cours',
             'etude': 'En étude',
             'concours': 'Concours'
         };

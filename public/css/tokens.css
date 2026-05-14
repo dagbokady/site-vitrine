@@ -4,21 +4,35 @@
    ============================================ */
 
 :root {
-    /* --- COULEURS --- */
+    /* --- COULEURS ---
+       Thème sombre : fond charcoal #151E27 sur toutes les pages publiques
+       (l'admin reste sur fond clair, voir admin.css) */
     --color-black: #0A0A0A;
     --color-white: #FFFFFF;
-    --color-bg: #FAFAF7;
-    --color-bg-alt: #F2F1EC;
-    --color-text: #1A1A1A;
-    --color-text-secondary: #6B6B6B;
-    --color-text-muted: #999999;
-    --color-text-on-dark: #B5B5B5;
-    --color-border: #E5E5E2;
-    --color-border-strong: #1A1A1A;
+
+    /* Fond principal : charcoal sombre */
+    --color-bg: #151E27;
+    --color-bg-alt: #1D2730;        /* nuance légèrement plus claire pour zones contrastées */
+    --color-bg-deep: #0F161D;       /* nuance encore plus sombre (sections, footer) */
+
+    /* Textes — adaptés au fond sombre */
+    --color-text: #F5F5F2;          /* texte principal blanc cassé */
+    --color-text-secondary: #B5B7BA; /* texte secondaire gris clair */
+    --color-text-muted: #7A8088;    /* texte discret */
+    --color-text-on-dark: #B5B7BA;
+    --color-text-on-light: #1A1A1A; /* utilisé si fond clair (cards, inputs) */
+
+    /* Bordures */
+    --color-border: rgba(255, 255, 255, 0.10);
+    --color-border-strong: rgba(255, 255, 255, 0.25);
+
+    /* Accent (reste rouge orangé) */
     --color-accent: #E63A11;
-    --color-accent-hover: #C62F0E;
-    --color-success: #1D9E75;
-    --color-error: #D8392E;
+    --color-accent-hover: #FF5A33;
+
+    /* États */
+    --color-success: #4ADE80;
+    --color-error: #FF6B5A;
 
     /* --- TYPOGRAPHIE --- */
     --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;

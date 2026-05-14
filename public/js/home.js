@@ -6,7 +6,14 @@
     'use strict';
 
     const SLIDER_INTERVAL = 5000; // 5s par slide
-    const PROJECTS_PER_DISCIPLINE = 5;
+
+    // Nombre de projets affichés par discipline sur la home.
+    // Architecture met en avant 3 lignes (15 projets), les autres 1 ligne (5 projets).
+    const PROJECTS_PER_DISCIPLINE = {
+        architecture: 15,
+        design: 5,
+        urbanisme: 5
+    };
 
     const state = {
         allProjects: [],
@@ -233,7 +240,9 @@
         const grid = document.getElementById('grid-' + discipline);
         if (!grid) return;
 
-        // Filtrer + trier + prendre 3
+        const limit = PROJECTS_PER_DISCIPLINE[discipline] || 5;
+
+        // Filtrer + trier + prendre le bon nombre
         const projects = state.allProjects
             .filter(p => p.discipline === discipline)
             .sort((a, b) => {
@@ -242,7 +251,7 @@
                 if (orderA !== orderB) return orderA - orderB;
                 return (b.year || 0) - (a.year || 0);
             })
-            .slice(0, PROJECTS_PER_DISCIPLINE);
+            .slice(0, limit);
 
         grid.innerHTML = '';
 

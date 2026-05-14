@@ -12,7 +12,7 @@ function validateProject(p) {
     if (!p.discipline || !['architecture', 'design', 'urbanisme'].includes(p.discipline)) {
         return 'Discipline invalide';
     }
-    if (!p.status || !['realise', 'etude', 'concours'].includes(p.status)) {
+    if (!p.status || !['realise', 'en-cours', 'etude', 'concours'].includes(p.status)) {
         return 'Statut invalide';
     }
     if (!p.cover) return 'Image de couverture requise';
@@ -52,9 +52,8 @@ export default async function handler(req, res) {
         const maxOrder = data.projects.reduce((m, p) => Math.max(m, p.order || 0), 0);
 
         const newProject = {
-
             ...project,
-            // Force les champs système (même si fournis dans le body)
+
             id: finalSlug,                         // (overrides précédents)
             slug: finalSlug,
             order: maxOrder + 1,
