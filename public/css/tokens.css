@@ -17,18 +17,32 @@
 
     /* Textes — adaptés au fond sombre */
     --color-text: #F5F5F2;          /* texte principal blanc cassé */
-    --color-text-secondary: #B5B7BA; /* texte secondaire gris clair */
-    --color-text-muted: #7A8088;    /* texte discret */
-    --color-text-on-dark: #B5B7BA;
+    --color-text-secondary: #C2C5CA; /* texte secondaire — éclairci pour WCAG AA (était #B5B7BA) */
+    --color-text-muted: #8B929A;    /* texte discret — éclairci (était #7A8088) */
+    --color-text-on-dark: #C2C5CA;
     --color-text-on-light: #1A1A1A; /* utilisé si fond clair (cards, inputs) */
 
     /* Bordures */
     --color-border: rgba(255, 255, 255, 0.10);
     --color-border-strong: rgba(255, 255, 255, 0.25);
 
-    /* Accent (reste rouge orangé) */
-    --color-accent: #E63A11;
-    --color-accent-hover: #FF5A33;
+    /* --- SURFACES INTERACTIVES (toujours contrastées, quel que soit le thème) ---
+       Ces tokens remplacent les usages de --color-text en background,
+       qui marchaient en thème clair (fond presque noir) mais cassent en thème sombre (fond presque blanc).
+       --color-surface-invert  : fond pour boutons/chips "actifs" → blanc pour thème sombre
+       --color-on-invert       : texte sur ce fond → noir
+       --color-surface-input   : fond des <input> et <textarea>
+       --color-on-input        : texte dans ces champs
+    */
+    --color-surface-invert: #FFFFFF;           /* chips/boutons actifs : fond blanc */
+    --color-on-invert: #151E27;                /* texte sur ces boutons : charcoal */
+    --color-surface-input: rgba(255,255,255,0.06); /* fond des inputs (semi-transparent) */
+    --color-on-input: #F5F5F2;                 /* texte dans les inputs */
+    --color-surface-card: rgba(255,255,255,0.04);  /* fond des cards */
+
+    /* Accent (rouge orangé — légèrement éclairci pour contraste WCAG sur fond #151E27) */
+    --color-accent: #F04A20;
+    --color-accent-hover: #E63A11;
 
     /* États */
     --color-success: #4ADE80;

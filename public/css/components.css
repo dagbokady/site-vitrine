@@ -71,8 +71,8 @@
 }
 
 .btn-outline:hover {
-    background-color: var(--color-text);
-    color: var(--color-white);
+    background-color: var(--color-surface-invert);
+    color: var(--color-on-invert);
 }
 
 .btn-large {
@@ -249,9 +249,9 @@
 }
 
 .filter-btn.is-active {
-    background-color: var(--color-text);
-    color: var(--color-white);
-    border-color: var(--color-text);
+    background-color: var(--color-surface-invert);
+    color: var(--color-on-invert);
+    border-color: var(--color-surface-invert);
 }
 
 /* === LOADING & STATES === */

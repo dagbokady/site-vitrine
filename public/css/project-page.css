@@ -790,9 +790,18 @@
     max-height: 40vh;
 }
 
+/* Section plans : fond grisé → tous les textes doivent être sombres */
+.section-plans {
+    color: #1A1A1A;                /* force le texte en noir */
+}
+
+.section-plans-eyebrow {
+    color: #C63511;    /* rouge plus sombre, lisible sur #E8E8E5 : ratio ~4.2 */
+}
+
 .section-plans-caption {
     font-size: var(--text-sm);
-    color: var(--color-text-secondary);
+    color: #555555;                /* gris moyen sombre, lisible sur fond clair */
     font-style: italic;
     margin-top: var(--space-3);
 }

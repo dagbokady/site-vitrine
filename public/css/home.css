@@ -482,8 +482,8 @@
     align-items: center;
     gap: var(--space-3);
     padding: var(--space-4) var(--space-8);
-    background-color: var(--color-accent);
-    color: var(--color-white);
+    background-color: var(--color-surface-invert);
+    color: var(--color-on-invert);
     font-size: var(--text-base);
     font-weight: var(--weight-medium);
     letter-spacing: var(--tracking-wide);
@@ -494,6 +494,7 @@
 
 .archive-cta:hover {
     background-color: var(--color-accent);
+    color: var(--color-white);
     gap: var(--space-4);
 }
 

@@ -525,13 +525,13 @@
 }
 
 .expertise-card:hover {
-    background-color: var(--color-text);
-    color: var(--color-white);
+    background-color: var(--color-surface-invert);
+    color: var(--color-on-invert);
 }
 
 .expertise-card:hover h3,
 .expertise-card:hover .expertise-num {
-    color: var(--color-white);
+    color: var(--color-on-invert);
 }
 
 .expertise-num {
@@ -575,7 +575,7 @@
 .founder-photo {
     width: 100%;
     aspect-ratio: 1;
-    background-color: var(--color-text);
+    background-color: #2A3540;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -688,7 +688,7 @@
 }
 
 .value {
-    font-size: var(--text-xl);
+    font-size: var(--text-3xl);
     font-weight: var(--weight-medium);
     letter-spacing: var(--tracking-tight);
 }
@@ -759,9 +759,9 @@
     width: 100%;
     padding: var(--space-3) var(--space-4);
     font-size: var(--text-base);
-    color: var(--color-text);
+    color: var(--color-text-on-light);   /* noir sur fond blanc */
     background-color: var(--color-white);
-    border: 1px solid var(--color-border);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: var(--radius-sm);
     transition: border-color var(--duration-fast) var(--ease-out),
     box-shadow var(--duration-fast) var(--ease-out);
@@ -772,8 +772,8 @@
 .form-field select:focus,
 .form-field textarea:focus {
     outline: none;
-    border-color: var(--color-text);
-    box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.1);
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(230, 58, 17, 0.15);
 }
 
 .form-field input.has-error,
