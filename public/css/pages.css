@@ -688,7 +688,7 @@
 }
 
 .value {
-    font-size: var(--text-3xl);
+    font-size: var(--text-xl);
     font-weight: var(--weight-medium);
     letter-spacing: var(--tracking-tight);
 }
