@@ -246,15 +246,14 @@
     }
 
     function renderContext(section) {
-        const imageUrl = window.MCJP.cloudinaryOptimize(section.image, 1800);
+        // Même layout que section 2 (image-text) : texte gauche 40% / image droite 60%
+        // Seule différence : l'eyebrow "Contexte & implantation" et pas de titre optionnel
+        const imageUrl = window.MCJP.cloudinaryOptimize(section.image, 1600);
         return `
-      <div class="section-context-content">
-        <p class="section-context-eyebrow">Contexte &amp; implantation</p>
-        <h2 class="section-context-title">Lecture du site</h2>
-        ${section.caption ? `<p class="section-context-caption">${escapeHtml(section.caption)}</p>` : ''}
-      </div>
-      <div class="section-context-image-wrap">
-        <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(section.caption || 'Plan de contexte')}" class="section-context-image" loading="lazy">
+      <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(section.caption || 'Contexte & implantation')}" class="section-image-text-image" loading="lazy">
+      <div class="section-image-text-content">
+        <p class="section-image-text-eyebrow">Contexte &amp; implantation</p>
+        ${section.caption ? `<h2 class="section-image-text-title">${escapeHtml(section.caption)}</h2>` : ''}
       </div>
     `;
     }
@@ -313,7 +312,10 @@
             wrapper.className = 'project-section section-gallery' + (images.length === 3 ? ' has-3' : '');
             wrapper.innerHTML = renderGallery(section);
         } else {
-            wrapper.className = 'project-section section-' + section.type;
+            // La section "context" réutilise volontairement les styles de "image-text"
+            // (même layout 40/60, même image plein bord) — seul l'eyebrow change
+            const cssType = section.type === 'context' ? 'image-text' : section.type;
+            wrapper.className = 'project-section section-' + cssType;
             switch (section.type) {
                 case 'image-text':
                     wrapper.innerHTML = renderImageText(section);
