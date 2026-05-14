@@ -9,10 +9,11 @@ import { setupUploadZone } from './cloudinary.js';
 // État local de l'éditeur
 const state = {
     mode: 'create',          // 'create' | 'edit'
-    editingId: null,         // id du projet en édition (null si création)
+    editingId: null,
     currentStep: 1,
-    uploadHandlers: {},      // map { 'cover' | 'hero' | 'image-text' | 'gallery-0' | ... : { setUrl, getUrl } }
-    imageUrls: {}            // map des URLs uploadées par target
+    uploadHandlers: {},      // map { target : { setUrl, getUrl, getIsUploading } }
+    imageUrls: {},           // map des URLs uploadées (uniquement Cloudinary, jamais data:)
+    activeUploads: 0         // compteur d'uploads en cours (bloque "Suivant")
 };
 
 const FORM_FIELDS_META = [
@@ -69,11 +70,20 @@ function setupUploadZones() {
     if (coverZone) {
         state.uploadHandlers['cover'] = setupUploadZone(coverZone, {
             mini: false,
-            onUploaded: (url) => {
-                state.imageUrls['cover'] = url;
-                // Synchroniser avec l'input URL
-                const urlInput = document.getElementById('f-cover-url');
-                if (urlInput && url) urlInput.value = url;
+            onUploaded: (url, meta) => {
+                // Ne stocker l'URL que si l'upload est terminé (pas pendant)
+                if (meta?.uploading) {
+                    state.activeUploads = (state.activeUploads || 0) + 1;
+                    updateWizardNextState();
+                } else {
+                    if (typeof url === 'string') {
+                        state.imageUrls['cover'] = url;
+                        const urlInput = document.getElementById('f-cover-url');
+                        if (urlInput && url) urlInput.value = url;
+                    }
+                    if (state.activeUploads > 0) state.activeUploads--;
+                    updateWizardNextState();
+                }
             }
         });
     }
@@ -87,15 +97,23 @@ function setupUploadZones() {
 
     // Toutes les zones mini (sections)
     document.querySelectorAll('.upload-zone-mini').forEach(zone => {
-        const target = zone.dataset.target; // ex: 'hero', 'image-text', 'gallery-0'
+        const target = zone.dataset.target;
         state.uploadHandlers[target] = setupUploadZone(zone, {
             mini: true,
-            onUploaded: (url) => {
-                state.imageUrls[target] = url;
-                // Sync l'input URL associé (si présent)
-                const urlInput = document.querySelector(`.section-url-input[data-target="${target}"]`);
-                if (urlInput && url) urlInput.value = url;
-                updateSectionStatus();
+            onUploaded: (url, meta) => {
+                if (meta?.uploading) {
+                    state.activeUploads = (state.activeUploads || 0) + 1;
+                    updateWizardNextState();
+                } else {
+                    if (typeof url === 'string') {
+                        state.imageUrls[target] = url;
+                        const urlInput = document.querySelector(`.section-url-input[data-target="${target}"]`);
+                        if (urlInput && url) urlInput.value = url;
+                    }
+                    if (state.activeUploads > 0) state.activeUploads--;
+                    updateWizardNextState();
+                    updateSectionStatus();
+                }
             }
         });
     });
@@ -170,7 +188,45 @@ function showStep(step) {
     // Si on entre dans la prévisualisation : générer
     if (step === 4) renderPreview();
 
+    // Mettre à jour l'état du bouton Suivant (au cas où un upload est en cours)
+    updateWizardNextState();
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/**
+ * Désactive le bouton "Suivant" si une upload est en cours,
+ * pour éviter de sauvegarder un data:image qui n'a pas fini d'uploader.
+ */
+function updateWizardNextState() {
+    const nextBtn = document.getElementById('wizard-next');
+    const submitBtn = document.getElementById('wizard-submit');
+    const isUploading = state.activeUploads > 0;
+
+    if (nextBtn) {
+        nextBtn.disabled = isUploading;
+        const label = nextBtn.querySelector('.btn-label') || nextBtn;
+        if (isUploading) {
+            nextBtn.dataset.originalText = nextBtn.dataset.originalText || nextBtn.textContent;
+            nextBtn.textContent = '⏳ Upload en cours…';
+        } else if (nextBtn.dataset.originalText) {
+            nextBtn.textContent = nextBtn.dataset.originalText;
+        }
+    }
+    if (submitBtn) {
+        submitBtn.disabled = isUploading;
+    }
+
+    // Petit indicateur dans la zone d'erreur
+    const errorEl = document.getElementById('wizard-error');
+    if (isUploading && errorEl) {
+        errorEl.textContent = 'Upload(s) en cours, patientez avant de continuer…';
+        errorEl.hidden = false;
+        errorEl.className = 'wizard-info';
+    } else if (errorEl && errorEl.className === 'wizard-info') {
+        errorEl.hidden = true;
+        errorEl.className = 'wizard-error';
+    }
 }
 
 // ============================================
@@ -250,7 +306,9 @@ function resetForm() {
     // Reset des previews d'upload
     Object.values(state.uploadHandlers).forEach(h => h?.setUrl(''));
     state.imageUrls = {};
+    state.activeUploads = 0;
     updateSectionStatus();
+    updateWizardNextState();
 }
 
 function prefillForm(project) {
@@ -329,10 +387,10 @@ function prefillForm(project) {
         });
     }
 
-    // Section plans (2 slots)
+    // Section plans (jusqu'à 5 slots)
     if (sectionMap.plans?.images) {
         sectionMap.plans.images.forEach((img, i) => {
-            if (i < 2) {
+            if (i < 5) {
                 const target = `plans-${i}`;
                 if (img.url) {
                     state.imageUrls[target] = img.url;
@@ -420,9 +478,9 @@ function collectSections() {
         sections.push({ type: 'gallery', images: galleryImages });
     }
 
-    // Plans (2 slots)
+    // Plans (jusqu'à 5 slots)
     const planImages = [];
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < 5; i++) {
         const url = state.imageUrls[`plans-${i}`];
         const caption = document.querySelector(`.plans-caption[data-slot="${i}"]`)?.value.trim();
         if (url) planImages.push({ url, caption: caption || '' });
@@ -453,9 +511,9 @@ function updateSectionStatus() {
     const galleryCount = [0, 1, 2].filter(i => state.imageUrls[`gallery-${i}`]).length;
     document.getElementById('status-gallery').textContent = `${galleryCount} / 3 images`;
 
-    // Plans
-    const plansCount = [0, 1].filter(i => state.imageUrls[`plans-${i}`]).length;
-    document.getElementById('status-plans').textContent = `${plansCount} / 2 plans`;
+    // Plans (jusqu'à 5)
+    const plansCount = [0, 1, 2, 3, 4].filter(i => state.imageUrls[`plans-${i}`]).length;
+    document.getElementById('status-plans').textContent = `${plansCount} / 5 plans`;
 }
 
 // ============================================

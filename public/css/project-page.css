@@ -259,9 +259,9 @@
     opacity: 0.5;
 }
 
-/* Bloc rouge à gauche */
+/* Bloc charcoal à gauche (anciennement rouge) */
 .cover-text {
-    background-color: var(--color-accent);
+    background-color: #151E27;
     color: var(--color-white);
     display: flex;
     align-items: stretch;
@@ -434,7 +434,8 @@
 }
 
 /* ============================================
-   SECTION 2 : IMAGE-TEXT (refonte)
+   SECTION 2 : IMAGE-TEXT
+   Texte à GAUCHE (40%) — Image à DROITE (60%)
    ============================================ */
 .section-image-text {
     background-color: var(--color-bg);
@@ -445,7 +446,8 @@
 
 @media (min-width: 900px) {
     .section-image-text {
-        grid-template-columns: 1.4fr 1fr;
+        /* Texte 40% à gauche, image 60% à droite */
+        grid-template-columns: 40% 60%;
     }
 }
 
@@ -454,26 +456,39 @@
     height: 100%;
     object-fit: cover;
     min-height: 50vh;
+    order: 2; /* Image après le contenu dans l'ordre DOM mais à droite visuellement */
 }
 
 @media (max-width: 899px) {
     .section-image-text-image {
-        height: 60vh;
+        height: 55vh;
+        min-height: auto;
+        order: 1; /* Mobile : image en haut */
     }
 }
 
 .section-image-text-content {
+    order: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: var(--space-12) var(--space-8);
     gap: var(--space-6);
-    max-width: 580px;
 }
 
 @media (min-width: 900px) {
     .section-image-text-content {
-        padding: var(--space-12) var(--space-12);
+        padding: var(--space-12) var(--space-12) var(--space-12) var(--space-16);
+        max-width: none;
+    }
+    .section-image-text-image {
+        order: 2;
+    }
+}
+
+@media (max-width: 899px) {
+    .section-image-text-content {
+        order: 2;
     }
 }
 
@@ -513,16 +528,43 @@
 
 /* ============================================
    SECTION 3 : CONTEXT (plan masse, etc.)
+   Texte à GAUCHE (40%) — Image à DROITE (60%)
+   Mêmes proportions que image-text pour cohérence
    ============================================ */
 .section-context {
     background-color: var(--color-bg-alt);
     color: var(--color-text);
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+    .section-context {
+        grid-template-columns: 40% 60%;
+        align-items: stretch;
+    }
+}
+
+/* Bloc texte gauche */
+.section-context-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: var(--space-16) var(--container-padding);
-    gap: var(--space-6);
+    padding: var(--space-12) var(--space-8);
+    gap: var(--space-5);
+    order: 1;
+}
+
+@media (min-width: 900px) {
+    .section-context-content {
+        padding: var(--space-12) var(--space-12) var(--space-12) var(--space-16);
+    }
+}
+
+@media (max-width: 899px) {
+    .section-context-content {
+        order: 2;
+    }
 }
 
 .section-context-eyebrow {
@@ -531,26 +573,63 @@
     letter-spacing: var(--tracking-wider);
     color: var(--color-accent);
     font-weight: var(--weight-semibold);
+    position: relative;
+    padding-left: var(--space-6);
+}
+
+.section-context-eyebrow::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: var(--space-4);
+    height: 1px;
+    background-color: var(--color-accent);
+}
+
+.section-context-title {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    font-weight: var(--weight-medium);
+    letter-spacing: var(--tracking-tight);
+    line-height: var(--leading-snug);
+    color: var(--color-text);
+}
+
+.section-context-caption {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    font-style: italic;
+    line-height: var(--leading-relaxed);
+}
+
+/* Bloc image droite */
+.section-context-image-wrap {
+    order: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-6);
+    background-color: var(--color-bg-alt);
+    min-height: 50vh;
+}
+
+@media (max-width: 899px) {
+    .section-context-image-wrap {
+        order: 1;
+        min-height: 55vh;
+        padding: var(--space-4);
+    }
 }
 
 .section-context-image {
-    max-width: 1100px;
-    max-height: 65vh;
+    max-width: 100%;
+    max-height: 75vh;
     width: auto;
     height: auto;
     object-fit: contain;
     background-color: var(--color-white);
     padding: var(--space-3);
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-}
-
-.section-context-caption {
-    font-size: var(--text-sm);
-    color: var(--color-text-secondary);
-    font-style: italic;
-    max-width: 60ch;
-    text-align: center;
-    line-height: var(--leading-relaxed);
 }
 
 /* ============================================
@@ -659,14 +738,25 @@
 .section-plans-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--space-8);
+    gap: var(--space-6);
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
 }
 
 @media (min-width: 768px) {
-    .section-plans-grid.has-multiple {
+    .section-plans-grid.has-one {
+        max-width: 900px;
+        grid-template-columns: 1fr;
+    }
+    .section-plans-grid.has-two {
         grid-template-columns: 1fr 1fr;
+    }
+    .section-plans-grid.has-three {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* 4 et 5 plans : grille flexible, 3 colonnes max */
+    .section-plans-grid.has-many {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -679,7 +769,12 @@
     max-height: 55vh;
     object-fit: contain;
     background-color: var(--color-bg-alt);
-    padding: var(--space-4);
+    padding: var(--space-3);
+}
+
+/* Quand il y a 4-5 plans, réduire un peu la hauteur */
+.section-plans-grid.has-many .section-plans-item img {
+    max-height: 40vh;
 }
 
 .section-plans-caption {

@@ -198,9 +198,14 @@
     function renderContext(section) {
         const imageUrl = window.MCJP.cloudinaryOptimize(section.image, 1800);
         return `
-      <p class="section-context-eyebrow">Contexte &amp; implantation</p>
-      <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(section.caption || 'Plan de contexte')}" class="section-context-image" loading="lazy">
-      ${section.caption ? `<p class="section-context-caption">${escapeHtml(section.caption)}</p>` : ''}
+      <div class="section-context-content">
+        <p class="section-context-eyebrow">Contexte &amp; implantation</p>
+        <h2 class="section-context-title">Lecture du site</h2>
+        ${section.caption ? `<p class="section-context-caption">${escapeHtml(section.caption)}</p>` : ''}
+      </div>
+      <div class="section-context-image-wrap">
+        <img src="${escapeAttr(imageUrl)}" alt="${escapeAttr(section.caption || 'Plan de contexte')}" class="section-context-image" loading="lazy">
+      </div>
     `;
     }
 
@@ -224,7 +229,13 @@
 
     function renderPlans(section) {
         const images = section.images || [];
-        const gridClass = 'section-plans-grid' + (images.length > 1 ? ' has-multiple' : '');
+        const count = images.length;
+        // Classes : 1 → centré, 2 → 2 cols, 3 → 3 cols, 4-5 → grille flexible
+        let gridClass = 'section-plans-grid';
+        if (count === 1) gridClass += ' has-one';
+        else if (count === 2) gridClass += ' has-two';
+        else if (count === 3) gridClass += ' has-three';
+        else gridClass += ' has-many';
 
         const imagesHtml = images.map(img => {
             const url = window.MCJP.cloudinaryOptimize(img.url, 1800);
