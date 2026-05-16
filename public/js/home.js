@@ -96,17 +96,34 @@
             slide.setAttribute('aria-hidden', index === 0 ? 'false' : 'true');
             slide.setAttribute('role', 'tabpanel');
 
-            const imageUrl = window.MCJP.cloudinaryOptimize(project.cover, 2400);
             const meta = [
                 getDisciplineLabel(project.discipline),
                 project.year || window.MCJP.getStatusLabel(project.status)
             ].filter(Boolean).join(' · ');
 
+            // === DÉTECTION VIDÉO vs IMAGE ===
+            // Si project.cover finit par .mp4 / .webm / .mov, on génère un <video>.
+            // Sinon : <img> classique.
+            // → Cloudinary délivre les vidéos depuis la même URL (pas besoin de pattern spécial)
+            // → Pour utiliser une vidéo, le client upload simplement un .mp4 ou .webm
+            //   dans le champ "Image de couverture" (n'importe lequel des 2 champs).
+            const isVideo = /\.(mp4|webm|mov)(\?|$)/i.test(project.cover || '');
+            const mediaUrl = isVideo
+                ? project.cover  // pas d'optimisation Cloudinary pour vidéo (URL inchangée)
+                : window.MCJP.cloudinaryOptimize(project.cover, 2400);
+
+            const mediaHtml = isVideo
+                ? `<video class="hero-slide-image hero-slide-video"
+                  src="${escapeAttr(mediaUrl)}"
+                  autoplay muted loop playsinline preload="metadata"
+                  aria-label="${escapeAttr(project.title)}"></video>`
+                : `<img src="${escapeAttr(mediaUrl)}"
+                alt="${escapeAttr(project.title)}"
+                class="hero-slide-image"
+                ${index === 0 ? '' : 'loading="lazy"'}>`;
+
             slide.innerHTML = `
-        <img src="${escapeAttr(imageUrl)}"
-             alt="${escapeAttr(project.title)}"
-             class="hero-slide-image"
-             ${index === 0 ? '' : 'loading="lazy"'}>
+        ${mediaHtml}
         <div class="hero-slide-text">
           <div class="hero-slide-text-inner">
             <p class="hero-slide-meta">${escapeHtml(meta)}</p>

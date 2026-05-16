@@ -73,6 +73,7 @@
         buildCoverSection(project);
         buildDynamicSections(project);
         buildSectionIndicator();
+        setupPlansChevrons();
         setupScrollObserver();
         setupProjectNavigation(project);
         setupKeyboardNav();
@@ -278,27 +279,30 @@
 
     function renderPlans(section) {
         const images = section.images || [];
-        const count = images.length;
-        // Classes : 1 → centré, 2 → 2 cols, 3 → 3 cols, 4-5 → grille flexible
-        let gridClass = 'section-plans-grid';
-        if (count === 1) gridClass += ' has-one';
-        else if (count === 2) gridClass += ' has-two';
-        else if (count === 3) gridClass += ' has-three';
-        else gridClass += ' has-many';
+        // Identifiant unique pour cibler les chevrons de cette section
+        const uid = 'plans-' + Math.random().toString(36).slice(2, 8);
 
-        const imagesHtml = images.map(img => {
-            const url = window.MCJP.cloudinaryOptimize(img.url, 1800);
+        const imagesHtml = images.map((img, i) => {
+            const url = window.MCJP.cloudinaryOptimize(img.url, 1400);
             return `
         <figure class="section-plans-item">
-          <img src="${escapeAttr(url)}" alt="${escapeAttr(img.caption || 'Plan technique')}" loading="lazy">
+          <img src="${escapeAttr(url)}" alt="${escapeAttr(img.caption || 'Plan technique ' + (i+1))}" loading="lazy">
           ${img.caption ? `<figcaption class="section-plans-caption">${escapeHtml(img.caption)}</figcaption>` : ''}
         </figure>
       `;
         }).join('');
 
         return `
-      <p class="section-plans-eyebrow">Plans &amp; dessins techniques</p>
-      <div class="${gridClass}">${imagesHtml}</div>
+      <div class="section-plans-inner">
+        <header class="section-plans-header">
+          <p class="section-plans-eyebrow">Plans &amp; dessins techniques</p>
+          <div class="section-plans-controls">
+            <button type="button" class="plans-chevron" data-plans-prev="${uid}" aria-label="Voir les plans précédents">←</button>
+            <button type="button" class="plans-chevron" data-plans-next="${uid}" aria-label="Voir les plans suivants">→</button>
+          </div>
+        </header>
+        <div class="section-plans-grid" data-plans-grid="${uid}">${imagesHtml}</div>
+      </div>
     `;
     }
 
@@ -371,6 +375,45 @@
         if (state.sectionElements[index]) {
             state.sectionElements[index].scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+    }
+
+    // ============================================
+    // CHEVRONS de défilement horizontal pour la section Plans
+    // ============================================
+    function setupPlansChevrons() {
+        document.querySelectorAll('.plans-chevron').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const isNext = btn.hasAttribute('data-plans-next');
+                const uid = btn.getAttribute(isNext ? 'data-plans-next' : 'data-plans-prev');
+                const grid = document.querySelector(`[data-plans-grid="${uid}"]`);
+                if (!grid) return;
+                // Faire défiler d'environ la largeur d'une card
+                const card = grid.querySelector('.section-plans-item');
+                const cardW = card ? card.getBoundingClientRect().width : 200;
+                const gap = 12; // var(--space-3)
+                const delta = (cardW + gap) * (isNext ? 1 : -1);
+                grid.scrollBy({ left: delta, behavior: 'smooth' });
+            });
+        });
+
+        // Met à jour l'état disabled des chevrons selon la position de scroll
+        document.querySelectorAll('.section-plans-grid').forEach(grid => {
+            const uid = grid.getAttribute('data-plans-grid');
+            const prevBtn = document.querySelector(`[data-plans-prev="${uid}"]`);
+            const nextBtn = document.querySelector(`[data-plans-next="${uid}"]`);
+            function updateChevrons() {
+                if (!prevBtn || !nextBtn) return;
+                const atStart = grid.scrollLeft <= 5;
+                const atEnd = grid.scrollLeft >= grid.scrollWidth - grid.clientWidth - 5;
+                prevBtn.disabled = atStart;
+                nextBtn.disabled = atEnd;
+            }
+            grid.addEventListener('scroll', updateChevrons, { passive: true });
+            window.addEventListener('resize', updateChevrons);
+            // Initial
+            setTimeout(updateChevrons, 100);
+        });
     }
 
     // ============================================

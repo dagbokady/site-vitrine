@@ -15,7 +15,9 @@ export async function uploadImage(file, onProgress) {
         formData.append('upload_preset', UPLOAD_PRESET);
 
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/image/upload`);
+        // /auto/ : Cloudinary détecte automatiquement le type (image OU vidéo).
+        // → permet d'uploader des .mp4 / .webm pour le slider hero.
+        xhr.open('POST', `https://api.cloudinary.com/v1_1/${CLOUD_NAME}/auto/upload`);
 
         xhr.upload.addEventListener('progress', (e) => {
             if (e.lengthComputable && typeof onProgress === 'function') {
@@ -57,15 +59,59 @@ export function setupUploadZone(zoneEl, { onUploaded, mini = false } = {}) {
     // État interne : upload en cours ?
     let isUploading = false;
 
-    function showPreview(url) {
-        if (img) img.src = url;
-        if (preview) preview.hidden = false;
+    function showPreview(url, isVideoOverride) {
+        // Détecte si c'est une vidéo (soit forçé via flag, soit par URL/extension)
+        const isVid = isVideoOverride === true
+            || /^data:video\//i.test(url)
+            || /\.(mp4|webm|mov)(\?|$)/i.test(url);
+
+        if (preview) {
+            // Si vidéo : remplace le <img> par un <video> au runtime
+            if (isVid) {
+                let video = preview.querySelector('video');
+                if (!video) {
+                    video = document.createElement('video');
+                    video.muted = true;
+                    video.loop = true;
+                    video.autoplay = true;
+                    video.playsInline = true;
+                    video.style.cssText = (img && img.style.cssText) || '';
+                    video.style.width = '100%';
+                    video.style.maxHeight = '280px';
+                    video.style.objectFit = 'cover';
+                    if (img) img.replaceWith(video);
+                    else preview.prepend(video);
+                }
+                video.src = url;
+                if (img) img.style.display = 'none';
+            } else {
+                // Image : restaurer <img> si elle a été remplacée par une <video>
+                let video = preview.querySelector('video');
+                if (video && !img) {
+                    // Recréer une img
+                    const newImg = document.createElement('img');
+                    video.replaceWith(newImg);
+                } else if (video) {
+                    video.remove();
+                }
+                const imgEl = preview.querySelector('img') || img;
+                if (imgEl) {
+                    imgEl.src = url;
+                    imgEl.style.display = '';
+                }
+            }
+            preview.hidden = false;
+        }
         if (trigger) trigger.hidden = true;
     }
 
     function hidePreview() {
-        if (img) img.src = '';
-        if (preview) preview.hidden = true;
+        if (preview) {
+            const video = preview.querySelector('video');
+            if (video) video.remove();
+            if (img) img.src = '';
+            preview.hidden = true;
+        }
         if (trigger) trigger.hidden = false;
         fileInput.value = '';
     }
@@ -97,18 +143,24 @@ export function setupUploadZone(zoneEl, { onUploaded, mini = false } = {}) {
     }
 
     async function handleFile(file) {
-        if (!file || !file.type.startsWith('image/')) {
-            alert('Seules les images sont acceptées');
+        if (!file) return;
+        const isImage = file.type.startsWith('image/');
+        const isVideo = file.type.startsWith('video/');
+        if (!isImage && !isVideo) {
+            alert('Seules les images et les vidéos sont acceptées');
             return;
         }
-        if (file.size > 10 * 1024 * 1024) {
-            alert('Image trop lourde (max 10 Mo)');
+        // Limite : 10 Mo pour les images, 50 Mo pour les vidéos
+        const maxSize = isVideo ? 50 * 1024 * 1024 : 10 * 1024 * 1024;
+        if (file.size > maxSize) {
+            alert(`Fichier trop lourd (max ${isVideo ? '50 Mo pour une vidéo' : '10 Mo pour une image'})`);
             return;
         }
 
-        // Aperçu local immédiat (data:image)
+        // Aperçu local immédiat : pour image c'est une dataURL,
+        // pour vidéo on affiche aussi la dataURL (le navigateur la lira)
         const reader = new FileReader();
-        reader.onload = (e) => showPreview(e.target.result);
+        reader.onload = (e) => showPreview(e.target.result, isVideo);
         reader.readAsDataURL(file);
 
         // Marquer comme en cours d'upload + UI

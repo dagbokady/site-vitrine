@@ -6,6 +6,7 @@ import { showView, toast } from './ui.js';
 import { setupLogin, setupLogout } from './login.js';
 import { setupList, enterList } from './list.js';
 import { setupEditor, openCreate, openEdit } from './editor.js';
+import { setupMessages, enterMessages, refreshUnreadCount } from './messages.js';
 
 // ============================================
 // INIT
@@ -23,16 +24,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setupEditor({
         onSaved: async () => {
-            // Après sauvegarde : retour à la liste rafraîchie
             await enterList();
+            activateTab('projects');
         },
-        onBack: () => enterList()
+        onBack: () => {
+            enterList();
+            activateTab('projects');
+        }
     });
 
-    // Démarrage : si on a déjà un token, on tente d'entrer directement
+    setupMessages();
+
+    // Onglets dans le header admin
+    document.getElementById('tab-projects')?.addEventListener('click', () => {
+        enterList();
+        activateTab('projects');
+    });
+    document.getElementById('tab-messages')?.addEventListener('click', () => {
+        enterMessages();
+        activateTab('messages');
+    });
+
+    // Démarrage
     if (api.getToken()) {
         enterApp().catch(() => {
-            // Token invalide → reste sur la vue login
             api.clearToken();
             showView('view-login');
         });
@@ -43,4 +58,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 async function enterApp() {
     await enterList();
+    activateTab('projects');
+    // En arrière-plan : pré-charger le compteur de messages non lus
+    refreshUnreadCount();
+}
+
+function activateTab(name) {
+    document.querySelectorAll('.admin-tab').forEach(t => t.classList.remove('is-active'));
+    const el = document.getElementById('tab-' + name);
+    if (el) el.classList.add('is-active');
 }

@@ -25,11 +25,15 @@
 <header class="admin-header">
     <div class="admin-header-inner">
         <a href="/" class="admin-logo">
-            <img src="/images/ui/logo-mcjohnson.png" alt="Mc.Johnson & Partners" class="site-logo-img" width="600" height="117">
+            <span class="logo-text">Mc.JOHNSON &amp; <span class="logo-accent">Partners</span></span>
             <span class="admin-badge">Admin</span>
         </a>
         <div class="admin-header-actions" id="header-actions" hidden>
             <button class="admin-link" id="back-to-list" hidden>← Liste</button>
+            <button class="admin-link admin-tab" id="tab-projects">Projets</button>
+            <button class="admin-link admin-tab" id="tab-messages">
+                Messages <span class="admin-badge-count" id="unread-count" hidden>0</span>
+            </button>
             <a href="/" class="admin-link" target="_blank" rel="noopener">Voir le site ↗</a>
             <button class="admin-link admin-logout" id="logout-btn">Déconnexion</button>
         </div>
@@ -116,6 +120,40 @@
                 <span class="page-info" id="page-info">Page 1 / —</span>
                 <button class="page-btn" id="page-next">Suivant →</button>
             </nav>
+
+        </div>
+    </section>
+
+    <!-- ====================================================
+         VUE : INBOX MESSAGES (formulaire de contact)
+         ==================================================== -->
+    <section class="admin-view view-messages" id="view-messages" hidden>
+        <div class="admin-container">
+
+            <header class="list-header">
+                <div>
+                    <h1 class="list-title">Messages reçus</h1>
+                    <p class="list-count" id="messages-count">— messages</p>
+                </div>
+                <button class="admin-btn admin-btn-secondary" id="messages-refresh">↻ Actualiser</button>
+            </header>
+
+            <div class="messages-layout">
+                <!-- Liste des messages à gauche -->
+                <div class="messages-list" id="messages-list">
+                    <p class="messages-empty" id="messages-empty" hidden>Aucun message pour le moment.</p>
+                    <div class="messages-loading" id="messages-loading">
+                        <span class="spinner"></span>
+                        <p>Chargement…</p>
+                    </div>
+                    <ul class="messages-items" id="messages-items"></ul>
+                </div>
+
+                <!-- Détail du message à droite -->
+                <div class="message-detail" id="message-detail">
+                    <p class="message-detail-empty">Sélectionnez un message pour le lire.</p>
+                </div>
+            </div>
 
         </div>
     </section>
@@ -242,10 +280,10 @@
                 <!-- ÉTAPE 2 : COUVERTURE -->
                 <div class="wizard-pane" data-pane="2">
                     <h2 class="pane-title">2. Image de couverture</h2>
-                    <p class="pane-help">L'image principale qui représente le projet sur la home et l'archive. Format paysage recommandé, minimum 1600×1000px.</p>
+                    <p class="pane-help">L'image (ou la vidéo .mp4 / .webm) qui représente le projet sur la home et l'archive. Format paysage recommandé, minimum 1600×1000px. Vidéo max 50 Mo, auto-play en boucle muet sur le slider.</p>
 
                     <div class="upload-zone" id="upload-cover">
-                        <input type="file" id="cover-input" accept="image/*" hidden>
+                        <input type="file" id="cover-input" accept="image/*,video/*" hidden>
                         <div class="upload-preview" id="cover-preview" hidden>
                             <img id="cover-preview-img" alt="Aperçu de la couverture">
                             <button type="button" class="upload-remove" id="cover-remove" aria-label="Supprimer">✕</button>

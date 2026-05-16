@@ -446,8 +446,9 @@
 
 @media (min-width: 900px) {
     .section-image-text {
-        /* Texte 40% à gauche, image 60% à droite */
-        grid-template-columns: 40% 60%;
+        /* Exactement les mêmes proportions que la section 1 (cover) :
+           38% texte à gauche, 62% image à droite. */
+        grid-template-columns: minmax(380px, 38%) 1fr;
     }
 }
 
@@ -455,15 +456,15 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    min-height: 50vh;
-    order: 2; /* Image après le contenu dans l'ordre DOM mais à droite visuellement */
+    min-height: 100vh;            /* Pleine hauteur écran comme la cover */
+    order: 2;
 }
 
 @media (max-width: 899px) {
     .section-image-text-image {
         height: 55vh;
         min-height: auto;
-        order: 1; /* Mobile : image en haut */
+        order: 1;
     }
 }
 
@@ -472,13 +473,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: var(--space-12) var(--space-8);
+    /* Padding identique à .cover-text-inner (100px top mobile, 120px desktop) */
+    padding: 100px var(--space-6) var(--space-8);
     gap: var(--space-6);
+    background-color: var(--color-bg);
+    min-height: 60vh;
 }
 
 @media (min-width: 900px) {
     .section-image-text-content {
-        padding: var(--space-12) var(--space-12) var(--space-12) var(--space-16);
+        padding: 120px var(--space-12) var(--space-12) var(--space-16);
+        min-height: 100vh;
         max-width: none;
     }
     .section-image-text-image {
@@ -604,105 +609,151 @@
 
 /* ============================================
    SECTION 5 : PLANS
-   Fond grisé pour cette section (demande client).
-   Les cadres d'images restent blancs pour le contraste.
+   Fond charcoal (même que le reste du site).
+   Disposition style "discipline" de la home : header + grille horizontale 5 cards
+   avec scroll snap horizontal + boutons chevrons.
    ============================================ */
 .section-plans {
-    background-color: #E8E8E5;
+    background-color: var(--color-bg);     /* #151E27 : même fond que le site */
     color: var(--color-text);
-    padding: var(--space-16) var(--container-padding);
+    padding: var(--space-16) 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    gap: var(--space-8);
+    gap: var(--space-6);
+}
+
+.section-plans-inner {
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+    width: 100%;
+}
+
+.section-plans-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid var(--color-border-strong);
+    margin-bottom: var(--space-4);
+    gap: var(--space-4);
+    flex-wrap: wrap;
 }
 
 .section-plans-eyebrow {
-    font-size: var(--text-xs);
-    text-transform: uppercase;
-    letter-spacing: var(--tracking-wider);
-    color: var(--color-accent);
-    font-weight: var(--weight-semibold);
-    position: relative;
-    padding-left: var(--space-6);
+    font-size: var(--text-xl);             /* taille équivalente à .discipline-name */
+    font-weight: var(--weight-medium);
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-text);
+    text-transform: none;
+    padding-left: 0;
 }
 
 .section-plans-eyebrow::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: var(--space-4);
-    height: 1px;
+    display: none;
+}
+
+/* Chevrons de défilement */
+.section-plans-controls {
+    display: flex;
+    gap: var(--space-2);
+}
+
+.plans-chevron {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--color-border-strong);
+    color: var(--color-text);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1;
+    transition: background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    opacity var(--duration-fast) var(--ease-out);
+    font-family: inherit;
+}
+
+.plans-chevron:hover:not(:disabled) {
     background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.plans-chevron:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
 }
 
 .section-plans-title {
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
-    font-weight: var(--weight-medium);
-    letter-spacing: var(--tracking-tight);
-    margin-bottom: var(--space-4);
-    text-align: center;
+    display: none;                          /* pas utilisé dans ce layout */
 }
 
+/* === GRILLE HORIZONTALE === */
 .section-plans-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--space-6);
-    width: 100%;
-    max-width: 1400px;
+    grid-auto-flow: column;                 /* défilement horizontal */
+    grid-auto-columns: calc((100% - var(--space-3) * 4) / 5);  /* 5 visibles desktop */
+    gap: var(--space-3);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;                  /* Firefox */
+    -ms-overflow-style: none;               /* IE */
+    padding-bottom: var(--space-2);
 }
 
-@media (min-width: 768px) {
-    .section-plans-grid.has-one {
-        max-width: 900px;
-        grid-template-columns: 1fr;
+.section-plans-grid::-webkit-scrollbar {
+    display: none;                          /* Chrome / Safari */
+}
+
+@media (max-width: 1000px) {
+    .section-plans-grid {
+        grid-auto-columns: calc((100% - var(--space-3) * 2) / 3);  /* 3 visibles tablette */
     }
-    .section-plans-grid.has-two {
-        grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 700px) {
+    .section-plans-grid {
+        grid-auto-columns: calc((100% - var(--space-3)) / 2);     /* 2 visibles mobile L */
     }
-    .section-plans-grid.has-three {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    /* 4 et 5 plans : grille flexible, 3 colonnes max */
-    .section-plans-grid.has-many {
-        grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 480px) {
+    .section-plans-grid {
+        grid-auto-columns: 85%;                                    /* 1 + peek mobile */
     }
 }
 
 .section-plans-item {
-    text-align: center;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
 }
 
 .section-plans-item img {
     width: 100%;
-    max-height: 55vh;
-    object-fit: contain;
-    background-color: var(--color-white);
-    padding: var(--space-3);
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    aspect-ratio: 4 / 3;                    /* même ratio que .thumb sur la home */
+    object-fit: cover;                      /* couvre comme une thumb */
+    background-color: var(--color-bg-alt);
+    display: block;
+    transition: transform 0.8s var(--ease-out);
 }
 
-/* Quand il y a 4-5 plans, réduire un peu la hauteur */
-.section-plans-grid.has-many .section-plans-item img {
-    max-height: 40vh;
-}
-
-/* Section plans : fond grisé → tous les textes doivent être sombres */
-.section-plans {
-    color: #1A1A1A;                /* force le texte en noir */
-}
-
-.section-plans-eyebrow {
-    color: #C63511;    /* rouge plus sombre, lisible sur #E8E8E5 : ratio ~4.2 */
+.section-plans-item:hover img {
+    transform: scale(1.04);
 }
 
 .section-plans-caption {
     font-size: var(--text-sm);
-    color: #555555;                /* gris moyen sombre, lisible sur fond clair */
-    font-style: italic;
-    margin-top: var(--space-3);
+    color: var(--color-text-secondary);
+    font-style: normal;
+    margin-top: 0;
 }
 
 /* ============================================
