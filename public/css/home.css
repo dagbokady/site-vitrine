@@ -129,7 +129,7 @@
 }
 
 .hero-slide-title {
-    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-size: var(--text-hero);
     font-weight: var(--weight-regular);
     letter-spacing: var(--tracking-tight);
     line-height: var(--leading-tight);

@@ -72,7 +72,7 @@ section {
 
 .section-title {
     font-size: var(--text-3xl);
-    font-weight: var(--weight-medium);
+    font-weight: var(--weight-regular);
     letter-spacing: var(--tracking-tight);
     line-height: var(--leading-snug);
     color: var(--color-text);
@@ -96,7 +96,7 @@ section {
 
 .page-title {
     font-size: var(--text-4xl);
-    font-weight: var(--weight-medium);
+    font-weight: var(--weight-regular);
     letter-spacing: var(--tracking-tight);
     line-height: var(--leading-tight);
     margin-top: var(--space-4);
@@ -193,4 +193,34 @@ section {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: var(--text-xs);
     color: var(--color-text-muted);
+}
+
+/* ============================================
+   GROS TITRES : poids regular comme le texte "Notre objectif..."
+   Override centralisé pour cohérence sur toutes les pages.
+   Les eyebrows, badges, labels, step-num gardent leur poids semi-bold.
+   ============================================ */
+.page-title,
+.hero-slide-title,
+.hero-title,
+.cover-title,
+.cover-subtitle,
+.section-title,
+.archive-title,
+.recent-title,
+.cta-title,
+.founder-name,
+.section-image-text-title,
+.section-plans-eyebrow,
+.discipline-name,
+.team-subtitle,
+    /* admin */
+.admin-card-title,
+.list-title,
+.editor-title,
+.pane-title,
+.preview-title,
+.admin-modal-title,
+.message-detail-name {
+    font-weight: 400;   /* = --weight-regular, comme "Notre objectif..." */
 }

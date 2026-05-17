@@ -324,8 +324,8 @@
 }
 
 .cover-title {
-    font-size: clamp(2.25rem, 4.5vw, 3.75rem);
-    font-weight: var(--weight-medium);
+    font-size: var(--text-4xl);
+    font-weight: var(--weight-regular);
     letter-spacing: -0.025em;
     line-height: 1;
     color: var(--color-white);
@@ -518,8 +518,8 @@
 }
 
 .section-image-text-title {
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-weight: var(--weight-medium);
+    font-size: var(--text-3xl);
+    font-weight: var(--weight-regular);
     letter-spacing: var(--tracking-tight);
     line-height: var(--leading-snug);
     color: var(--color-text);
