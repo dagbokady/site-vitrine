@@ -4,31 +4,35 @@
 
     <url>
         <loc>https://mc-johnson-partners.com/</loc>
-        <lastmod>2026-05-10</lastmod>
+        <lastmod>2026-05-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="fr" href="https://mc-johnson-partners.com/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://mc-johnson-partners.com/"/>
     </url>
 
     <url>
         <loc>https://mc-johnson-partners.com/archive</loc>
-        <lastmod>2026-05-10</lastmod>
+        <lastmod>2026-05-18</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://mc-johnson-partners.com/archive"/>
     </url>
 
     <url>
         <loc>https://mc-johnson-partners.com/agence</loc>
-        <lastmod>2026-05-10</lastmod>
+        <lastmod>2026-05-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://mc-johnson-partners.com/agence"/>
     </url>
 
     <url>
         <loc>https://mc-johnson-partners.com/contact</loc>
-        <lastmod>2026-05-10</lastmod>
+        <lastmod>2026-05-18</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://mc-johnson-partners.com/contact"/>
     </url>
 
 </urlset>
