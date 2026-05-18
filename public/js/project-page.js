@@ -74,6 +74,7 @@
         buildDynamicSections(project);
         buildSectionIndicator();
         setupPlansChevrons();
+        setupPlansLightbox();
         setupScrollObserver();
         setupProjectNavigation(project);
         setupKeyboardNav();
@@ -279,14 +280,20 @@
 
     function renderPlans(section) {
         const images = section.images || [];
-        // Identifiant unique pour cibler les chevrons de cette section
         const uid = 'plans-' + Math.random().toString(36).slice(2, 8);
 
         const imagesHtml = images.map((img, i) => {
-            const url = window.MCJP.cloudinaryOptimize(img.url, 1400);
+            // URL miniature pour la grille, URL haute résolution pour le lightbox
+            const thumbUrl = window.MCJP.cloudinaryOptimize(img.url, 1400);
+            const fullUrl  = window.MCJP.cloudinaryOptimize(img.url, 3200);
             return `
-        <figure class="section-plans-item">
-          <img src="${escapeAttr(url)}" alt="${escapeAttr(img.caption || 'Plan technique ' + (i+1))}" loading="lazy">
+        <figure class="section-plans-item" data-lightbox-index="${i}" data-lightbox-group="${uid}">
+          <img src="${escapeAttr(thumbUrl)}"
+               data-full="${escapeAttr(fullUrl)}"
+               data-caption="${escapeAttr(img.caption || '')}"
+               alt="${escapeAttr(img.caption || 'Plan technique ' + (i+1))}"
+               loading="lazy"
+               class="plans-thumb">
           ${img.caption ? `<figcaption class="section-plans-caption">${escapeHtml(img.caption)}</figcaption>` : ''}
         </figure>
       `;
@@ -417,8 +424,149 @@
     }
 
     // ============================================
-    // SCROLL OBSERVER
+    // LIGHTBOX pour les plans & dessins techniques
+    // Clic sur une card → overlay plein écran avec
+    // navigation prev/next + fermeture esc/clic fond
     // ============================================
+    function setupPlansLightbox() {
+        // Créer l'overlay une seule fois dans le DOM
+        const overlay = document.createElement('div');
+        overlay.className = 'plans-lightbox';
+        overlay.setAttribute('role', 'dialog');
+        overlay.setAttribute('aria-modal', 'true');
+        overlay.setAttribute('aria-label', 'Vue agrandie du plan');
+        overlay.hidden = true;
+        overlay.innerHTML = `
+      <div class="plans-lb-backdrop"></div>
+      <div class="plans-lb-content">
+        <div class="plans-lb-img-wrap">
+          <img class="plans-lb-img" src="" alt="">
+          <div class="plans-lb-spinner"></div>
+        </div>
+        <p class="plans-lb-caption"></p>
+        <p class="plans-lb-hint">Cliquez sur l'image pour zoomer</p>
+      </div>
+      <button class="plans-lb-close" aria-label="Fermer">✕</button>
+      <button class="plans-lb-prev" aria-label="Plan précédent">←</button>
+      <button class="plans-lb-next" aria-label="Plan suivant">→</button>
+      <p class="plans-lb-counter"></p>
+    `;
+        document.body.appendChild(overlay);
+
+        // État courant du lightbox
+        let currentGroup = null;   // uid du groupe
+        let currentIndex = 0;
+        let allItems = [];         // toutes les figures du groupe
+
+        const lbImg     = overlay.querySelector('.plans-lb-img');
+        const lbCaption = overlay.querySelector('.plans-lb-caption');
+        const lbCounter = overlay.querySelector('.plans-lb-counter');
+        const lbSpinner = overlay.querySelector('.plans-lb-spinner');
+        const lbHint    = overlay.querySelector('.plans-lb-hint');
+
+        function openLightbox(group, index) {
+            currentGroup = group;
+            allItems = Array.from(
+                document.querySelectorAll(`[data-lightbox-group="${group}"] img.plans-thumb`)
+            );
+            currentIndex = index;
+            overlay.hidden = false;
+            document.body.style.overflow = 'hidden';
+            loadImage(index);
+            updateNav();
+        }
+
+        function closeLightbox() {
+            overlay.hidden = true;
+            document.body.style.overflow = '';
+            lbImg.src = '';
+            currentGroup = null;
+        }
+
+        function loadImage(idx) {
+            const img = allItems[idx];
+            if (!img) return;
+
+            const fullSrc = img.dataset.full || img.src;
+            const caption = img.dataset.caption || img.alt || '';
+
+            lbImg.classList.add('is-loading');
+            lbSpinner.style.display = 'block';
+            lbHint.style.display = 'none';
+
+            const tempImg = new Image();
+            tempImg.onload = () => {
+                lbImg.src = fullSrc;
+                lbImg.alt = caption;
+                lbImg.classList.remove('is-loading');
+                lbSpinner.style.display = 'none';
+                lbHint.style.display = 'block';
+            };
+            tempImg.onerror = () => {
+                lbImg.src = img.src;   // fallback sur la miniature
+                lbImg.classList.remove('is-loading');
+                lbSpinner.style.display = 'none';
+            };
+            tempImg.src = fullSrc;
+
+            lbCaption.textContent = caption;
+            lbCounter.textContent = `${idx + 1} / ${allItems.length}`;
+        }
+
+        function navigate(dir) {
+            currentIndex = (currentIndex + dir + allItems.length) % allItems.length;
+            loadImage(currentIndex);
+            updateNav();
+        }
+
+        function updateNav() {
+            const prevBtn = overlay.querySelector('.plans-lb-prev');
+            const nextBtn = overlay.querySelector('.plans-lb-next');
+            prevBtn.style.display = allItems.length <= 1 ? 'none' : '';
+            nextBtn.style.display = allItems.length <= 1 ? 'none' : '';
+        }
+
+        // Toggle zoom au clic sur l'image
+        lbImg.addEventListener('click', () => {
+            lbImg.classList.toggle('is-zoomed');
+            lbHint.textContent = lbImg.classList.contains('is-zoomed')
+                ? 'Cliquez pour dézoomer'
+                : 'Cliquez sur l\'image pour zoomer';
+        });
+
+        // Fermeture
+        overlay.querySelector('.plans-lb-close').addEventListener('click', closeLightbox);
+        overlay.querySelector('.plans-lb-backdrop').addEventListener('click', closeLightbox);
+
+        // Navigation
+        overlay.querySelector('.plans-lb-prev').addEventListener('click', () => navigate(-1));
+        overlay.querySelector('.plans-lb-next').addEventListener('click', () => navigate(+1));
+
+        // Clavier
+        document.addEventListener('keydown', (e) => {
+            if (overlay.hidden) return;
+            if (e.key === 'Escape')      { e.preventDefault(); closeLightbox(); }
+            if (e.key === 'ArrowLeft')   { e.preventDefault(); navigate(-1); }
+            if (e.key === 'ArrowRight')  { e.preventDefault(); navigate(+1); }
+        });
+
+        // Swipe tactile
+        let touchStartX = 0;
+        overlay.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+        overlay.addEventListener('touchend', e => {
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(dx) > 50) navigate(dx < 0 ? 1 : -1);
+        });
+
+        // Délégation de clic sur toutes les figures de plan
+        document.addEventListener('click', (e) => {
+            const figure = e.target.closest('[data-lightbox-group]');
+            if (!figure) return;
+            const group = figure.dataset.lightboxGroup;
+            const index = parseInt(figure.dataset.lightboxIndex, 10);
+            if (!isNaN(index)) openLightbox(group, index);
+        });
+    }
     function setupScrollObserver() {
         if (!('IntersectionObserver' in window)) return;
 
