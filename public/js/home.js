@@ -65,7 +65,9 @@
             .slice(0, 3);
 
         if (recent.length === 0) {
-            showLoadError();
+            // Slider vide : cacher le loading, ne rien afficher (pas de message d'erreur)
+            const loading = document.getElementById('hero-loading');
+            if (loading) loading.hidden = true;
             return;
         }
 
