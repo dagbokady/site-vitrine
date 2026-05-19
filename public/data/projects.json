@@ -2,7 +2,7 @@
   "meta": {
     "lastUpdate": "2026-05-19",
     "version": 3,
-    "totalProjects": 1
+    "totalProjects": 2
   },
   "disciplines": [
     {
@@ -41,6 +41,77 @@
     }
   ],
   "projects": [
+    {
+      "title": "Villa ASW1",
+      "subtitle": "Résidentiel",
+      "discipline": "architecture",
+      "status": "en-cours",
+      "year": 2026,
+      "surface": "6000m²",
+      "location": "Assinie",
+      "client": "Entreprise",
+      "role": "Maitre D'oeuvre",
+      "partners": [],
+      "categories": [
+        "Résidientielle"
+      ],
+      "description": "Cet ensemble immobilier contemporain adopte une architecture minimaliste, mêlant façades d'ensemble en bloc claires et inserts bois pour créer une esthétique à la fois sobre. Implanté sur un terrain plat, le projet intègredes volumes souples, espaces paysagers luxuriants, piscines et circulations ouvertes qui renforcent l’impression de complexe résidentiel de très haut standing.",
+      "featured": true,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1779186282/s8vsbheeixwetrtjsqzd.png",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779186302/z6nbvmqq3vdcit7ezhtk.jpg",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "image-text",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779186324/puodxe2xtxokrjhjeoj8.png",
+          "title": "",
+          "text": "Une architecture de strates et de lumière, où les lignes horizontales sculptent le paysage comme une géographie habitée, suspendue entre minéral et végétal.<br data-start=\"156\" data-end=\"159\">Le projet ne cherche pas à dominer le site, il l’accompagne, en transformant la densité urbaine en une succession de jardins, de terrasses et d’ombres habitées."
+        },
+        {
+          "type": "context",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779186351/adhriopwd28occndn5s2.png",
+          "caption": "Vue axo"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779186382/umpdpgsylbgisbo4py53.png",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779186388/hfhbjivdrzk4bii8xjlp.png",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779186399/pkxsxni93somt1ywq8bu.png",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779186420/nay9fh3pov36buuo2svi.png",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779186436/luprslz4b95h57oud8pi.png",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "id": "villa-asw1",
+      "slug": "villa-asw1",
+      "order": 2,
+      "createdAt": "2026-05-19",
+      "updatedAt": "2026-05-19T10:27:32.786Z"
+    },
     {
       "title": "Cité Résidentielle",
       "subtitle": "Mixte",
