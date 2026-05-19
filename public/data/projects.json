@@ -1,20 +1,130 @@
 {
   "meta": {
-    "lastUpdate": "2026-05-18",
+    "lastUpdate": "2026-05-19",
     "version": 3,
-    "totalProjects": 0
+    "totalProjects": 1
   },
   "disciplines": [
-    { "id": "architecture", "label": "Architecture" },
-    { "id": "design",       "label": "Design"       },
-    { "id": "urbanisme",    "label": "Urbanisme"    }
+    {
+      "id": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "id": "design",
+      "label": "Design"
+    },
+    {
+      "id": "urbanisme",
+      "label": "Urbanisme"
+    }
   ],
   "categories": [
-    { "id": "residentiel",   "label": "Résidentiel"           },
-    { "id": "tertiaire",     "label": "Tertiaire / Bureaux"   },
-    { "id": "hotellerie",    "label": "Hôtellerie / Tourisme" },
-    { "id": "infrastructure","label": "Infrastructure"        },
-    { "id": "concours",      "label": "Concours"              }
+    {
+      "id": "residentiel",
+      "label": "Résidentiel"
+    },
+    {
+      "id": "tertiaire",
+      "label": "Tertiaire / Bureaux"
+    },
+    {
+      "id": "hotellerie",
+      "label": "Hôtellerie / Tourisme"
+    },
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "id": "concours",
+      "label": "Concours"
+    }
   ],
-  "projects": []
+  "projects": [
+    {
+      "title": "Cité Résidentielle",
+      "subtitle": "Mixte",
+      "discipline": "architecture",
+      "status": "etude",
+      "year": 2026,
+      "surface": "02 hectares",
+      "location": "Feh Kesseh, Abidjan",
+      "client": "Promoteur",
+      "role": "Maitre D'oeuvre",
+      "partners": [
+        "Bureau d'étude"
+      ],
+      "categories": [
+        "Résidientielle"
+      ],
+      "description": "Cet ensemble immobilier contemporain adopte une architecture en terrasses avec de larges débords horizontaux, mêlant façades minérales claires et inserts bois pour créer une esthétique à la fois sobre. Implanté sur un terrain en pente, le projet intègre commerces en pied d’immeuble, espaces paysagers luxuriants, piscines et circulations ouvertes qui renforcent l’impression de complexe résidentiel haut standing.",
+      "featured": true,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1779185394/lnicdu0wwiwxmjyjdxlq.png",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779185438/k3k8msuv4j3bpeglogv5.png",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "image-text",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779185463/ll2umk0nd1kewveq3vat.png",
+          "title": "architecture de strates",
+          "text": "Une architecture de strates et de lumière, où les lignes horizontales sculptent le paysage comme une géographie habitée, suspendue entre minéral et végétal.<br data-start=\"156\" data-end=\"159\">Le projet ne cherche pas à dominer le site, il l’accompagne, en transformant la densité urbaine en une succession de jardins, de terrasses et d’ombres habitées."
+        },
+        {
+          "type": "context",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779185553/fbiyjinhzunmjehffrpy.png",
+          "caption": "Vue aérienne"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779185637/dau4rf65jczxsxxmdonp.png",
+              "caption": "Façade Latérale Droite"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779185642/w84jg8twaywxlk3ahhni.png",
+              "caption": "Façade Principale"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779185648/a0hcwqkjey8dxf8jmf3f.png",
+              "caption": "Vue Aérienne"
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779185898/cwurx6iokbggxsygnsdh.png",
+              "caption": "1"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779185933/ljdf2xdo9qgxogx8gyym.png",
+              "caption": "2"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779185952/e3pl3cgjfozgenhxxdcx.png",
+              "caption": "3"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779185998/le89bwp3otv6cuichizx.png",
+              "caption": "4"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779186036/cchoiafzf8eewzrngltg.png",
+              "caption": "5"
+            }
+          ]
+        }
+      ],
+      "id": "cite-residentielle",
+      "slug": "cite-residentielle",
+      "order": 1,
+      "createdAt": "2026-05-19",
+      "updatedAt": "2026-05-19T10:22:07.616Z"
+    }
+  ]
 }
