@@ -62,7 +62,23 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;   /* Centre par défaut */
     opacity: 0.85;
+}
+
+/* Sur mobile : on évite que l'image ne soit trop coupée verticalement
+   en réduisant légèrement la hauteur du slider, ce qui rapproche
+   le ratio du conteneur du ratio paysage des photos d'architecture */
+@media (max-width: 767px) {
+    .hero-slider {
+        height: 75vh;
+        min-height: 480px;
+    }
+    .hero-slide-image {
+        /* Sur mobile : on cadre légèrement vers le haut pour éviter de couper
+           le bâtiment dans les photos d'architecture (souvent placé au centre vertical) */
+        object-position: center 35%;
+    }
 }
 
 .hero-slide::after {
@@ -400,12 +416,20 @@
 .thumb {
     display: block;
     position: relative;
-    /* Aspect 4:3 = thumbs plus paysage = moins hautes */
+    /* Aspect 4:3 par défaut (desktop) = thumbs paysage, dense */
     aspect-ratio: 4 / 3;
     overflow: hidden;
     background-color: var(--color-bg-alt);
     text-decoration: none;
     color: var(--color-white);
+}
+
+/* Sur mobile : 1 col plein écran. On passe à 16/9 (plus paysage)
+   pour que les photos d'architecture soient mieux mises en valeur */
+@media (max-width: 767px) {
+    .thumb {
+        aspect-ratio: 16 / 9;
+    }
 }
 
 .thumb-image {
@@ -414,6 +438,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     transition: transform 0.8s var(--ease-out);
 }
 

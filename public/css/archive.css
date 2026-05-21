@@ -279,12 +279,21 @@
     margin-bottom: var(--space-2);
 }
 
+/* Sur mobile : 1 col plein écran. Ratio 16/9 (plus paysage) pour mieux
+   mettre en valeur les photos d'architecture sans les couper */
+@media (max-width: 767px) {
+    .archive-card-image-wrap {
+        aspect-ratio: 16 / 9;
+    }
+}
+
 .archive-card-image {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
     transition: transform 0.6s var(--ease-out);
 }
 
