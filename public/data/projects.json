@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdate": "2026-05-19",
+    "lastUpdate": "2026-05-22",
     "version": 3,
-    "totalProjects": 2
+    "totalProjects": 3
   },
   "disciplines": [
     {
@@ -41,6 +41,79 @@
     }
   ],
   "projects": [
+    {
+      "title": "Le Temple",
+      "subtitle": "Cultuel",
+      "discipline": "architecture",
+      "status": "realise",
+      "year": 2024,
+      "surface": "1200 m²",
+      "location": "Cocody, Abodjan",
+      "client": "Eglise",
+      "role": "Architecte Maitre d'oeuvre",
+      "partners": [],
+      "categories": [],
+      "description": "",
+      "featured": true,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1779417151/h4gr2zbydftvc3li4ccx.jpg",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779417158/cqxlqcscjgsxzy3tjpwy.jpg",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "image-text",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779417164/v3qsmdds7ilrwwxmeuv0.jpg",
+          "title": "",
+          "text": ""
+        },
+        {
+          "type": "context",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779417176/jdrdcjjwyk9aozzndxsw.jpg",
+          "caption": ""
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779417225/rdel7h3foajen9vnqns9.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779417233/zkjrnbm1dpa886xupa8k.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779417241/wbylzd5fmp02iapxx3p7.jpg",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779417288/bawqakee4cjdnsfajj7g.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779417289/czhrucv47uincjpzp8dz.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779417291/easxyulibedqem8qdb5b.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "id": "le-temple",
+      "slug": "le-temple",
+      "order": 3,
+      "createdAt": "2026-05-22",
+      "updatedAt": "2026-05-22T02:34:56.738Z"
+    },
     {
       "title": "Villa ASW1",
       "subtitle": "Résidentiel",
