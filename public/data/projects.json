@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdate": "2026-05-22",
+    "lastUpdate": "2026-05-28",
     "version": 3,
-    "totalProjects": 3
+    "totalProjects": 4
   },
   "disciplines": [
     {
@@ -41,6 +41,89 @@
     }
   ],
   "projects": [
+    {
+      "title": "SAVW1 DESIGN",
+      "subtitle": "Intérieur",
+      "discipline": "architecture",
+      "status": "en-cours",
+      "year": 2026,
+      "surface": "3500 m²",
+      "location": "Assinie",
+      "client": "Particulier",
+      "role": "Architecte Maitre d'oeuvre",
+      "partners": [
+        "Bureaus d'études"
+      ],
+      "categories": [],
+      "description": "<h3 data-section-id=\"1w76p77\" data-start=\"0\" data-end=\"17\">Hall d’entrée</h3>\n<p data-start=\"19\" data-end=\"368\">Un hall monumental à double hauteur où le minimalisme architectural rencontre une mise en scène lumineuse sculpturale. L’escalier flottant rétroéclairé, les garde-corps en verre et les finitions minérales grand format créent une atmosphère contemporaine, élégante et apaisante, sublimée par des menuiseries bois foncé et un jardin intérieur minéral.</p>\n<h3 data-section-id=\"1ep8z2b\" data-start=\"370\" data-end=\"398\">Salle de bain principale</h3>\n<p data-start=\"400\" data-end=\"712\" data-is-last-node=\"\" data-is-only-node=\"\">Une salle de bain haut de gamme pensée comme un espace de bien-être, mêlant marbre vert profond, travertin clair et bois naturel dans une composition chaleureuse et raffinée. Les lignes épurées, les niches rétroéclairées et les volumes ouverts offrent une expérience spa contemporaine, lumineuse et intemporelle.</p>",
+      "featured": true,
+      "cover": "https://res.cloudinary.com/diqycra58/video/upload/v1779963216/yuxxtzdj00739fmkuepq.mp4",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779963227/uhutlp5hmp3z6fp75xim.png",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "image-text",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779963234/o3arln91h8tvjgxa9rvl.jpg",
+          "title": "",
+          "text": "<h3 data-section-id=\"1w76p77\" data-start=\"0\" data-end=\"17\">Hall d’entrée</h3>\n<p data-start=\"19\" data-end=\"368\">Un hall monumental à double hauteur où le minimalisme architectural rencontre une mise en scène lumineuse sculpturale. L’escalier flottant rétroéclairé, les garde-corps en verre et les finitions minérales grand format créent une atmosphère contemporaine, élégante et apaisante, sublimée par des menuiseries bois foncé et un jardin intérieur minéral.</p>\n<h3 data-section-id=\"1ep8z2b\" data-start=\"370\" data-end=\"398\">Salle de bain principale</h3>\n<p data-start=\"400\" data-end=\"712\" data-is-last-node=\"\" data-is-only-node=\"\">Une salle de bain haut de gamme pensée comme un espace de bien-être, mêlant marbre vert profond, travertin clair et bois naturel dans une composition chaleureuse et raffinée. Les lignes épurées, les niches rétroéclairées et les volumes ouverts offrent une expérience spa contemporaine, lumineuse et intemporelle.</p>"
+        },
+        {
+          "type": "context",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1779963258/jcmcbjk0t909utqgki9s.png",
+          "caption": ""
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779963264/vbvxbjkwyeoo39yfpxpc.png",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779963266/rvjcmqgw4flxovorzktn.png",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779963269/iewyah60g4ypet8oknv1.png",
+              "caption": ""
+            }
+          ]
+        },
+        {
+          "type": "plans",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779963273/fyggpguduehvgp2g1c3q.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779963276/erapz9si4kiqx7tmbmln.png",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779963281/rh8culrknb7otuylclv6.png",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779963285/fcx4b5talamuqnkebvxe.png",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1779963299/she0msdntvwhchoihldp.png",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "id": "savw1-design",
+      "slug": "savw1-design",
+      "order": 4,
+      "createdAt": "2026-05-28",
+      "updatedAt": "2026-05-28T10:15:12.223Z"
+    },
     {
       "title": "Le Temple",
       "subtitle": "Cultuel",
