@@ -66,18 +66,42 @@
     opacity: 0.85;
 }
 
-/* Sur mobile : on évite que l'image ne soit trop coupée verticalement
-   en réduisant légèrement la hauteur du slider, ce qui rapproche
-   le ratio du conteneur du ratio paysage des photos d'architecture */
+/* Sur mobile : image 100% visible en largeur ET en hauteur (pas de rognage).
+   On passe en `contain` pour afficher l'image entière, et on réduit la hauteur
+   du slider pour éviter trop d'espace vide vertical. */
 @media (max-width: 767px) {
     .hero-slider {
-        height: 75vh;
-        min-height: 480px;
+        height: fit-content;
+        min-height: 380px;
     }
     .hero-slide-image {
-        /* Sur mobile : on cadre légèrement vers le haut pour éviter de couper
-           le bâtiment dans les photos d'architecture (souvent placé au centre vertical) */
-        object-position: center 35%;
+        object-fit: cover;          /* image entière visible, pas de coupure */
+        object-position: center center;
+        background-color: var(--color-black);
+        opacity: 1;                   /* on retire l'opacité car le fond gère le contraste */
+    }
+    /* On réduit le voile dégradé sur mobile car l'image n'occupe plus
+       toute la zone — sinon le bas du slider devient trop sombre */
+    .hero-slide::after {
+        background: linear-gradient(
+                180deg,
+                rgba(10, 10, 10, 0.5) 0%,
+                rgba(10, 10, 10, 0.15) 30%,
+                rgba(10, 10, 10, 0.15) 70%,
+                rgba(10, 10, 10, 0.85) 100%
+        );
+    }
+    /* Le texte du slide reste lisible : on le repositionne avec un fond plus marqué */
+    .hero-slide-text {
+        bottom: var(--space-8);
+        background: linear-gradient(
+                to top,
+                rgba(10, 10, 10, 0.9) 0%,
+                rgba(10, 10, 10, 0.7) 50%,
+                transparent 100%
+        );
+        padding-top: var(--space-12);
+        padding-bottom: var(--space-6);
     }
 }
 
@@ -179,7 +203,12 @@
     100% { transform: scale(1.08) translate(-1%, -1%); }
 }
 
+/* Sur mobile : ken burns désactivé car incompatible avec object-fit: contain
+   (le zoom ferait sortir l'image de son cadre) */
 @media (max-width: 767px) {
+    .hero-slide.is-active .hero-slide-image {
+        animation: none !important;
+    }
     .hero-slide-text {
         bottom: var(--space-12);
     }
