@@ -9,7 +9,6 @@
      - CONTACT_FROM_EMAIL  (email expéditeur, doit être validé chez Resend)
      - TURNSTILE_SECRET    (optionnel, secret Cloudflare Turnstile)
    ============================================ */
-
 export const config = {
     runtime: 'nodejs'
 };
@@ -31,7 +30,9 @@ export default async function handler(req, res) {
     }
 
     try {
-        const data = req.body;
+        const data = typeof req.body === 'string'
+            ? JSON.parse(req.body)
+            : req.body;
 
         // ============================================
         // 1. VALIDATION CÔTÉ SERVEUR
@@ -171,7 +172,7 @@ function escapeHtml(text) {
 function getSubjectLabel(value) {
     const labels = {
         'residentiel': 'Projet résidentiel',
-        'tertiaire': 'Bâtiment tertiaire / bureaux',
+        'tertiaire': 'Bâtiment tertiaire  / bureaux',
         'hotellerie': 'Hôtellerie / tourisme',
         'infrastructure': 'Infrastructure / équipement public',
         'urbanisme': 'Urbanisme / aménagement',
