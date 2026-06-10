@@ -1,4 +1,18 @@
 {
-  "messages": [],
-  "lastUpdate": "2025-01-01T00:00:00.000Z"
+  "messages": [
+    {
+      "id": "msg_mq8giczc_jkyo66",
+      "firstname": "K.",
+      "lastname": "DAGBO",
+      "email": "dagbokady@gmail.com",
+      "phone": "+250171007643",
+      "company": "societe",
+      "subject": "residentiel",
+      "subjectLabel": "Projet résidentiel",
+      "message": "jaon donoa cond",
+      "createdAt": "2026-06-10T19:23:30.744Z",
+      "read": false
+    }
+  ],
+  "lastUpdate": "2026-06-10T19:23:30.985Z"
 }
