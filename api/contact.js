@@ -9,6 +9,12 @@
      - CONTACT_FROM_EMAIL  (email expéditeur, doit être validé chez Resend)
      - TURNSTILE_SECRET    (optionnel, secret Cloudflare Turnstile)
    ============================================ */
+import {
+    readMessages,
+    writeMessages,
+    generateMessageId
+} from './_helpers.js';
+
 export const config = {
     runtime: 'nodejs'
 };
@@ -114,7 +120,29 @@ ${escapeHtml(data.message)}
         </body>
       </html>
     `;
+        const newMessage = {
+            id: generateMessageId(),
+            firstname: data.firstname,
+            lastname: data.lastname,
+            email: data.email,
+            phone: data.phone || '',
+            company: data.company || '',
+            subject: data.subject || '',
+            subjectLabel,
+            message: data.message,
+            createdAt: new Date().toISOString(),
+            read: false
+        };
 
+        const { messages, sha } = await readMessages();
+
+        messages.unshift(newMessage);
+
+        await writeMessages(
+            messages.slice(0, 500),
+            sha,
+            `[admin] Nouveau message : ${data.firstname} ${data.lastname}`
+        );
         // ============================================
         // 4. ENVOI VIA RESEND
         // ============================================
