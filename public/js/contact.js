@@ -1,5 +1,5 @@
 /* ============================================
-   /api/contact.js — Serverless Function Vercel
+   /js/contact.js — Serverless Function Vercel
    Reçoit le formulaire, valide, stocke dans l'inbox admin,
    et envoie une notification mail légère.
    ============================================
@@ -11,7 +11,7 @@
      - TURNSTILE_SECRET    (optionnel, secret Cloudflare Turnstile)
    ============================================ */
 
-import { readMessages, writeMessages, generateMessageId } from '../../api/_helpers.js';
+
 
 export const config = {
     runtime: 'nodejs'
