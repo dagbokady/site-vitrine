@@ -11,7 +11,7 @@
      - TURNSTILE_SECRET    (optionnel, secret Cloudflare Turnstile)
    ============================================ */
 
-import { readMessages, writeMessages, generateMessageId } from './_helpers.js';
+import { readMessages, writeMessages, generateMessageId } from '../../api/_helpers.js';
 
 export const config = {
     runtime: 'nodejs'
