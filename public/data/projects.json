@@ -2,7 +2,7 @@
   "meta": {
     "lastUpdate": "2026-06-17",
     "version": 3,
-    "totalProjects": 9
+    "totalProjects": 10
   },
   "disciplines": [
     {
@@ -41,6 +41,47 @@
     }
   ],
   "projects": [
+    {
+      "title": "Sky Garden Résidence",
+      "subtitle": "Immeuble résidentiel haut de gamme",
+      "discipline": "architecture",
+      "status": "realise",
+      "year": 2025,
+      "surface": "—",
+      "location": "Abidjan",
+      "client": "Anonyme",
+      "role": "Architecture",
+      "partners": [],
+      "categories": [],
+      "description": "Développée sur plusieurs niveaux, cette résidence contemporaine se distingue par ses lignes élégantes, ses larges terrasses panoramiques et sa végétation intégrée. Pensé pour offrir confort, luminosité et qualité de vie, le projet associe des espaces généreux, une architecture raffinée et des vues dégagées dans un cadre résidentiel de standing.",
+      "featured": false,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1781693715/qb2grpj958wjpmprfsg6.jpg",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781693749/ndn4gmrgenyzxvunnx1m.jpg",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781693757/iowpsj5zwc14imyhoyac.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781693785/mthaapkbnbbx6sysfw7c.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "id": "sky-garden-residence",
+      "slug": "sky-garden-residence",
+      "order": 10,
+      "createdAt": "2026-06-17",
+      "updatedAt": "2026-06-17T10:56:41.197Z"
+    },
     {
       "title": "Villa Oasis",
       "subtitle": "Villa contemporaine de plain-pied",
