@@ -2,7 +2,7 @@
   "meta": {
     "lastUpdate": "2026-06-17",
     "version": 3,
-    "totalProjects": 6
+    "totalProjects": 7
   },
   "disciplines": [
     {
@@ -41,6 +41,51 @@
     }
   ],
   "projects": [
+    {
+      "title": "Villa Verde",
+      "subtitle": "Villa contemporaine haut de gamme",
+      "discipline": "architecture",
+      "status": "realise",
+      "year": 2022,
+      "surface": "—",
+      "location": "Bingerville",
+      "client": "Anonyme",
+      "role": "Architecture",
+      "partners": [],
+      "categories": [],
+      "description": "Un projet aux volumes généreux où les espaces intérieurs et extérieurs dialoguent harmonieusement. Cette villa développe une architecture sobre et élégante, enrichie par une forte présence végétale et des espaces de vie ouverts sur l’extérieur. Idéalement pensée pour un climat tropical, elle privilégie la lumière naturelle, la ventilation et le confort, tout en offrant un cadre de vie raffiné et apaisant.",
+      "featured": false,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1781692215/zuvkvdp018tfgcfiosss.jpg",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781692499/fwchonznwiewdjchztun.jpg",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781692631/i3bdpnoqy8ifcncnlp6u.jpg",
+              "caption": "Vue principale de la façade"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781692639/dynhuchgk8v62fhfp4ib.jpg",
+              "caption": "Perspective avant"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781692726/u18mihcyh7dlmhl488o2.jpg",
+              "caption": "Vue d'ensemble de la résidence"
+            }
+          ]
+        }
+      ],
+      "id": "villa-verde",
+      "slug": "villa-verde",
+      "order": 7,
+      "createdAt": "2026-06-17",
+      "updatedAt": "2026-06-17T10:40:24.958Z"
+    },
     {
       "title": "PAVILLONS CANOPÉES",
       "subtitle": "Complexe immobilier",
