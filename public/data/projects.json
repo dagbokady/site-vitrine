@@ -2,7 +2,7 @@
   "meta": {
     "lastUpdate": "2026-06-17",
     "version": 3,
-    "totalProjects": 10
+    "totalProjects": 11
   },
   "disciplines": [
     {
@@ -41,6 +41,51 @@
     }
   ],
   "projects": [
+    {
+      "title": "Auto Prestige Center",
+      "subtitle": "Showroom automobile contemporain",
+      "discipline": "architecture",
+      "status": "en-cours",
+      "year": null,
+      "surface": "—",
+      "location": "",
+      "client": "Anonyme",
+      "role": "",
+      "partners": [],
+      "categories": [],
+      "description": "<p data-start=\"529\" data-end=\"817\">Ce projet propose une architecture moderne aux lignes affirmées, pensée pour offrir une visibilité maximale aux véhicules exposés. L’association du verre, du métal et du bois apporte une identité forte tout en garantissant confort, luminosité et fluidité des parcours.</p>",
+      "featured": false,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1781694263/nhkxzgbfljaabiawi5md.jpg",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781694285/jqkyzcptm2cjj9j4wxlq.jpg",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781694437/ei4wfrbuetjgkjexvqns.png",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781694307/gok64rkzywmnohw1gbmt.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781694310/xyqnmsymuuklraz3lndj.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "id": "auto-prestige-center",
+      "slug": "auto-prestige-center",
+      "order": 11,
+      "createdAt": "2026-06-17",
+      "updatedAt": "2026-06-17T11:09:12.747Z"
+    },
     {
       "title": "Sky Garden Résidence",
       "subtitle": "Immeuble résidentiel haut de gamme",
