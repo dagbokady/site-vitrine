@@ -2,7 +2,7 @@
   "meta": {
     "lastUpdate": "2026-06-17",
     "version": 3,
-    "totalProjects": 8
+    "totalProjects": 9
   },
   "disciplines": [
     {
@@ -41,6 +41,56 @@
     }
   ],
   "projects": [
+    {
+      "title": "Villa Oasis",
+      "subtitle": "Villa contemporaine de plain-pied",
+      "discipline": "architecture",
+      "status": "realise",
+      "year": 2023,
+      "surface": "—",
+      "location": "Assinie",
+      "client": "Anonyme",
+      "role": "Architecture",
+      "partners": [],
+      "categories": [],
+      "description": "Cette résidence développe une architecture horizontale aux lignes épurées, mettant en valeur la lumière naturelle et les espaces de détente. Organisée autour d’une piscine centrale et de généreuses terrasses couvertes, elle propose un équilibre harmonieux entre intimité, convivialité et ouverture sur le paysage tropical.",
+      "featured": false,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1781693317/prixynjozihoszrkxkmq.jpg",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781693332/hyfu0fpqrrktocwkj2dg.jpg",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "context",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781693417/x34yj4cop034ihnc5q3t.jpg",
+          "caption": "Vue de haut"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781693369/nbvu7rmbj0nviwf4uppr.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781693399/ssbzsksatr1vc1llbsai.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781693403/m1lig5lmmqywyxh2x14q.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "id": "villa-oasis",
+      "slug": "villa-oasis",
+      "order": 9,
+      "createdAt": "2026-06-17",
+      "updatedAt": "2026-06-17T10:51:07.436Z"
+    },
     {
       "title": "Résidence Rubis",
       "subtitle": "Villa contemporaine R+1",
