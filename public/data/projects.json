@@ -2,7 +2,7 @@
   "meta": {
     "lastUpdate": "2026-06-17",
     "version": 3,
-    "totalProjects": 5
+    "totalProjects": 6
   },
   "disciplines": [
     {
@@ -41,6 +41,56 @@
     }
   ],
   "projects": [
+    {
+      "title": "PAVILLONS CANOPÉES",
+      "subtitle": "Complexe immobilier",
+      "discipline": "architecture",
+      "status": "realise",
+      "year": null,
+      "surface": "—",
+      "location": "",
+      "client": "",
+      "role": "",
+      "partners": [],
+      "categories": [],
+      "description": "Les Pavillons Canopée proposent un cadre de vie moderne et apaisant, où architecture contemporaine et nature se rencontrent harmonieusement. Conçus pour offrir confort, luminosité et intimité, ces pavillons bénéficient d’espaces extérieurs agréables, de stationnements privatifs et d’un environnement verdoyant propice au bien-être quotidien.",
+      "featured": false,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1781691520/bjvjtqd2rksbusmmuino.jpg",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781691539/pw6os192qwfx7r6sc56n.jpg",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "context",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781691555/wtkcizpjpjheggajnwtn.jpg",
+          "caption": "Plan masse - Implantation"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781691594/bsddzlqmmvnu1cuknk58.jpg",
+              "caption": "Entrée résidence"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781691599/iq5tnnf3d8dk3iu8pkjl.jpg",
+              "caption": "Vue des pavillons"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781691605/uxfnxso89hbax3phthau.jpg",
+              "caption": "Vue aérienne du programme"
+            }
+          ]
+        }
+      ],
+      "id": "pavillons-canopees",
+      "slug": "pavillons-canopees",
+      "order": 6,
+      "createdAt": "2026-06-17",
+      "updatedAt": "2026-06-17T10:21:49.891Z"
+    },
     {
       "title": "BLANCAFOR",
       "subtitle": "Complexe résidentielle",
