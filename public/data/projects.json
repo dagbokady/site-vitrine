@@ -2,7 +2,7 @@
   "meta": {
     "lastUpdate": "2026-06-17",
     "version": 3,
-    "totalProjects": 7
+    "totalProjects": 8
   },
   "disciplines": [
     {
@@ -41,6 +41,51 @@
     }
   ],
   "projects": [
+    {
+      "title": "Résidence Rubis",
+      "subtitle": "Villa contemporaine R+1",
+      "discipline": "architecture",
+      "status": "realise",
+      "year": null,
+      "surface": "—",
+      "location": "Sanon",
+      "client": "Anonyme",
+      "role": "Architecture",
+      "partners": [],
+      "categories": [],
+      "description": "Cette villa contemporaine se distingue par son architecture géométrique affirmée, associant des volumes épurés, des teintes contrastées et des matériaux nobles. Les larges ouvertures, les terrasses couvertes et les espaces extérieurs soigneusement aménagés favorisent une connexion fluide entre intérieur et extérieur. Conçue pour offrir confort, luminosité et élégance, elle propose un cadre de vie moderne adapté aux climats tropicaux.",
+      "featured": false,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1781693009/dtob7l1n0howolcg7rcn.jpg",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781693043/grfqefkeinzyloreqifc.jpg",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781693090/zcfnfcrfkzslam4etaqh.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781693109/li0pskrcert1nryd9bhq.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781693113/vcfdh9imif8gzxzqhl2q.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "id": "residence-rubis",
+      "slug": "residence-rubis",
+      "order": 8,
+      "createdAt": "2026-06-17",
+      "updatedAt": "2026-06-17T10:45:27.235Z"
+    },
     {
       "title": "Villa Verde",
       "subtitle": "Villa contemporaine haut de gamme",
