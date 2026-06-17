@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastUpdate": "2026-05-28",
+    "lastUpdate": "2026-06-17",
     "version": 3,
-    "totalProjects": 4
+    "totalProjects": 5
   },
   "disciplines": [
     {
@@ -41,6 +41,56 @@
     }
   ],
   "projects": [
+    {
+      "title": "BLANCAFOR",
+      "subtitle": "Complexe résidentielle",
+      "discipline": "architecture",
+      "status": "en-cours",
+      "year": 2024,
+      "surface": "2250 m2",
+      "location": "Bingerville",
+      "client": "Anonyme",
+      "role": "",
+      "partners": [],
+      "categories": [],
+      "description": "Villa contemporaine avec rooftop végétalisé\n\nCette villa moderne allie élégance, confort et nature. Ses lignes épurées, ses grandes baies vitrées et ses espaces extérieurs végétalisés créent un cadre de vie lumineux et agréable. Le projet comprend plusieurs niveaux, un sous-sol entièrement enterré et un rooftop aménagé offrant un espace de détente avec une vue dégagée. L’architecture met l’accent sur le bien-être, la lumière naturelle et l’intégration du végétal au cœur de l’habitat.",
+      "featured": false,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1781689633/fwueoyferutmnpbwpmtp.jpg",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781689662/kaonhuku0yxeepw5yig4.jpg",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "context",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781689702/khrwrdpzbrfdku07mjyb.jpg",
+          "caption": "Plan masse - Implantation du complexe"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781690204/fgljto5ysfajrq0t4shs.png",
+              "caption": "Vue principale"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781690211/jsnoy9jurwzqflixsnvl.jpg",
+              "caption": "Perspective extérieur"
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781690215/safrvuvc1rrxznmjh3m0.jpg",
+              "caption": "Cheminement paysager et accès résidentiel"
+            }
+          ]
+        }
+      ],
+      "id": "blancafor",
+      "slug": "blancafor",
+      "order": 5,
+      "createdAt": "2026-06-17",
+      "updatedAt": "2026-06-17T10:13:06.835Z"
+    },
     {
       "title": "SAVW1 DESIGN",
       "subtitle": "Intérieur",
