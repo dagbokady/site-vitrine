@@ -2,7 +2,7 @@
   "meta": {
     "lastUpdate": "2026-06-17",
     "version": 3,
-    "totalProjects": 11
+    "totalProjects": 12
   },
   "disciplines": [
     {
@@ -41,6 +41,51 @@
     }
   ],
   "projects": [
+    {
+      "title": "Resort Lagunaire",
+      "subtitle": "Hôtel",
+      "discipline": "architecture",
+      "status": "realise",
+      "year": null,
+      "surface": "—",
+      "location": "Sinementiali",
+      "client": "Anonyme",
+      "role": "",
+      "partners": [],
+      "categories": [],
+      "description": "<p data-start=\"529\" data-end=\"817\">Complexe touristique conçu pour offrir une expérience immersive au cœur d’un environnement tropical, combinant hébergements, espaces de loisirs, services et infrastructures dédiés au confort et au bien-être des visiteurs.</p>",
+      "featured": false,
+      "cover": "https://res.cloudinary.com/diqycra58/image/upload/v1781695105/rdyiixgybwctgmwqv2fp.jpg",
+      "sections": [
+        {
+          "type": "hero",
+          "image": "https://res.cloudinary.com/diqycra58/image/upload/v1781695113/zmcqtfcrmws6ohapcjzv.jpg",
+          "alt": "Vue principale"
+        },
+        {
+          "type": "gallery",
+          "images": [
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781695146/nhb7hhdtfyadovupefgh.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781695151/s5ztgix7kkjw1q4nwhag.jpg",
+              "caption": ""
+            },
+            {
+              "url": "https://res.cloudinary.com/diqycra58/image/upload/v1781695169/naok5z65dfnbea7ypctj.jpg",
+              "caption": ""
+            }
+          ]
+        }
+      ],
+      "id": "resort-lagunaire",
+      "slug": "resort-lagunaire",
+      "order": 12,
+      "createdAt": "2026-06-17",
+      "updatedAt": "2026-06-17T11:19:38.988Z"
+    },
     {
       "title": "Auto Prestige Center",
       "subtitle": "Showroom automobile contemporain",
